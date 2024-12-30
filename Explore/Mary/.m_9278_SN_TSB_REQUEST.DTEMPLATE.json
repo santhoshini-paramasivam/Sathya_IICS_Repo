@@ -1,7 +1,7 @@
 {
   "objectInfo" : {
-    "id" : "2ERyPlTTaWCb3IqASOZ8AI",
-    "name" : "m_Brewer_Setting_reg",
+    "id" : "3IHzNhLWygQlc6juWI818O",
+    "name" : "m_9278_SN_TSB_REQUEST",
     "type" : "DTEMPLATE",
     "metadata" : {
       "modelVersion" : {
@@ -9,7 +9,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0110ZH170000000006W3"
+        "repoHandle" : "0110ZH1700000000007S"
       },
       "contextAttributes" : [ {
         "name" : "id",
@@ -23,10 +23,10 @@
     }
   },
   "dataFileExtension" : "zip",
-  "updateTime" : "2024-12-30T10:49:04.486Z",
+  "updateTime" : "2024-12-30T10:49:04.494Z",
   "objectRefs" : [ {
-    "id" : "cRPWinSW5gPcbneKpVkV25",
-    "name" : "Sandy_Cosmos",
+    "id" : "hgSrl7jXkarf9Fp5TJWe0Y",
+    "name" : "TT_STAGING",
     "type" : "Connection",
     "metadata" : {
       "modelVersion" : {
@@ -34,19 +34,19 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0110ZH0B0000000001UF"
+        "repoHandle" : "0110ZH0B000000000041"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
-        "description" : "Created for case 04647407",
+        "description" : "TaskTopData Test DB Read Access",
         "contentType" : "JSON",
         "documentState" : "COMPLETE"
       }
     },
     "path" : "/SYS"
   }, {
-    "id" : "h95fARPThYPfk7MnZjh448",
-    "name" : "Flatfile_Sandy",
+    "id" : "70dKbdBpMQglcvc4Fskpex",
+    "name" : "SN_DM_DB",
     "type" : "Connection",
     "metadata" : {
       "modelVersion" : {
@@ -54,11 +54,11 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0110ZH0B0000000001UG"
+        "repoHandle" : "0110ZH0B000000000042"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
-        "description" : null,
+        "description" : "IT Data Mart Dev",
         "contentType" : "JSON",
         "documentState" : "COMPLETE"
       }

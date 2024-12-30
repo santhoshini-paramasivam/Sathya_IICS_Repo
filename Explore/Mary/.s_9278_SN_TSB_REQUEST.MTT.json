@@ -1,7 +1,7 @@
 {
   "objectInfo" : {
-    "id" : "04feu5up66CjePvUcdxHqL",
-    "name" : "mt_ff_acc_oracle_cloud_hosted",
+    "id" : "6oOf1zjDnjZcty2QuCgYkr",
+    "name" : "s_9278_SN_TSB_REQUEST",
     "type" : "MTT",
     "metadata" : {
       "modelVersion" : {
@@ -9,44 +9,24 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0110ZH0Z0000000002KD"
+        "repoHandle" : "0110ZH0Z00000000007G"
       },
       "contextAttributes" : [ {
         "name" : "id",
         "value" : "@1"
       } ],
       "additionalInfo" : {
-        "description" : "",
+        "description" : "Session pushed from PC to ICS : s_9278_SN_TSB_REQUEST",
         "contentType" : "JSON",
         "documentState" : "VALID"
       }
     }
   },
   "dataFileExtension" : "zip",
-  "updateTime" : "2024-12-30T10:49:04.489Z",
+  "updateTime" : "2024-12-30T10:49:04.492Z",
   "objectRefs" : [ {
-    "id" : "4TOV6u8aYmplkwdGKeBe0u",
-    "name" : "m_ff_acc_oracle_cloud_hosted",
-    "type" : "DTEMPLATE",
-    "metadata" : {
-      "modelVersion" : {
-        "major" : 0,
-        "minor" : 0
-      },
-      "repoInfo" : {
-        "repoHandle" : "0110ZH170000000005X6"
-      },
-      "contextAttributes" : null,
-      "additionalInfo" : {
-        "description" : "",
-        "contentType" : "JSON",
-        "documentState" : "VALID"
-      }
-    },
-    "path" : "/Explore/Santhoshini_Test"
-  }, {
-    "id" : "aLltTXWFVGXgjFEDiXxG0m",
-    "name" : "Oracle_varsb",
+    "id" : "hgSrl7jXkarf9Fp5TJWe0Y",
+    "name" : "TT_STAGING",
     "type" : "Connection",
     "metadata" : {
       "modelVersion" : {
@@ -54,19 +34,19 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0110ZH0B0000000000PW"
+        "repoHandle" : "0110ZH0B000000000041"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
-        "description" : "Connects to varsb",
+        "description" : "TaskTopData Test DB Read Access",
         "contentType" : "JSON",
         "documentState" : "COMPLETE"
       }
     },
     "path" : "/SYS"
   }, {
-    "id" : "9mdEEGnCcaUgHir1nhiFaP",
-    "name" : "san_1",
+    "id" : "7P6dWOgup6LkqwLLlpYCc3",
+    "name" : "EDO-DATAMART-DEV-OH",
     "type" : "AgentGroup",
     "metadata" : {
       "modelVersion" : {
@@ -74,7 +54,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0110ZH2500000000007Z"
+        "repoHandle" : "0110ZH2500000000000U"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
@@ -85,8 +65,31 @@
     },
     "path" : "/SYS"
   }, {
-    "id" : "eCNB94EEeghguzFd7OmkwH",
-    "name" : "Flatfile_01",
+    "id" : "3IHzNhLWygQlc6juWI818O",
+    "name" : "m_9278_SN_TSB_REQUEST",
+    "type" : "DTEMPLATE",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0110ZH1700000000007S"
+      },
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Mary"
+  }, {
+    "id" : "70dKbdBpMQglcvc4Fskpex",
+    "name" : "SN_DM_DB",
     "type" : "Connection",
     "metadata" : {
       "modelVersion" : {
@@ -94,11 +97,11 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0110ZH0B00000000015W"
+        "repoHandle" : "0110ZH0B000000000042"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
-        "description" : "Created for flatfile connections in path /root/Downloads/Flatfile_Test under host  san1",
+        "description" : "IT Data Mart Dev",
         "contentType" : "JSON",
         "documentState" : "COMPLETE"
       }

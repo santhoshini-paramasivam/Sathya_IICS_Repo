@@ -1,7 +1,7 @@
 {
   "objectInfo" : {
-    "id" : "lfKDVXhlyw3jvCAVacRFOe",
-    "name" : "Tf_File_list",
+    "id" : "9OD56mAK1UpfpiI4sn6Q2s",
+    "name" : "Taskflow3",
     "type" : "TASKFLOW",
     "metadata" : {
       "modelVersion" : {
@@ -9,7 +9,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "jnS24FsWTzIf6ri-gt-15451532-2023-04-14T14:09:19.148Z::tf.xml"
+        "repoHandle" : "N4r6CFquUHukfRL-gt-14950267-2022-01-18T10:59:40.639Z::tf.xml"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
@@ -20,27 +20,30 @@
     }
   },
   "dataFileExtension" : "xml",
-  "updateTime" : "2024-12-30T10:49:04.487Z",
+  "updateTime" : "2024-12-30T10:49:04.493Z",
   "objectRefs" : [ {
-    "id" : "6BgOHjLoIESeoOakksGCMI",
-    "name" : "File_Listnener_dummy",
-    "type" : "MI_FILE_LISTENER",
+    "id" : "7AbLwGA7DjlimIKXxWAR6x",
+    "name" : "Morning_Start_Teating",
+    "type" : "MTT",
     "metadata" : {
       "modelVersion" : {
-        "major" : 1,
+        "major" : 0,
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "38757"
+        "repoHandle" : "0110ZH0Z0000000000OT"
       },
-      "contextAttributes" : null,
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
       "additionalInfo" : {
         "description" : "",
-        "contentType" : "Binary",
+        "contentType" : "JSON",
         "documentState" : "VALID"
       }
     },
-    "path" : "/Explore/Santhoshini_Test/Hands_On"
+    "path" : "/Explore/Smruti"
   } ],
   "readableFileExtension" : null,
   "readableFilePresent" : false

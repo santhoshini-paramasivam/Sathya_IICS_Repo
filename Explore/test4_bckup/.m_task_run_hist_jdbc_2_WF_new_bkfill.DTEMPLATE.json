@@ -1,7 +1,7 @@
 {
   "objectInfo" : {
-    "id" : "2ERyPlTTaWCb3IqASOZ8AI",
-    "name" : "m_Brewer_Setting_reg",
+    "id" : "3oY7AReMau5c9sKgVwXuYK",
+    "name" : "m_task_run_hist_jdbc_2_WF_new_bkfill",
     "type" : "DTEMPLATE",
     "metadata" : {
       "modelVersion" : {
@@ -9,7 +9,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0110ZH170000000006W3"
+        "repoHandle" : "0110ZH170000000000ZD"
       },
       "contextAttributes" : [ {
         "name" : "id",
@@ -23,10 +23,10 @@
     }
   },
   "dataFileExtension" : "zip",
-  "updateTime" : "2024-12-30T10:49:04.486Z",
+  "updateTime" : "2024-12-30T10:49:04.493Z",
   "objectRefs" : [ {
-    "id" : "cRPWinSW5gPcbneKpVkV25",
-    "name" : "Sandy_Cosmos",
+    "id" : "3PZdksEs18vkVc0UA0ieKw",
+    "name" : "Florence_Redshift",
     "type" : "Connection",
     "metadata" : {
       "modelVersion" : {
@@ -34,19 +34,19 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0110ZH0B0000000001UF"
+        "repoHandle" : "0110ZH0B00000000003O"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
-        "description" : "Created for case 04647407",
+        "description" : null,
         "contentType" : "JSON",
         "documentState" : "COMPLETE"
       }
     },
     "path" : "/SYS"
   }, {
-    "id" : "h95fARPThYPfk7MnZjh448",
-    "name" : "Flatfile_Sandy",
+    "id" : "dXsDH6GCXcRdtFHm94r3Cq",
+    "name" : "IICS_Redshift_Src_QA",
     "type" : "Connection",
     "metadata" : {
       "modelVersion" : {
@@ -54,7 +54,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0110ZH0B0000000001UG"
+        "repoHandle" : "0110ZH0B00000000003N"
       },
       "contextAttributes" : null,
       "additionalInfo" : {

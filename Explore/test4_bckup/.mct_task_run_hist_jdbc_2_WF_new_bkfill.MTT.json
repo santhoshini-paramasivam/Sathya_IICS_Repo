@@ -1,7 +1,7 @@
 {
   "objectInfo" : {
-    "id" : "04feu5up66CjePvUcdxHqL",
-    "name" : "mt_ff_acc_oracle_cloud_hosted",
+    "id" : "5ng46bov1hPeroAB56SM8j",
+    "name" : "mct_task_run_hist_jdbc_2_WF_new_bkfill",
     "type" : "MTT",
     "metadata" : {
       "modelVersion" : {
@@ -9,7 +9,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0110ZH0Z0000000002KD"
+        "repoHandle" : "0110ZH0Z0000000000ZE"
       },
       "contextAttributes" : [ {
         "name" : "id",
@@ -23,10 +23,50 @@
     }
   },
   "dataFileExtension" : "zip",
-  "updateTime" : "2024-12-30T10:49:04.489Z",
+  "updateTime" : "2024-12-30T10:49:04.488Z",
   "objectRefs" : [ {
-    "id" : "4TOV6u8aYmplkwdGKeBe0u",
-    "name" : "m_ff_acc_oracle_cloud_hosted",
+    "id" : "3PZdksEs18vkVc0UA0ieKw",
+    "name" : "Florence_Redshift",
+    "type" : "Connection",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0110ZH0B00000000003O"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/SYS"
+  }, {
+    "id" : "dXsDH6GCXcRdtFHm94r3Cq",
+    "name" : "IICS_Redshift_Src_QA",
+    "type" : "Connection",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0110ZH0B00000000003N"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/SYS"
+  }, {
+    "id" : "3oY7AReMau5c9sKgVwXuYK",
+    "name" : "m_task_run_hist_jdbc_2_WF_new_bkfill",
     "type" : "DTEMPLATE",
     "metadata" : {
       "modelVersion" : {
@@ -34,39 +74,22 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0110ZH170000000005X6"
+        "repoHandle" : "0110ZH170000000000ZD"
       },
-      "contextAttributes" : null,
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
       "additionalInfo" : {
         "description" : "",
         "contentType" : "JSON",
         "documentState" : "VALID"
       }
     },
-    "path" : "/Explore/Santhoshini_Test"
+    "path" : "/Explore/test4_bckup"
   }, {
-    "id" : "aLltTXWFVGXgjFEDiXxG0m",
-    "name" : "Oracle_varsb",
-    "type" : "Connection",
-    "metadata" : {
-      "modelVersion" : {
-        "major" : 0,
-        "minor" : 0
-      },
-      "repoInfo" : {
-        "repoHandle" : "0110ZH0B0000000000PW"
-      },
-      "contextAttributes" : null,
-      "additionalInfo" : {
-        "description" : "Connects to varsb",
-        "contentType" : "JSON",
-        "documentState" : "COMPLETE"
-      }
-    },
-    "path" : "/SYS"
-  }, {
-    "id" : "9mdEEGnCcaUgHir1nhiFaP",
-    "name" : "san_1",
+    "id" : "8ipjkqHUmspgnsIj77qL2p",
+    "name" : "IIDIQ_Multipod_PROD_DI_Agent",
     "type" : "AgentGroup",
     "metadata" : {
       "modelVersion" : {
@@ -74,33 +97,13 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0110ZH2500000000007Z"
+        "repoHandle" : "0110ZH2500000000000Q"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
         "description" : null,
         "contentType" : "JSON",
         "documentState" : "VALID"
-      }
-    },
-    "path" : "/SYS"
-  }, {
-    "id" : "eCNB94EEeghguzFd7OmkwH",
-    "name" : "Flatfile_01",
-    "type" : "Connection",
-    "metadata" : {
-      "modelVersion" : {
-        "major" : 0,
-        "minor" : 0
-      },
-      "repoInfo" : {
-        "repoHandle" : "0110ZH0B00000000015W"
-      },
-      "contextAttributes" : null,
-      "additionalInfo" : {
-        "description" : "Created for flatfile connections in path /root/Downloads/Flatfile_Test under host  san1",
-        "contentType" : "JSON",
-        "documentState" : "COMPLETE"
       }
     },
     "path" : "/SYS"
