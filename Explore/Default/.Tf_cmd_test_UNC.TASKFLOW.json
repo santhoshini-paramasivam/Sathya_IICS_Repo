@@ -1,0 +1,47 @@
+{
+  "objectInfo" : {
+    "id" : "7kmZchJx8nkb9BGA5xXoqK",
+    "name" : "Tf_cmd_test_UNC",
+    "type" : "TASKFLOW",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "wlyjllCYAOTMneB-gt-32253273-2024-07-25T13:10:19.363Z::tf.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "xml",
+  "updateTime" : "2024-12-30T10:45:21.627Z",
+  "objectRefs" : [ {
+    "id" : "hLvXIc7yU6mdz9De5ZiaIX",
+    "name" : "vmwin16inaz",
+    "type" : "AgentGroup",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0110ZH2500000000002W"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/SYS"
+  } ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}

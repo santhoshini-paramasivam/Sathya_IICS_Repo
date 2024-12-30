@@ -1,0 +1,151 @@
+<aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
+                   xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
+   <types1:Item>
+      <types1:EntryId>wlyjllCYAOTMneB-gt-32253273-2024-07-25T13:10:19.363Z::tf.xml</types1:EntryId>
+      <types1:Name>Tf_cmd_test_UNC</types1:Name>
+      <types1:MimeType>application/xml+taskflow</types1:MimeType>
+      <types1:Description/>
+      <types1:AppliesTo/>
+      <types1:Tags/>
+      <types1:VersionLabel>1.0</types1:VersionLabel>
+      <types1:State>CURRENT</types1:State>
+      <types1:ProcessGroup/>
+      <types1:CreatedBy>Azhar_user</types1:CreatedBy>
+      <types1:CreationDate>2024-07-25T13:10:19Z</types1:CreationDate>
+      <types1:ModifiedBy>Azhar_user</types1:ModifiedBy>
+      <types1:ModificationDate>2024-07-30T06:46:52Z</types1:ModificationDate>
+      <types1:PublicationStatus>published</types1:PublicationStatus>
+      <types1:PublishedBy>Azhar_user</types1:PublishedBy>
+      <types1:PublicationDate>2024-07-30T06:46:57Z</types1:PublicationDate>
+      <types1:PublishedContributionId>project:/tf.Tf_cmd_test_UNC/Tf_cmd_test_UNC.tf.xml</types1:PublishedContributionId>
+      <types1:Entry>
+         <taskflow xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2010/10/avosScreenflow.xsd"
+                   xmlns:tfm="http://schemas.active-endpoints.com/appmodules/screenflow/2021/04/taskflowModel.xsd"
+                   xmlns:list="urn:activevos:spi:list:functions"
+                   displayName="Tf_cmd_test_UNC"
+                   name="Tf_cmd_test_UNC"
+                   overrideAPIName="false">
+            <parameterSet xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2021/04/taskflowModel.xsd"/>
+            <appliesTo/>
+            <description/>
+            <tags/>
+            <generator>Informatica Process Designer 11</generator>
+            <input>
+               <parameter description="" name="Script" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </parameter>
+               <parameter description="" name="Arg" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </parameter>
+            </input>
+            <tempFields>
+               <field description="" name="Command Task 1" type="reference">
+                  <options>
+                     <option name="referenceTo">$po:INFA-commandTask</option>
+                     <option name="failOnNotRun">false</option>
+                     <option name="failOnFault">false</option>
+                  </options>
+               </field>
+            </tempFields>
+            <notes/>
+            <deployment skipIfRunning="false" suspendOnFault="false" tracingLevel="verbose">
+               <rest/>
+            </deployment>
+            <extData>
+               <nvpair name="treatEmptyStringAsNotNull">false</nvpair>
+               <nvpair name="treatEmptyObjectListAsArray">false</nvpair>
+            </extData>
+            <flow id="a">
+               <start id="b">
+                  <link id="lz1ajh8p" targetId="lz1ajh8o"/>
+               </start>
+               <assignment id="lz1ajh8o">
+                  <title>Assignment 1</title>
+                  <operation source="formula" to="input.Script">
+                     <expression language="XQuery">fn:concat('\', '\\\10.75.159.5\shared_win\Script_sam.bat')</expression>
+                  </operation>
+                  <operation source="formula" to="input.Arg">
+                     <expression language="XQuery">fn:concat('\','\"del \\10.75.159.174\newshared\Sample.txt\"')</expression>
+                  </operation>
+                  <link id="lz1ajh8q" targetId="lz1ajh7f"/>
+               </assignment>
+               <eventContainer id="lz1ajh7f">
+                  <service id="lz1ajh6i">
+                     <title>Command Task 1</title>
+                     <serviceName>ICSExecuteCommandTask</serviceName>
+                     <serviceGUID/>
+                     <serviceInput>
+                        <parameter name="Task Name" source="constant">Command Task 1</parameter>
+                        <parameter name="Wait for Task to Complete" source="constant">true</parameter>
+                        <parameter name="Runtime Environment" source="constant">0110ZH2500000000002W:vmwin16inaz</parameter>
+                        <parameter name="Max Wait" source="constant">86400</parameter>
+                        <parameter name="Script Name" source="constant"/>
+                        <parameter name="Input Arguments" source="constant"/>
+                        <parameter name="Work Directory" source="constant"/>
+                        <parameter name="RuntimeEnvGUID" source="constant">hLvXIc7yU6mdz9De5ZiaIX</parameter>
+                        <parameter name="FailTaskIfAnyScriptFails" source="constant">false</parameter>
+                        <parameter name="taskField" source="nested">
+                           <operation source="field" to="INFA-commandTask">temp.Command Task 1</operation>
+                           <operation source="constant" to="INFA-commandTask/input[1]/script-1/name">Script1</operation>
+                           <operation source="formula" to="INFA-commandTask/input[1]/script-1/scriptName">
+                              <expression language="XQuery">'\\\10.75.159.5\\\shared_win\\\Script_sam.bat'</expression>
+                           </operation>
+                           <operation source="formula" to="INFA-commandTask/input[1]/script-1/inputArguments">
+                              <expression language="XQuery">'"del \\\10.75.159.174\newshared\Sample.txt"'</expression>
+                           </operation>
+                           <operation source="constant" to="INFA-commandTask/input[1]/script-1/workDir"/>
+                        </parameter>
+                     </serviceInput>
+                     <serviceOutput>
+                        <operation source="field" to="temp.Command Task 1/output/Run_Id">Run Id</operation>
+                        <operation source="field" to="temp.Command Task 1/output/Start_Time">Start Time</operation>
+                        <operation source="field" to="temp.Command Task 1/output/End_Time">End Time</operation>
+                        <operation source="field" to="temp.Command Task 1/output/Exit_Code">Exit Code</operation>
+                        <operation source="field" to="temp.Command Task 1/output/Execution_Status">Execution Status</operation>
+                        <operation source="field" to="temp.Command Task 1/output/Std_Error">Std Error</operation>
+                     </serviceOutput>
+                  </service>
+                  <link id="lz1ajh6k" targetId="c"/>
+                  <events>
+                     <catch faultField="temp.Command Task 1/fault"
+                            id="lz1ajh7e"
+                            interrupting="true"
+                            name="error">
+                        <suspend/>
+                     </catch>
+                  </events>
+               </eventContainer>
+               <end id="c"/>
+            </flow>
+            <dependencies>
+               <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
+                              displayName="INFA-commandTask"
+                              isByCopy="true"
+                              name="INFA-commandTask">
+                  <description>This process object represents a taskflow specific command task output field details.</description>
+                  <tags/>
+                  <detail>
+                     <field label="Output Parameters"
+                            name="output"
+                            nullable="true"
+                            required="false"
+                            type="reference"/>
+                     <field label="Fault"
+                            name="fault"
+                            nullable="true"
+                            required="false"
+                            type="reference"/>
+                  </detail>
+               </processObject>
+            </dependencies>
+         </taskflow>
+      </types1:Entry>
+      <types1:GUID>7kmZchJx8nkb9BGA5xXoqK</types1:GUID>
+      <types1:DisplayName>Tf_cmd_test_UNC</types1:DisplayName>
+   </types1:Item>
+   <types1:CurrentServerDateTime>2024-12-30T10:45:12.516Z</types1:CurrentServerDateTime>
+</aetgt:getResponse>
