@@ -1,0 +1,50 @@
+{
+  "objectInfo" : {
+    "id" : "9kuib2XM0Edd5ZwzpphFgC",
+    "name" : "Taskflow2",
+    "type" : "TASKFLOW",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "UiRW8UBM7zsZvEI-gt-14957487-2022-01-18T10:58:45.742Z::tf.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "INVALID"
+      }
+    }
+  },
+  "dataFileExtension" : "xml",
+  "updateTime" : "2024-12-30T10:48:07.070Z",
+  "objectRefs" : [ {
+    "id" : "knXvrGbfNuwcUG70WTiwkf",
+    "name" : "s_m_P_MSTAR_HISTPERF_FO_MONTHLY_DAILY_FFSTAGING",
+    "type" : "MTT",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0110ZH0Z0000000000OS"
+      },
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Smruti/Map_Morning_Star"
+  } ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}

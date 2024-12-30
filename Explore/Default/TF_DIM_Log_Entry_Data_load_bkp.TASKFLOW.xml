@@ -1,0 +1,1364 @@
+<aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
+                   xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
+   <types1:Item>
+      <types1:EntryId>phJvsGRvDINciZB-gt-91855350-2022-03-15T05:58:51.247Z::tf.xml</types1:EntryId>
+      <types1:Name>TF_DIM_Log_Entry_Data_load_bkp</types1:Name>
+      <types1:MimeType>application/xml+taskflow</types1:MimeType>
+      <types1:Description/>
+      <types1:AppliesTo/>
+      <types1:Tags/>
+      <types1:VersionLabel>1.0</types1:VersionLabel>
+      <types1:State>CURRENT</types1:State>
+      <types1:ProcessGroup/>
+      <types1:CreatedBy>sathyanath.48@gmail.com.SAML2</types1:CreatedBy>
+      <types1:CreationDate>2022-03-15T05:58:51Z</types1:CreationDate>
+      <types1:ModifiedBy>sn</types1:ModifiedBy>
+      <types1:ModificationDate>2023-01-09T09:18:27Z</types1:ModificationDate>
+      <types1:PublicationStatus>published</types1:PublicationStatus>
+      <types1:PublishedBy>sn</types1:PublishedBy>
+      <types1:PublicationDate>2023-01-09T09:19:43Z</types1:PublicationDate>
+      <types1:PublishedContributionId>project:/tf.TF_DIM_Log_Entry_Data_load_bkp/TF_DIM_Log_Entry_Data_load_bkp.tf.xml</types1:PublishedContributionId>
+      <types1:Entry>
+         <taskflow xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2010/10/avosScreenflow.xsd"
+                   xmlns:list="urn:activevos:spi:list:functions"
+                   displayName="TF_DIM_Log_Entry_Data_load_bkp"
+                   name="TF_DIM_Log_Entry_Data_load_bkp">
+            <appliesTo/>
+            <description/>
+            <tags/>
+            <generator>Informatica Process Designer 11</generator>
+            <tempFields>
+               <field description="" name="MCT_Load_Status_Check" type="reference">
+                  <options>
+                     <option name="referenceTo">$po:mct-Redshift-Load-status-Check</option>
+                  </options>
+               </field>
+               <field description="" name="Org_dim" type="reference">
+                  <options>
+                     <option name="referenceTo">$po:mt-Org-Dim1</option>
+                  </options>
+               </field>
+               <field description="" name="dt_iod_log_entry_iics_app2" type="reference">
+                  <options>
+                     <option name="referenceTo">$po:mt-iod-log-entry-iics-app2</option>
+                  </options>
+               </field>
+               <field description="" name="dt_iod_log_entry_iics_app3" type="reference">
+                  <options>
+                     <option name="referenceTo">$po:mt-iod-log-entry-iics-app3</option>
+                  </options>
+               </field>
+               <field description="" name="dt_iod_log_entry_iics_app4" type="reference">
+                  <options>
+                     <option name="referenceTo">$po:mt-iod-log-entry-iics-app4</option>
+                  </options>
+               </field>
+               <field description="" name="dt_iod_log_entry_iics_app6" type="reference">
+                  <options>
+                     <option name="referenceTo">$po:mt-iod-log-entry-iics-app6</option>
+                  </options>
+               </field>
+               <field description=""
+                      name="dt_iod_log_entry_item_iics_app1"
+                      type="reference">
+                  <options>
+                     <option name="referenceTo">$po:mt-iod-log-entry-item-iics-app1</option>
+                  </options>
+               </field>
+               <field description=""
+                      name="dt_iod_log_entry_item_iics_app2"
+                      type="reference">
+                  <options>
+                     <option name="referenceTo">$po:mt-iod-log-entry-item-iics-app2</option>
+                  </options>
+               </field>
+               <field description=""
+                      name="dt_iod_log_entry_item_iics_app3"
+                      type="reference">
+                  <options>
+                     <option name="referenceTo">$po:mt-iod-log-entry-item-iics-app3</option>
+                  </options>
+               </field>
+               <field description=""
+                      name="dt_iod_transformation_log_entry_iics_app1"
+                      type="reference">
+                  <options>
+                     <option name="referenceTo">$po:mt-iod-transformation-log-entry-iics-app1</option>
+                  </options>
+               </field>
+               <field description=""
+                      name="dt_iod_transformation_log_entry_iics_app2"
+                      type="reference">
+                  <options>
+                     <option name="referenceTo">$po:mt-iod-transformation-log-entry-iics-app2</option>
+                  </options>
+               </field>
+               <field description=""
+                      name="dt_iod_transformation_log_entry_iics_app3"
+                      type="reference">
+                  <options>
+                     <option name="referenceTo">$po:mt-iod-transformation-log-entry-iics-app3</option>
+                  </options>
+               </field>
+               <field description=""
+                      name="dt_iod_log_entry_item_iics_app4"
+                      type="reference">
+                  <options>
+                     <option name="referenceTo">$po:mt-iod-log-entry-item-iics-app4</option>
+                  </options>
+               </field>
+               <field description=""
+                      name="dt_iod_log_entry_item_iics_app6"
+                      type="reference">
+                  <options>
+                     <option name="referenceTo">$po:mt-iod-log-entry-item-iics-app6</option>
+                  </options>
+               </field>
+               <field description=""
+                      name="dt_iod_transformation_log_entry_iics_app4"
+                      type="reference">
+                  <options>
+                     <option name="referenceTo">$po:mt-iod-transformation-log-entry-iics-app4</option>
+                  </options>
+               </field>
+               <field description=""
+                      name="dt_iod_transformation_log_entry_iics_app6"
+                      type="reference">
+                  <options>
+                     <option name="referenceTo">$po:mt-iod-transformation-log-entry-iics-app6</option>
+                  </options>
+               </field>
+               <field description="" name="dt_iod_log_entry_iics_app1" type="reference">
+                  <options>
+                     <option name="referenceTo">$po:mt-iod-log-entry-iics-app1</option>
+                  </options>
+               </field>
+            </tempFields>
+            <notes/>
+            <deployment suspendOnFault="false" tracingLevel="verbose">
+               <rest/>
+            </deployment>
+            <flow id="a">
+               <start id="b">
+                  <link id="jqnjfo11" targetId="jqnjfo1a"/>
+               </start>
+               <eventContainer id="jqnjfo1a">
+                  <service id="jqnjfo10">
+                     <title>MCT_Load_Status_Check</title>
+                     <serviceName>ICSExecuteDataTask</serviceName>
+                     <serviceGUID/>
+                     <serviceInput>
+                        <parameter name="Wait for Task to Complete" source="constant" updatable="true">true</parameter>
+                        <parameter name="Max Wait" source="constant" updatable="true">86400</parameter>
+                        <parameter name="Task Name" source="constant" updatable="true">mct_Redshift_Load_status_Check</parameter>
+                        <parameter name="GUID" source="constant" updatable="true">7udyy6xayWWjIBciICSygf</parameter>
+                        <parameter name="Task Type" source="constant" updatable="true">MCT</parameter>
+                        <parameter name="Has Inout Parameters" source="constant" updatable="true">false</parameter>
+                        <parameter name="taskField" source="nested">
+                           <operation source="field" to="mct-Redshift-Load-status-Check">temp.MCT_Load_Status_Check</operation>
+                        </parameter>
+                     </serviceInput>
+                     <serviceOutput>
+                        <operation source="field" to="temp.MCT_Load_Status_Check/output">Success Source Rows</operation>
+                        <operation source="field" to="temp.MCT_Load_Status_Check/output/Object_Name">Object Name</operation>
+                        <operation source="field" to="temp.MCT_Load_Status_Check/output/Run_Id">Run Id</operation>
+                        <operation source="field" to="temp.MCT_Load_Status_Check/output/Log_Id">Log Id</operation>
+                        <operation source="field" to="temp.MCT_Load_Status_Check/output/Task_Status">Task Status</operation>
+                        <operation source="field"
+                                   to="temp.MCT_Load_Status_Check/output/Success_Source_Rows">Success Source Rows</operation>
+                        <operation source="field"
+                                   to="temp.MCT_Load_Status_Check/output/Failed_Source_Rows">Failed Source Rows</operation>
+                        <operation source="field"
+                                   to="temp.MCT_Load_Status_Check/output/Success_Target_Rows">Success Target Rows</operation>
+                        <operation source="field"
+                                   to="temp.MCT_Load_Status_Check/output/Failed_Target_Rows">Failed Target Rows</operation>
+                        <operation source="field" to="temp.MCT_Load_Status_Check/output/Start_Time">Start Time</operation>
+                        <operation source="field" to="temp.MCT_Load_Status_Check/output/End_Time">End Time</operation>
+                        <operation source="field" to="temp.MCT_Load_Status_Check/output/Error_Message">Error Message</operation>
+                     </serviceOutput>
+                  </service>
+                  <link id="jqnjfo28" targetId="jqnjfo27"/>
+                  <events>
+                     <catch faultField="temp.MCT_Load_Status_Check/fault"
+                            id="jqnjfo1h"
+                            interrupting="true"
+                            name="error"/>
+                     <catch faultField="temp.MCT_Load_Status_Check/fault"
+                            id="jqnjfo1i"
+                            interrupting="true"
+                            name="warning"/>
+                  </events>
+               </eventContainer>
+               <container id="jqnjfo27" type="exclusive">
+                  <title>Decision 2</title>
+                  <flow id="jqnjfo2b">
+                     <jumpTo id="jqnjfo4t">
+                        <link id="jqnjfo4u" targetId="jqnjfo1a"/>
+                     </jumpTo>
+                  </flow>
+                  <flow id="jqnjfo2e">
+                     <container id="jqnn2178" type="parallel">
+                        <title>Parallel Paths 4</title>
+                        <flow id="jqnn217b">
+                           <eventContainer id="jqnn219z">
+                              <service id="jqnn21a0">
+                                 <title>Org_dim</title>
+                                 <serviceName>ICSExecuteDataTask</serviceName>
+                                 <serviceGUID/>
+                                 <serviceInput>
+                                    <parameter name="Wait for Task to Complete" source="constant" updatable="true">true</parameter>
+                                    <parameter name="Max Wait" source="constant" updatable="true">86400</parameter>
+                                    <parameter name="Task Name" source="constant" updatable="true">mt_Org_Dim1</parameter>
+                                    <parameter name="GUID" source="constant" updatable="true">cvBmR9zG0wMiENgpJPkGs7</parameter>
+                                    <parameter name="Task Type" source="constant" updatable="true">MCT</parameter>
+                                    <parameter name="Has Inout Parameters" source="constant" updatable="true">false</parameter>
+                                    <parameter name="taskField" source="nested">
+                                       <operation source="field" to="mt-Org-Dim1">temp.Org_dim</operation>
+                                    </parameter>
+                                 </serviceInput>
+                                 <serviceOutput>
+                                    <operation source="field" to="temp.Org_dim/output">Success Source Rows</operation>
+                                    <operation source="field" to="temp.Org_dim/output/Object_Name">Object Name</operation>
+                                    <operation source="field" to="temp.Org_dim/output/Run_Id">Run Id</operation>
+                                    <operation source="field" to="temp.Org_dim/output/Log_Id">Log Id</operation>
+                                    <operation source="field" to="temp.Org_dim/output/Task_Status">Task Status</operation>
+                                    <operation source="field" to="temp.Org_dim/output/Success_Source_Rows">Success Source Rows</operation>
+                                    <operation source="field" to="temp.Org_dim/output/Failed_Source_Rows">Failed Source Rows</operation>
+                                    <operation source="field" to="temp.Org_dim/output/Success_Target_Rows">Success Target Rows</operation>
+                                    <operation source="field" to="temp.Org_dim/output/Failed_Target_Rows">Failed Target Rows</operation>
+                                    <operation source="field" to="temp.Org_dim/output/Start_Time">Start Time</operation>
+                                    <operation source="field" to="temp.Org_dim/output/End_Time">End Time</operation>
+                                    <operation source="field" to="temp.Org_dim/output/Error_Message">Error Message</operation>
+                                 </serviceOutput>
+                              </service>
+                              <events>
+                                 <catch faultField="temp.Org_dim/fault"
+                                        id="jqnlr493"
+                                        interrupting="true"
+                                        name="error"/>
+                                 <catch faultField="temp.Org_dim/fault"
+                                        id="jqnlr494"
+                                        interrupting="true"
+                                        name="warning"/>
+                              </events>
+                           </eventContainer>
+                           <link id="jqnn217c" targetId="jqnn2178" type="containerLink"/>
+                        </flow>
+                        <link id="jqnn217a" targetId="jqnn217b" type="containerLink"/>
+                        <link id="jqnn2179" targetId="jqnjfo5f"/>
+                     </container>
+                     <container id="jqnjfo5f" type="parallel">
+                        <title>Parallel Paths 2</title>
+                        <flow id="jqnjfona">
+                           <container id="k0p1mns5" type="parallel">
+                              <title>log_entry_stg</title>
+                              <flow id="k0p1mns8">
+                                 <eventContainer id="k0p1mnx8">
+                                    <service id="k0p1mnu6">
+                                       <title>dt_iod_log_entry_iics_app1</title>
+                                       <serviceName>ICSExecuteDataTask</serviceName>
+                                       <serviceGUID/>
+                                       <serviceInput>
+                                          <parameter name="Wait for Task to Complete" source="constant" updatable="true">true</parameter>
+                                          <parameter name="Max Wait" source="constant" updatable="true">86400</parameter>
+                                          <parameter name="Task Name" source="constant" updatable="true">mt_iod_log_entry_iics_app1</parameter>
+                                          <parameter name="GUID" source="constant" updatable="true">lSH78yJGN8KhPWGKzswh0c</parameter>
+                                          <parameter name="Task Type" source="constant" updatable="true">MCT</parameter>
+                                          <parameter name="Has Inout Parameters" source="constant" updatable="true">true</parameter>
+                                          <parameter name="taskField" source="nested">
+                                             <operation source="field" to="mt-iod-log-entry-iics-app1">temp.dt_iod_log_entry_iics_app1</operation>
+                                          </parameter>
+                                       </serviceInput>
+                                       <serviceOutput>
+                                          <operation source="field" to="temp.dt_iod_log_entry_iics_app1/output/Object_Name">Object Name</operation>
+                                          <operation source="field" to="temp.dt_iod_log_entry_iics_app1/output/Run_Id">Run Id</operation>
+                                          <operation source="field" to="temp.dt_iod_log_entry_iics_app1/output/Log_Id">Log Id</operation>
+                                          <operation source="field" to="temp.dt_iod_log_entry_iics_app1/output/Task_Status">Task Status</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_log_entry_iics_app1/output/Success_Source_Rows">Success Source Rows</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_log_entry_iics_app1/output/Failed_Source_Rows">Failed Source Rows</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_log_entry_iics_app1/output/Success_Target_Rows">Success Target Rows</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_log_entry_iics_app1/output/Failed_Target_Rows">Failed Target Rows</operation>
+                                          <operation source="field" to="temp.dt_iod_log_entry_iics_app1/output/Start_Time">Start Time</operation>
+                                          <operation source="field" to="temp.dt_iod_log_entry_iics_app1/output/End_Time">End Time</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_log_entry_iics_app1/output/Error_Message">Error Message</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_log_entry_iics_app1/inout/mv_log_entry_app1">mv_log_entry_app1</operation>
+                                       </serviceOutput>
+                                    </service>
+                                    <events>
+                                       <catch faultField="temp.dt_iod_log_entry_iics_app1/fault"
+                                              id="k0p1mnx6"
+                                              interrupting="true"
+                                              name="error">
+                                          <suspend/>
+                                       </catch>
+                                       <catch faultField="temp.dt_iod_log_entry_iics_app1/fault"
+                                              id="k0p1mnx7"
+                                              interrupting="true"
+                                              name="warning"/>
+                                    </events>
+                                 </eventContainer>
+                                 <link id="k0p1mns9" targetId="k0p1mns5" type="containerLink"/>
+                              </flow>
+                              <flow id="k0p1mnsb">
+                                 <eventContainer id="k0p1mnyk">
+                                    <service id="k0p1mnup">
+                                       <title>dt_iod_log_entry_iics_app2</title>
+                                       <serviceName>ICSExecuteDataTask</serviceName>
+                                       <serviceGUID/>
+                                       <serviceInput>
+                                          <parameter name="Wait for Task to Complete" source="constant" updatable="true">true</parameter>
+                                          <parameter name="Max Wait" source="constant" updatable="true">86400</parameter>
+                                          <parameter name="Task Name" source="constant" updatable="true">mt_iod_log_entry_iics_app2</parameter>
+                                          <parameter name="GUID" source="constant" updatable="true">8IBSkPoGrNAhnT0u40hmg4</parameter>
+                                          <parameter name="Task Type" source="constant" updatable="true">MCT</parameter>
+                                          <parameter name="Has Inout Parameters" source="constant" updatable="true">true</parameter>
+                                          <parameter name="taskField" source="nested">
+                                             <operation source="field" to="mt-iod-log-entry-iics-app2">temp.dt_iod_log_entry_iics_app2</operation>
+                                          </parameter>
+                                       </serviceInput>
+                                       <serviceOutput>
+                                          <operation source="field" to="temp.dt_iod_log_entry_iics_app2/output/Object_Name">Object Name</operation>
+                                          <operation source="field" to="temp.dt_iod_log_entry_iics_app2/output/Run_Id">Run Id</operation>
+                                          <operation source="field" to="temp.dt_iod_log_entry_iics_app2/output/Log_Id">Log Id</operation>
+                                          <operation source="field" to="temp.dt_iod_log_entry_iics_app2/output/Task_Status">Task Status</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_log_entry_iics_app2/output/Success_Source_Rows">Success Source Rows</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_log_entry_iics_app2/output/Failed_Source_Rows">Failed Source Rows</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_log_entry_iics_app2/output/Success_Target_Rows">Success Target Rows</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_log_entry_iics_app2/output/Failed_Target_Rows">Failed Target Rows</operation>
+                                          <operation source="field" to="temp.dt_iod_log_entry_iics_app2/output/Start_Time">Start Time</operation>
+                                          <operation source="field" to="temp.dt_iod_log_entry_iics_app2/output/End_Time">End Time</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_log_entry_iics_app2/output/Error_Message">Error Message</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_log_entry_iics_app2/inout/mv_log_entry_app2">mv_log_entry_app2</operation>
+                                       </serviceOutput>
+                                    </service>
+                                    <events>
+                                       <catch faultField="temp.dt_iod_log_entry_iics_app2/fault"
+                                              id="k0p1mnyi"
+                                              interrupting="true"
+                                              name="error">
+                                          <suspend/>
+                                       </catch>
+                                       <catch faultField="temp.dt_iod_log_entry_iics_app2/fault"
+                                              id="k0p1mnyj"
+                                              interrupting="true"
+                                              name="warning"/>
+                                    </events>
+                                 </eventContainer>
+                                 <link id="k0p1mnsc" targetId="k0p1mns5" type="containerLink"/>
+                              </flow>
+                              <flow id="k0p1mnsq">
+                                 <eventContainer id="k0p1mnzw">
+                                    <service id="k0p1mnv8">
+                                       <title>dt_iod_log_entry_iics_app3</title>
+                                       <serviceName>ICSExecuteDataTask</serviceName>
+                                       <serviceGUID/>
+                                       <serviceInput>
+                                          <parameter name="Wait for Task to Complete" source="constant" updatable="true">true</parameter>
+                                          <parameter name="Max Wait" source="constant" updatable="true">86400</parameter>
+                                          <parameter name="Task Name" source="constant" updatable="true">mt_iod_log_entry_iics_app3</parameter>
+                                          <parameter name="GUID" source="constant" updatable="true">ao4aLCVXX51kjwditcLUo1</parameter>
+                                          <parameter name="Task Type" source="constant" updatable="true">MCT</parameter>
+                                          <parameter name="Has Inout Parameters" source="constant" updatable="true">true</parameter>
+                                          <parameter name="taskField" source="nested">
+                                             <operation source="field" to="mt-iod-log-entry-iics-app3">temp.dt_iod_log_entry_iics_app3</operation>
+                                          </parameter>
+                                       </serviceInput>
+                                       <serviceOutput>
+                                          <operation source="field" to="temp.dt_iod_log_entry_iics_app3/output/Object_Name">Object Name</operation>
+                                          <operation source="field" to="temp.dt_iod_log_entry_iics_app3/output/Run_Id">Run Id</operation>
+                                          <operation source="field" to="temp.dt_iod_log_entry_iics_app3/output/Log_Id">Log Id</operation>
+                                          <operation source="field" to="temp.dt_iod_log_entry_iics_app3/output/Task_Status">Task Status</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_log_entry_iics_app3/output/Success_Source_Rows">Success Source Rows</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_log_entry_iics_app3/output/Failed_Source_Rows">Failed Source Rows</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_log_entry_iics_app3/output/Success_Target_Rows">Success Target Rows</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_log_entry_iics_app3/output/Failed_Target_Rows">Failed Target Rows</operation>
+                                          <operation source="field" to="temp.dt_iod_log_entry_iics_app3/output/Start_Time">Start Time</operation>
+                                          <operation source="field" to="temp.dt_iod_log_entry_iics_app3/output/End_Time">End Time</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_log_entry_iics_app3/output/Error_Message">Error Message</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_log_entry_iics_app3/inout/mv_log_entry_app3">mv_log_entry_app3</operation>
+                                       </serviceOutput>
+                                    </service>
+                                    <events>
+                                       <catch faultField="temp.dt_iod_log_entry_iics_app3/fault"
+                                              id="k0p1mnzu"
+                                              interrupting="true"
+                                              name="error">
+                                          <suspend/>
+                                       </catch>
+                                       <catch faultField="temp.dt_iod_log_entry_iics_app3/fault"
+                                              id="k0p1mnzv"
+                                              interrupting="true"
+                                              name="warning"/>
+                                    </events>
+                                 </eventContainer>
+                                 <link id="k0p1mnsr" targetId="k0p1mns5" type="containerLink"/>
+                              </flow>
+                              <flow id="k0p1mnt6">
+                                 <eventContainer id="k0p1mo18">
+                                    <service id="k0p1mnvr">
+                                       <title>dt_iod_log_entry_iics_app4</title>
+                                       <serviceName>ICSExecuteDataTask</serviceName>
+                                       <serviceGUID/>
+                                       <serviceInput>
+                                          <parameter name="Wait for Task to Complete" source="constant" updatable="true">true</parameter>
+                                          <parameter name="Max Wait" source="constant" updatable="true">86400</parameter>
+                                          <parameter name="Task Name" source="constant" updatable="true">mt_iod_log_entry_iics_app4</parameter>
+                                          <parameter name="GUID" source="constant" updatable="true">77PfU5MzBICkeE31dcLT4v</parameter>
+                                          <parameter name="Task Type" source="constant" updatable="true">MCT</parameter>
+                                          <parameter name="Has Inout Parameters" source="constant" updatable="true">true</parameter>
+                                          <parameter name="taskField" source="nested">
+                                             <operation source="field" to="mt-iod-log-entry-iics-app4">temp.dt_iod_log_entry_iics_app4</operation>
+                                          </parameter>
+                                       </serviceInput>
+                                       <serviceOutput>
+                                          <operation source="field" to="temp.dt_iod_log_entry_iics_app4/output/Object_Name">Object Name</operation>
+                                          <operation source="field" to="temp.dt_iod_log_entry_iics_app4/output/Run_Id">Run Id</operation>
+                                          <operation source="field" to="temp.dt_iod_log_entry_iics_app4/output/Log_Id">Log Id</operation>
+                                          <operation source="field" to="temp.dt_iod_log_entry_iics_app4/output/Task_Status">Task Status</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_log_entry_iics_app4/output/Success_Source_Rows">Success Source Rows</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_log_entry_iics_app4/output/Failed_Source_Rows">Failed Source Rows</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_log_entry_iics_app4/output/Success_Target_Rows">Success Target Rows</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_log_entry_iics_app4/output/Failed_Target_Rows">Failed Target Rows</operation>
+                                          <operation source="field" to="temp.dt_iod_log_entry_iics_app4/output/Start_Time">Start Time</operation>
+                                          <operation source="field" to="temp.dt_iod_log_entry_iics_app4/output/End_Time">End Time</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_log_entry_iics_app4/output/Error_Message">Error Message</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_log_entry_iics_app4/inout/mv_log_entry_pod4">mv_log_entry_pod4</operation>
+                                       </serviceOutput>
+                                    </service>
+                                    <events>
+                                       <catch faultField="temp.dt_iod_log_entry_iics_app4/fault"
+                                              id="k0p1mo16"
+                                              interrupting="true"
+                                              name="error">
+                                          <suspend/>
+                                       </catch>
+                                       <catch faultField="temp.dt_iod_log_entry_iics_app4/fault"
+                                              id="k0p1mo17"
+                                              interrupting="true"
+                                              name="warning"/>
+                                    </events>
+                                 </eventContainer>
+                                 <link id="k0p1mnt7" targetId="k0p1mns5" type="containerLink"/>
+                              </flow>
+                              <flow id="k0p1mntn">
+                                 <eventContainer id="k0p1mo2k">
+                                    <service id="k0p1mnwa">
+                                       <title>dt_iod_log_entry_iics_app6</title>
+                                       <serviceName>ICSExecuteDataTask</serviceName>
+                                       <serviceGUID/>
+                                       <serviceInput>
+                                          <parameter name="Wait for Task to Complete" source="constant" updatable="true">true</parameter>
+                                          <parameter name="Max Wait" source="constant" updatable="true">86400</parameter>
+                                          <parameter name="Task Name" source="constant" updatable="true">mt_iod_log_entry_iics_app6</parameter>
+                                          <parameter name="GUID" source="constant" updatable="true">hVXbZ0YUf6adSRj795O0Yd</parameter>
+                                          <parameter name="Task Type" source="constant" updatable="true">MCT</parameter>
+                                          <parameter name="Has Inout Parameters" source="constant" updatable="true">true</parameter>
+                                          <parameter name="taskField" source="nested">
+                                             <operation source="field" to="mt-iod-log-entry-iics-app6">temp.dt_iod_log_entry_iics_app6</operation>
+                                          </parameter>
+                                       </serviceInput>
+                                       <serviceOutput>
+                                          <operation source="field" to="temp.dt_iod_log_entry_iics_app6/output/Object_Name">Object Name</operation>
+                                          <operation source="field" to="temp.dt_iod_log_entry_iics_app6/output/Run_Id">Run Id</operation>
+                                          <operation source="field" to="temp.dt_iod_log_entry_iics_app6/output/Log_Id">Log Id</operation>
+                                          <operation source="field" to="temp.dt_iod_log_entry_iics_app6/output/Task_Status">Task Status</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_log_entry_iics_app6/output/Success_Source_Rows">Success Source Rows</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_log_entry_iics_app6/output/Failed_Source_Rows">Failed Source Rows</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_log_entry_iics_app6/output/Success_Target_Rows">Success Target Rows</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_log_entry_iics_app6/output/Failed_Target_Rows">Failed Target Rows</operation>
+                                          <operation source="field" to="temp.dt_iod_log_entry_iics_app6/output/Start_Time">Start Time</operation>
+                                          <operation source="field" to="temp.dt_iod_log_entry_iics_app6/output/End_Time">End Time</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_log_entry_iics_app6/output/Error_Message">Error Message</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_log_entry_iics_app6/inout/mv_log_entry_app6">mv_log_entry_app6</operation>
+                                       </serviceOutput>
+                                    </service>
+                                    <events>
+                                       <catch faultField="temp.dt_iod_log_entry_iics_app6/fault"
+                                              id="k0p1mo2i"
+                                              interrupting="true"
+                                              name="error">
+                                          <suspend/>
+                                       </catch>
+                                       <catch faultField="temp.dt_iod_log_entry_iics_app6/fault"
+                                              id="k0p1mo2j"
+                                              interrupting="true"
+                                              name="warning"/>
+                                    </events>
+                                 </eventContainer>
+                                 <link id="k0p1mnto" targetId="k0p1mns5" type="containerLink"/>
+                              </flow>
+                              <link id="k0p1mns7" targetId="k0p1mns8" type="containerLink"/>
+                              <link id="k0p1mnsa" targetId="k0p1mnsb" type="containerLink"/>
+                              <link id="k0p1mnsp" targetId="k0p1mnsq" type="containerLink"/>
+                              <link id="k0p1mnt5" targetId="k0p1mnt6" type="containerLink"/>
+                              <link id="k0p1mntm" targetId="k0p1mntn" type="containerLink"/>
+                              <link id="k0p1mo3x" targetId="k0p1mo3w"/>
+                           </container>
+                           <container id="k0p1mo3w" type="parallel">
+                              <title>log_entry_item_stg</title>
+                              <flow id="k0p1mo40">
+                                 <eventContainer id="k0xc561m">
+                                    <service id="k0xc55t5">
+                                       <title>dt_iod_log_entry_item_iics_app1</title>
+                                       <serviceName>ICSExecuteDataTask</serviceName>
+                                       <serviceGUID/>
+                                       <serviceInput>
+                                          <parameter name="Wait for Task to Complete" source="constant" updatable="true">true</parameter>
+                                          <parameter name="Max Wait" source="constant" updatable="true">86400</parameter>
+                                          <parameter name="Task Name" source="constant" updatable="true">mt_iod_log_entry_item_iics_app1</parameter>
+                                          <parameter name="GUID" source="constant" updatable="true">5cnqN8dxUhehCgHeyPyMm5</parameter>
+                                          <parameter name="Task Type" source="constant" updatable="true">MCT</parameter>
+                                          <parameter name="Has Inout Parameters" source="constant" updatable="true">true</parameter>
+                                          <parameter name="taskField" source="nested">
+                                             <operation source="field" to="mt-iod-log-entry-item-iics-app1">temp.dt_iod_log_entry_item_iics_app1</operation>
+                                          </parameter>
+                                       </serviceInput>
+                                       <serviceOutput>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_log_entry_item_iics_app1/output/Object_Name">Object Name</operation>
+                                          <operation source="field" to="temp.dt_iod_log_entry_item_iics_app1/output/Run_Id">Run Id</operation>
+                                          <operation source="field" to="temp.dt_iod_log_entry_item_iics_app1/output/Log_Id">Log Id</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_log_entry_item_iics_app1/output/Task_Status">Task Status</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_log_entry_item_iics_app1/output/Success_Source_Rows">Success Source Rows</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_log_entry_item_iics_app1/output/Failed_Source_Rows">Failed Source Rows</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_log_entry_item_iics_app1/output/Success_Target_Rows">Success Target Rows</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_log_entry_item_iics_app1/output/Failed_Target_Rows">Failed Target Rows</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_log_entry_item_iics_app1/output/Start_Time">Start Time</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_log_entry_item_iics_app1/output/End_Time">End Time</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_log_entry_item_iics_app1/output/Error_Message">Error Message</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_log_entry_item_iics_app1/inout/mv_log_entry_item_pod1">mv_log_entry_item_pod1</operation>
+                                       </serviceOutput>
+                                    </service>
+                                    <events>
+                                       <catch faultField="temp.dt_iod_log_entry_item_iics_app1/fault"
+                                              id="k0xc561k"
+                                              interrupting="true"
+                                              name="error">
+                                          <suspend/>
+                                       </catch>
+                                       <catch faultField="temp.dt_iod_log_entry_item_iics_app1/fault"
+                                              id="k0xc561l"
+                                              interrupting="true"
+                                              name="warning"/>
+                                    </events>
+                                 </eventContainer>
+                                 <link id="k0p1mo41" targetId="k0p1mo3w" type="containerLink"/>
+                              </flow>
+                              <flow id="k0p1mo43">
+                                 <eventContainer id="k0xc563i">
+                                    <service id="k0xc55ty">
+                                       <title>dt_iod_log_entry_item_iics_app2</title>
+                                       <serviceName>ICSExecuteDataTask</serviceName>
+                                       <serviceGUID/>
+                                       <serviceInput>
+                                          <parameter name="Wait for Task to Complete" source="constant" updatable="true">true</parameter>
+                                          <parameter name="Max Wait" source="constant" updatable="true">86400</parameter>
+                                          <parameter name="Task Name" source="constant" updatable="true">mt_iod_log_entry_item_iics_app2</parameter>
+                                          <parameter name="GUID" source="constant" updatable="true">2exwTAW2utnieT9GwViuUA</parameter>
+                                          <parameter name="Task Type" source="constant" updatable="true">MCT</parameter>
+                                          <parameter name="Has Inout Parameters" source="constant" updatable="true">true</parameter>
+                                          <parameter name="taskField" source="nested">
+                                             <operation source="field" to="mt-iod-log-entry-item-iics-app2">temp.dt_iod_log_entry_item_iics_app2</operation>
+                                          </parameter>
+                                       </serviceInput>
+                                       <serviceOutput>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_log_entry_item_iics_app2/output/Object_Name">Object Name</operation>
+                                          <operation source="field" to="temp.dt_iod_log_entry_item_iics_app2/output/Run_Id">Run Id</operation>
+                                          <operation source="field" to="temp.dt_iod_log_entry_item_iics_app2/output/Log_Id">Log Id</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_log_entry_item_iics_app2/output/Task_Status">Task Status</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_log_entry_item_iics_app2/output/Success_Source_Rows">Success Source Rows</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_log_entry_item_iics_app2/output/Failed_Source_Rows">Failed Source Rows</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_log_entry_item_iics_app2/output/Success_Target_Rows">Success Target Rows</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_log_entry_item_iics_app2/output/Failed_Target_Rows">Failed Target Rows</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_log_entry_item_iics_app2/output/Start_Time">Start Time</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_log_entry_item_iics_app2/output/End_Time">End Time</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_log_entry_item_iics_app2/output/Error_Message">Error Message</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_log_entry_item_iics_app2/inout/mv_log_entry_item_pod2">mv_log_entry_item_pod2</operation>
+                                       </serviceOutput>
+                                    </service>
+                                    <events>
+                                       <catch faultField="temp.dt_iod_log_entry_item_iics_app2/fault"
+                                              id="k0xc563g"
+                                              interrupting="true"
+                                              name="error">
+                                          <suspend/>
+                                       </catch>
+                                       <catch faultField="temp.dt_iod_log_entry_item_iics_app2/fault"
+                                              id="k0xc563h"
+                                              interrupting="true"
+                                              name="warning"/>
+                                    </events>
+                                 </eventContainer>
+                                 <link id="k0p1mo44" targetId="k0p1mo3w" type="containerLink"/>
+                              </flow>
+                              <flow id="k0p1mo5l">
+                                 <eventContainer id="k0xc565e">
+                                    <service id="k0xc55ur">
+                                       <title>dt_iod_log_entry_item_iics_app3</title>
+                                       <serviceName>ICSExecuteDataTask</serviceName>
+                                       <serviceGUID/>
+                                       <serviceInput>
+                                          <parameter name="Wait for Task to Complete" source="constant" updatable="true">true</parameter>
+                                          <parameter name="Max Wait" source="constant" updatable="true">86400</parameter>
+                                          <parameter name="Task Name" source="constant" updatable="true">mt_iod_log_entry_item_iics_app3</parameter>
+                                          <parameter name="GUID" source="constant" updatable="true">b2weRt6ycqRf7FnmTzvcWW</parameter>
+                                          <parameter name="Task Type" source="constant" updatable="true">MCT</parameter>
+                                          <parameter name="Has Inout Parameters" source="constant" updatable="true">true</parameter>
+                                          <parameter name="taskField" source="nested">
+                                             <operation source="field" to="mt-iod-log-entry-item-iics-app3">temp.dt_iod_log_entry_item_iics_app3</operation>
+                                          </parameter>
+                                       </serviceInput>
+                                       <serviceOutput>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_log_entry_item_iics_app3/output/Object_Name">Object Name</operation>
+                                          <operation source="field" to="temp.dt_iod_log_entry_item_iics_app3/output/Run_Id">Run Id</operation>
+                                          <operation source="field" to="temp.dt_iod_log_entry_item_iics_app3/output/Log_Id">Log Id</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_log_entry_item_iics_app3/output/Task_Status">Task Status</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_log_entry_item_iics_app3/output/Success_Source_Rows">Success Source Rows</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_log_entry_item_iics_app3/output/Failed_Source_Rows">Failed Source Rows</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_log_entry_item_iics_app3/output/Success_Target_Rows">Success Target Rows</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_log_entry_item_iics_app3/output/Failed_Target_Rows">Failed Target Rows</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_log_entry_item_iics_app3/output/Start_Time">Start Time</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_log_entry_item_iics_app3/output/End_Time">End Time</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_log_entry_item_iics_app3/output/Error_Message">Error Message</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_log_entry_item_iics_app3/inout/mv_log_entry_item_pod3">mv_log_entry_item_pod3</operation>
+                                       </serviceOutput>
+                                    </service>
+                                    <events>
+                                       <catch faultField="temp.dt_iod_log_entry_item_iics_app3/fault"
+                                              id="k0xc565c"
+                                              interrupting="true"
+                                              name="error">
+                                          <suspend/>
+                                       </catch>
+                                       <catch faultField="temp.dt_iod_log_entry_item_iics_app3/fault"
+                                              id="k0xc565d"
+                                              interrupting="true"
+                                              name="warning"/>
+                                    </events>
+                                 </eventContainer>
+                                 <link id="k0p1mo5m" targetId="k0p1mo3w" type="containerLink"/>
+                              </flow>
+                              <flow id="k0p1mo66">
+                                 <eventContainer id="k0xc567a">
+                                    <service id="k0xc55xz">
+                                       <title>dt_iod_log_entry_item_iics_app4</title>
+                                       <serviceName>ICSExecuteDataTask</serviceName>
+                                       <serviceGUID/>
+                                       <serviceInput>
+                                          <parameter name="Wait for Task to Complete" source="constant" updatable="true">true</parameter>
+                                          <parameter name="Max Wait" source="constant" updatable="true">86400</parameter>
+                                          <parameter name="Task Name" source="constant" updatable="true">mt_iod_log_entry_item_iics_app4</parameter>
+                                          <parameter name="GUID" source="constant" updatable="true">aNLEwh113CZgZGfHUrfTaK</parameter>
+                                          <parameter name="Task Type" source="constant" updatable="true">MCT</parameter>
+                                          <parameter name="Has Inout Parameters" source="constant" updatable="true">true</parameter>
+                                          <parameter name="taskField" source="nested">
+                                             <operation source="field" to="mt-iod-log-entry-item-iics-app4">temp.dt_iod_log_entry_item_iics_app4</operation>
+                                          </parameter>
+                                       </serviceInput>
+                                       <serviceOutput>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_log_entry_item_iics_app4/output/Object_Name">Object Name</operation>
+                                          <operation source="field" to="temp.dt_iod_log_entry_item_iics_app4/output/Run_Id">Run Id</operation>
+                                          <operation source="field" to="temp.dt_iod_log_entry_item_iics_app4/output/Log_Id">Log Id</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_log_entry_item_iics_app4/output/Task_Status">Task Status</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_log_entry_item_iics_app4/output/Success_Source_Rows">Success Source Rows</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_log_entry_item_iics_app4/output/Failed_Source_Rows">Failed Source Rows</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_log_entry_item_iics_app4/output/Success_Target_Rows">Success Target Rows</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_log_entry_item_iics_app4/output/Failed_Target_Rows">Failed Target Rows</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_log_entry_item_iics_app4/output/Start_Time">Start Time</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_log_entry_item_iics_app4/output/End_Time">End Time</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_log_entry_item_iics_app4/output/Error_Message">Error Message</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_log_entry_item_iics_app4/inout/mv_log_entry_item_pod4">mv_log_entry_item_pod4</operation>
+                                       </serviceOutput>
+                                    </service>
+                                    <events>
+                                       <catch faultField="temp.dt_iod_log_entry_item_iics_app4/fault"
+                                              id="k0xc5678"
+                                              interrupting="true"
+                                              name="error">
+                                          <suspend/>
+                                       </catch>
+                                       <catch faultField="temp.dt_iod_log_entry_item_iics_app4/fault"
+                                              id="k0xc5679"
+                                              interrupting="true"
+                                              name="warning"/>
+                                    </events>
+                                 </eventContainer>
+                                 <link id="k0p1mo67" targetId="k0p1mo3w" type="containerLink"/>
+                              </flow>
+                              <flow id="k0p1mo6s">
+                                 <eventContainer id="k0xc5696">
+                                    <service id="k0xc55ys">
+                                       <title>dt_iod_log_entry_item_iics_app6</title>
+                                       <serviceName>ICSExecuteDataTask</serviceName>
+                                       <serviceGUID/>
+                                       <serviceInput>
+                                          <parameter name="Wait for Task to Complete" source="constant" updatable="true">true</parameter>
+                                          <parameter name="Max Wait" source="constant" updatable="true">86400</parameter>
+                                          <parameter name="Task Name" source="constant" updatable="true">mt_iod_log_entry_item_iics_app6</parameter>
+                                          <parameter name="GUID" source="constant" updatable="true">bMC4e7NBmk9kcHCRx8UUyD</parameter>
+                                          <parameter name="Task Type" source="constant" updatable="true">MCT</parameter>
+                                          <parameter name="Has Inout Parameters" source="constant" updatable="true">true</parameter>
+                                          <parameter name="taskField" source="nested">
+                                             <operation source="field" to="mt-iod-log-entry-item-iics-app6">temp.dt_iod_log_entry_item_iics_app6</operation>
+                                          </parameter>
+                                       </serviceInput>
+                                       <serviceOutput>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_log_entry_item_iics_app6/output/Object_Name">Object Name</operation>
+                                          <operation source="field" to="temp.dt_iod_log_entry_item_iics_app6/output/Run_Id">Run Id</operation>
+                                          <operation source="field" to="temp.dt_iod_log_entry_item_iics_app6/output/Log_Id">Log Id</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_log_entry_item_iics_app6/output/Task_Status">Task Status</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_log_entry_item_iics_app6/output/Success_Source_Rows">Success Source Rows</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_log_entry_item_iics_app6/output/Failed_Source_Rows">Failed Source Rows</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_log_entry_item_iics_app6/output/Success_Target_Rows">Success Target Rows</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_log_entry_item_iics_app6/output/Failed_Target_Rows">Failed Target Rows</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_log_entry_item_iics_app6/output/Start_Time">Start Time</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_log_entry_item_iics_app6/output/End_Time">End Time</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_log_entry_item_iics_app6/output/Error_Message">Error Message</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_log_entry_item_iics_app6/inout/mv_log_entry_item_pod6">mv_log_entry_item_pod6</operation>
+                                       </serviceOutput>
+                                    </service>
+                                    <events>
+                                       <catch faultField="temp.dt_iod_log_entry_item_iics_app6/fault"
+                                              id="k0xc5694"
+                                              interrupting="true"
+                                              name="error">
+                                          <suspend/>
+                                       </catch>
+                                       <catch faultField="temp.dt_iod_log_entry_item_iics_app6/fault"
+                                              id="k0xc5695"
+                                              interrupting="true"
+                                              name="warning"/>
+                                    </events>
+                                 </eventContainer>
+                                 <link id="k0p1mo6t" targetId="k0p1mo3w" type="containerLink"/>
+                              </flow>
+                              <link id="k0p1mo3z" targetId="k0p1mo40" type="containerLink"/>
+                              <link id="k0p1mo42" targetId="k0p1mo43" type="containerLink"/>
+                              <link id="k0p1mo5k" targetId="k0p1mo5l" type="containerLink"/>
+                              <link id="k0p1mo65" targetId="k0p1mo66" type="containerLink"/>
+                              <link id="k0p1mo6r" targetId="k0p1mo6s" type="containerLink"/>
+                              <link id="k0p6a5iy" targetId="k0p6a5ix"/>
+                           </container>
+                           <container id="k0p6a5ix" type="parallel">
+                              <title>log_transformation_stg</title>
+                              <flow id="k0p6a5j1">
+                                 <eventContainer id="k0xc56cg">
+                                    <service id="k0xc55vk">
+                                       <title>dt_iod_transformation_log_entry_iics_app1</title>
+                                       <serviceName>ICSExecuteDataTask</serviceName>
+                                       <serviceGUID/>
+                                       <serviceInput>
+                                          <parameter name="Wait for Task to Complete" source="constant" updatable="true">true</parameter>
+                                          <parameter name="Max Wait" source="constant" updatable="true">86400</parameter>
+                                          <parameter name="Task Name" source="constant" updatable="true">mt_iod_transformation_log_entry_iics_app1</parameter>
+                                          <parameter name="GUID" source="constant" updatable="true">2EOza3taxW1e6GsySmTJaU</parameter>
+                                          <parameter name="Task Type" source="constant" updatable="true">MCT</parameter>
+                                          <parameter name="Has Inout Parameters" source="constant" updatable="true">true</parameter>
+                                          <parameter name="taskField" source="nested">
+                                             <operation source="field" to="mt-iod-transformation-log-entry-iics-app1">temp.dt_iod_transformation_log_entry_iics_app1</operation>
+                                          </parameter>
+                                       </serviceInput>
+                                       <serviceOutput>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_transformation_log_entry_iics_app1/output/Object_Name">Object Name</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_transformation_log_entry_iics_app1/output/Run_Id">Run Id</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_transformation_log_entry_iics_app1/output/Log_Id">Log Id</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_transformation_log_entry_iics_app1/output/Task_Status">Task Status</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_transformation_log_entry_iics_app1/output/Success_Source_Rows">Success Source Rows</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_transformation_log_entry_iics_app1/output/Failed_Source_Rows">Failed Source Rows</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_transformation_log_entry_iics_app1/output/Success_Target_Rows">Success Target Rows</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_transformation_log_entry_iics_app1/output/Failed_Target_Rows">Failed Target Rows</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_transformation_log_entry_iics_app1/output/Start_Time">Start Time</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_transformation_log_entry_iics_app1/output/End_Time">End Time</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_transformation_log_entry_iics_app1/output/Error_Message">Error Message</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_transformation_log_entry_iics_app1/inout/mv_transfor_log_pod1">mv_transfor_log_pod1</operation>
+                                       </serviceOutput>
+                                    </service>
+                                    <events>
+                                       <catch faultField="temp.dt_iod_transformation_log_entry_iics_app1/fault"
+                                              id="k0xc56ce"
+                                              interrupting="true"
+                                              name="error">
+                                          <suspend/>
+                                       </catch>
+                                       <catch faultField="temp.dt_iod_transformation_log_entry_iics_app1/fault"
+                                              id="k0xc56cf"
+                                              interrupting="true"
+                                              name="warning"/>
+                                    </events>
+                                 </eventContainer>
+                                 <link id="k0p6a5j2" targetId="k0p6a5ix" type="containerLink"/>
+                              </flow>
+                              <flow id="k0p6a5j4">
+                                 <eventContainer id="k0xc56ec">
+                                    <service id="k0xc55wd">
+                                       <title>dt_iod_transformation_log_entry_iics_app2</title>
+                                       <serviceName>ICSExecuteDataTask</serviceName>
+                                       <serviceGUID/>
+                                       <serviceInput>
+                                          <parameter name="Wait for Task to Complete" source="constant" updatable="true">true</parameter>
+                                          <parameter name="Max Wait" source="constant" updatable="true">86400</parameter>
+                                          <parameter name="Task Name" source="constant" updatable="true">mt_iod_transformation_log_entry_iics_app2</parameter>
+                                          <parameter name="GUID" source="constant" updatable="true">90P5ynx6PZyc1puyGbQf4t</parameter>
+                                          <parameter name="Task Type" source="constant" updatable="true">MCT</parameter>
+                                          <parameter name="Has Inout Parameters" source="constant" updatable="true">true</parameter>
+                                          <parameter name="taskField" source="nested">
+                                             <operation source="field" to="mt-iod-transformation-log-entry-iics-app2">temp.dt_iod_transformation_log_entry_iics_app2</operation>
+                                          </parameter>
+                                       </serviceInput>
+                                       <serviceOutput>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_transformation_log_entry_iics_app2/output/Object_Name">Object Name</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_transformation_log_entry_iics_app2/output/Run_Id">Run Id</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_transformation_log_entry_iics_app2/output/Log_Id">Log Id</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_transformation_log_entry_iics_app2/output/Task_Status">Task Status</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_transformation_log_entry_iics_app2/output/Success_Source_Rows">Success Source Rows</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_transformation_log_entry_iics_app2/output/Failed_Source_Rows">Failed Source Rows</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_transformation_log_entry_iics_app2/output/Success_Target_Rows">Success Target Rows</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_transformation_log_entry_iics_app2/output/Failed_Target_Rows">Failed Target Rows</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_transformation_log_entry_iics_app2/output/Start_Time">Start Time</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_transformation_log_entry_iics_app2/output/End_Time">End Time</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_transformation_log_entry_iics_app2/output/Error_Message">Error Message</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_transformation_log_entry_iics_app2/inout/mv_transfor_log_pod2">mv_transfor_log_pod2</operation>
+                                       </serviceOutput>
+                                    </service>
+                                    <events>
+                                       <catch faultField="temp.dt_iod_transformation_log_entry_iics_app2/fault"
+                                              id="k0xc56ea"
+                                              interrupting="true"
+                                              name="error">
+                                          <suspend/>
+                                       </catch>
+                                       <catch faultField="temp.dt_iod_transformation_log_entry_iics_app2/fault"
+                                              id="k0xc56eb"
+                                              interrupting="true"
+                                              name="warning"/>
+                                    </events>
+                                 </eventContainer>
+                                 <link id="k0p6a5j5" targetId="k0p6a5ix" type="containerLink"/>
+                              </flow>
+                              <flow id="k0p6a5kf">
+                                 <eventContainer id="k0xc56g8">
+                                    <service id="k0xc55x6">
+                                       <title>dt_iod_transformation_log_entry_iics_app3</title>
+                                       <serviceName>ICSExecuteDataTask</serviceName>
+                                       <serviceGUID/>
+                                       <serviceInput>
+                                          <parameter name="Wait for Task to Complete" source="constant" updatable="true">true</parameter>
+                                          <parameter name="Max Wait" source="constant" updatable="true">86400</parameter>
+                                          <parameter name="Task Name" source="constant" updatable="true">mt_iod_transformation_log_entry_iics_app3</parameter>
+                                          <parameter name="GUID" source="constant" updatable="true">drKYdxzKGUkgL1fW8agbIT</parameter>
+                                          <parameter name="Task Type" source="constant" updatable="true">MCT</parameter>
+                                          <parameter name="Has Inout Parameters" source="constant" updatable="true">true</parameter>
+                                          <parameter name="taskField" source="nested">
+                                             <operation source="field" to="mt-iod-transformation-log-entry-iics-app3">temp.dt_iod_transformation_log_entry_iics_app3</operation>
+                                          </parameter>
+                                       </serviceInput>
+                                       <serviceOutput>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_transformation_log_entry_iics_app3/output/Object_Name">Object Name</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_transformation_log_entry_iics_app3/output/Run_Id">Run Id</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_transformation_log_entry_iics_app3/output/Log_Id">Log Id</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_transformation_log_entry_iics_app3/output/Task_Status">Task Status</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_transformation_log_entry_iics_app3/output/Success_Source_Rows">Success Source Rows</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_transformation_log_entry_iics_app3/output/Failed_Source_Rows">Failed Source Rows</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_transformation_log_entry_iics_app3/output/Success_Target_Rows">Success Target Rows</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_transformation_log_entry_iics_app3/output/Failed_Target_Rows">Failed Target Rows</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_transformation_log_entry_iics_app3/output/Start_Time">Start Time</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_transformation_log_entry_iics_app3/output/End_Time">End Time</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_transformation_log_entry_iics_app3/output/Error_Message">Error Message</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_transformation_log_entry_iics_app3/inout/mv_transfor_log_pod3">mv_transfor_log_pod3</operation>
+                                       </serviceOutput>
+                                    </service>
+                                    <events>
+                                       <catch faultField="temp.dt_iod_transformation_log_entry_iics_app3/fault"
+                                              id="k0xc56g6"
+                                              interrupting="true"
+                                              name="error">
+                                          <suspend/>
+                                       </catch>
+                                       <catch faultField="temp.dt_iod_transformation_log_entry_iics_app3/fault"
+                                              id="k0xc56g7"
+                                              interrupting="true"
+                                              name="warning"/>
+                                    </events>
+                                 </eventContainer>
+                                 <link id="k0p6a5kg" targetId="k0p6a5ix" type="containerLink"/>
+                              </flow>
+                              <flow id="k0p6a5l5">
+                                 <eventContainer id="k0xc56i4">
+                                    <service id="k0xc55zl">
+                                       <title>dt_iod_transformation_log_entry_iics_app4</title>
+                                       <serviceName>ICSExecuteDataTask</serviceName>
+                                       <serviceGUID/>
+                                       <serviceInput>
+                                          <parameter name="Wait for Task to Complete" source="constant" updatable="true">true</parameter>
+                                          <parameter name="Max Wait" source="constant" updatable="true">86400</parameter>
+                                          <parameter name="Task Name" source="constant" updatable="true">mt_iod_transformation_log_entry_iics_app4</parameter>
+                                          <parameter name="GUID" source="constant" updatable="true">iGJxo6NQ66Xk6OG5GDdzYY</parameter>
+                                          <parameter name="Task Type" source="constant" updatable="true">MCT</parameter>
+                                          <parameter name="Has Inout Parameters" source="constant" updatable="true">true</parameter>
+                                          <parameter name="taskField" source="nested">
+                                             <operation source="field" to="mt-iod-transformation-log-entry-iics-app4">temp.dt_iod_transformation_log_entry_iics_app4</operation>
+                                          </parameter>
+                                       </serviceInput>
+                                       <serviceOutput>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_transformation_log_entry_iics_app4/output/Object_Name">Object Name</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_transformation_log_entry_iics_app4/output/Run_Id">Run Id</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_transformation_log_entry_iics_app4/output/Log_Id">Log Id</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_transformation_log_entry_iics_app4/output/Task_Status">Task Status</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_transformation_log_entry_iics_app4/output/Success_Source_Rows">Success Source Rows</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_transformation_log_entry_iics_app4/output/Failed_Source_Rows">Failed Source Rows</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_transformation_log_entry_iics_app4/output/Success_Target_Rows">Success Target Rows</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_transformation_log_entry_iics_app4/output/Failed_Target_Rows">Failed Target Rows</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_transformation_log_entry_iics_app4/output/Start_Time">Start Time</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_transformation_log_entry_iics_app4/output/End_Time">End Time</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_transformation_log_entry_iics_app4/output/Error_Message">Error Message</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_transformation_log_entry_iics_app4/inout/mv_transfor_log_pod4">mv_transfor_log_pod4</operation>
+                                       </serviceOutput>
+                                    </service>
+                                    <events>
+                                       <catch faultField="temp.dt_iod_transformation_log_entry_iics_app4/fault"
+                                              id="k0xc56i2"
+                                              interrupting="true"
+                                              name="error">
+                                          <suspend/>
+                                       </catch>
+                                       <catch faultField="temp.dt_iod_transformation_log_entry_iics_app4/fault"
+                                              id="k0xc56i3"
+                                              interrupting="true"
+                                              name="warning"/>
+                                    </events>
+                                 </eventContainer>
+                                 <link id="k0p6a5l6" targetId="k0p6a5ix" type="containerLink"/>
+                              </flow>
+                              <flow id="k0p6a5lw">
+                                 <eventContainer id="k0xc56k0">
+                                    <service id="k0xc560e">
+                                       <title>dt_iod_transformation_log_entry_iics_app6</title>
+                                       <serviceName>ICSExecuteDataTask</serviceName>
+                                       <serviceGUID/>
+                                       <serviceInput>
+                                          <parameter name="Wait for Task to Complete" source="constant" updatable="true">true</parameter>
+                                          <parameter name="Max Wait" source="constant" updatable="true">86400</parameter>
+                                          <parameter name="Task Name" source="constant" updatable="true">mt_iod_transformation_log_entry_iics_app6</parameter>
+                                          <parameter name="GUID" source="constant" updatable="true">fCQ2FXjqGi6lM62Sxt9mKA</parameter>
+                                          <parameter name="Task Type" source="constant" updatable="true">MCT</parameter>
+                                          <parameter name="Has Inout Parameters" source="constant" updatable="true">true</parameter>
+                                          <parameter name="taskField" source="nested">
+                                             <operation source="field" to="mt-iod-transformation-log-entry-iics-app6">temp.dt_iod_transformation_log_entry_iics_app6</operation>
+                                          </parameter>
+                                       </serviceInput>
+                                       <serviceOutput>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_transformation_log_entry_iics_app6/output/Object_Name">Object Name</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_transformation_log_entry_iics_app6/output/Run_Id">Run Id</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_transformation_log_entry_iics_app6/output/Log_Id">Log Id</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_transformation_log_entry_iics_app6/output/Task_Status">Task Status</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_transformation_log_entry_iics_app6/output/Success_Source_Rows">Success Source Rows</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_transformation_log_entry_iics_app6/output/Failed_Source_Rows">Failed Source Rows</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_transformation_log_entry_iics_app6/output/Success_Target_Rows">Success Target Rows</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_transformation_log_entry_iics_app6/output/Failed_Target_Rows">Failed Target Rows</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_transformation_log_entry_iics_app6/output/Start_Time">Start Time</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_transformation_log_entry_iics_app6/output/End_Time">End Time</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_transformation_log_entry_iics_app6/output/Error_Message">Error Message</operation>
+                                          <operation source="field"
+                                                     to="temp.dt_iod_transformation_log_entry_iics_app6/inout/mv_transfor_log_pod6">mv_transfor_log_pod6</operation>
+                                       </serviceOutput>
+                                    </service>
+                                    <events>
+                                       <catch faultField="temp.dt_iod_transformation_log_entry_iics_app6/fault"
+                                              id="k0xc56jy"
+                                              interrupting="true"
+                                              name="error">
+                                          <suspend/>
+                                       </catch>
+                                       <catch faultField="temp.dt_iod_transformation_log_entry_iics_app6/fault"
+                                              id="k0xc56jz"
+                                              interrupting="true"
+                                              name="warning"/>
+                                    </events>
+                                 </eventContainer>
+                                 <link id="k0p6a5lx" targetId="k0p6a5ix" type="containerLink"/>
+                              </flow>
+                              <link id="k0p6a5j0" targetId="k0p6a5j1" type="containerLink"/>
+                              <link id="k0p6a5j3" targetId="k0p6a5j4" type="containerLink"/>
+                              <link id="k0p6a5ke" targetId="k0p6a5kf" type="containerLink"/>
+                              <link id="k0p6a5l4" targetId="k0p6a5l5" type="containerLink"/>
+                              <link id="k0p6a5lv" targetId="k0p6a5lw" type="containerLink"/>
+                           </container>
+                           <link id="jqnjfonb" targetId="jqnjfo5f" type="containerLink"/>
+                        </flow>
+                        <link id="jqnjfon9" targetId="jqnjfona" type="containerLink"/>
+                     </container>
+                     <link id="jqnjfo2f" targetId="jqnjfo27" type="containerLink"/>
+                  </flow>
+                  <flow id="jqnjfo4i">
+                     <link id="jqnjfo4j" targetId="jqnjfo27" type="containerLink"/>
+                  </flow>
+                  <link id="jqnjfo2a" targetId="jqnjfo2b" type="containerLink">
+                     <condition source="formula">
+                        <function name="less-than">
+                           <arg name="left">{$temp.MCT_Load_Status_Check[1]/output[1]/Success_Source_Rows}</arg>
+                           <arg name="right">{9}</arg>
+                        </function>
+                     </condition>
+                  </link>
+                  <link id="jqnjfo2d" targetId="jqnjfo2e" type="containerLink">
+                     <condition source="formula">
+                        <function name="equals">
+                           <arg name="left">{$temp.MCT_Load_Status_Check[1]/output[1]/Success_Source_Rows}</arg>
+                           <arg name="right">{9}</arg>
+                        </function>
+                     </condition>
+                  </link>
+                  <link id="jqnjfo4h" targetId="jqnjfo4i" type="containerLink"/>
+                  <link id="jqno8wn0" targetId="c"/>
+               </container>
+               <end id="c"/>
+            </flow>
+            <dependencies>
+               <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
+                              displayName="mct-Redshift-Load-status-Check"
+                              isByCopy="true"
+                              name="mct-Redshift-Load-status-Check">
+                  <description/>
+                  <tags/>
+                  <detail>
+                     <field label="Output Parameters" name="output" type="reference"/>
+                     <field label="Fault" name="fault" type="reference"/>
+                  </detail>
+               </processObject>
+               <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
+                              displayName="mt-Org-Dim1"
+                              isByCopy="true"
+                              name="mt-Org-Dim1">
+                  <description/>
+                  <tags/>
+                  <detail>
+                     <field label="Output Parameters" name="output" type="reference"/>
+                     <field label="Fault" name="fault" type="reference"/>
+                  </detail>
+               </processObject>
+               <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
+                              displayName="mt-iod-log-entry-iics-app2"
+                              isByCopy="true"
+                              name="mt-iod-log-entry-iics-app2">
+                  <description/>
+                  <tags/>
+                  <detail>
+                     <field label="InOut Parameters" name="inout" type="reference"/>
+                     <field label="Output Parameters" name="output" type="reference"/>
+                     <field label="Fault" name="fault" type="reference"/>
+                  </detail>
+               </processObject>
+               <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
+                              displayName="mt-iod-log-entry-iics-app3"
+                              isByCopy="true"
+                              name="mt-iod-log-entry-iics-app3">
+                  <description/>
+                  <tags/>
+                  <detail>
+                     <field label="InOut Parameters" name="inout" type="reference"/>
+                     <field label="Output Parameters" name="output" type="reference"/>
+                     <field label="Fault" name="fault" type="reference"/>
+                  </detail>
+               </processObject>
+               <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
+                              displayName="mt-iod-log-entry-iics-app4"
+                              isByCopy="true"
+                              name="mt-iod-log-entry-iics-app4">
+                  <description/>
+                  <tags/>
+                  <detail>
+                     <field label="InOut Parameters" name="inout" type="reference"/>
+                     <field label="Output Parameters" name="output" type="reference"/>
+                     <field label="Fault" name="fault" type="reference"/>
+                  </detail>
+               </processObject>
+               <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
+                              displayName="mt-iod-log-entry-iics-app6"
+                              isByCopy="true"
+                              name="mt-iod-log-entry-iics-app6">
+                  <description/>
+                  <tags/>
+                  <detail>
+                     <field label="InOut Parameters" name="inout" type="reference"/>
+                     <field label="Output Parameters" name="output" type="reference"/>
+                     <field label="Fault" name="fault" type="reference"/>
+                  </detail>
+               </processObject>
+               <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
+                              displayName="mt-iod-log-entry-item-iics-app1"
+                              isByCopy="true"
+                              name="mt-iod-log-entry-item-iics-app1">
+                  <description/>
+                  <tags/>
+                  <detail>
+                     <field label="InOut Parameters" name="inout" type="reference"/>
+                     <field label="Output Parameters" name="output" type="reference"/>
+                     <field label="Fault" name="fault" type="reference"/>
+                  </detail>
+               </processObject>
+               <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
+                              displayName="mt-iod-log-entry-item-iics-app2"
+                              isByCopy="true"
+                              name="mt-iod-log-entry-item-iics-app2">
+                  <description/>
+                  <tags/>
+                  <detail>
+                     <field label="InOut Parameters" name="inout" type="reference"/>
+                     <field label="Output Parameters" name="output" type="reference"/>
+                     <field label="Fault" name="fault" type="reference"/>
+                  </detail>
+               </processObject>
+               <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
+                              displayName="mt-iod-log-entry-item-iics-app3"
+                              isByCopy="true"
+                              name="mt-iod-log-entry-item-iics-app3">
+                  <description/>
+                  <tags/>
+                  <detail>
+                     <field label="InOut Parameters" name="inout" type="reference"/>
+                     <field label="Output Parameters" name="output" type="reference"/>
+                     <field label="Fault" name="fault" type="reference"/>
+                  </detail>
+               </processObject>
+               <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
+                              displayName="mt-iod-transformation-log-entry-iics-app1"
+                              isByCopy="true"
+                              name="mt-iod-transformation-log-entry-iics-app1">
+                  <description/>
+                  <tags/>
+                  <detail>
+                     <field label="InOut Parameters" name="inout" type="reference"/>
+                     <field label="Output Parameters" name="output" type="reference"/>
+                     <field label="Fault" name="fault" type="reference"/>
+                  </detail>
+               </processObject>
+               <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
+                              displayName="mt-iod-transformation-log-entry-iics-app2"
+                              isByCopy="true"
+                              name="mt-iod-transformation-log-entry-iics-app2">
+                  <description/>
+                  <tags/>
+                  <detail>
+                     <field label="InOut Parameters" name="inout" type="reference"/>
+                     <field label="Output Parameters" name="output" type="reference"/>
+                     <field label="Fault" name="fault" type="reference"/>
+                  </detail>
+               </processObject>
+               <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
+                              displayName="mt-iod-transformation-log-entry-iics-app3"
+                              isByCopy="true"
+                              name="mt-iod-transformation-log-entry-iics-app3">
+                  <description/>
+                  <tags/>
+                  <detail>
+                     <field label="InOut Parameters" name="inout" type="reference"/>
+                     <field label="Output Parameters" name="output" type="reference"/>
+                     <field label="Fault" name="fault" type="reference"/>
+                  </detail>
+               </processObject>
+               <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
+                              displayName="mt-iod-log-entry-item-iics-app4"
+                              isByCopy="true"
+                              name="mt-iod-log-entry-item-iics-app4">
+                  <description/>
+                  <tags/>
+                  <detail>
+                     <field label="InOut Parameters" name="inout" type="reference"/>
+                     <field label="Output Parameters" name="output" type="reference"/>
+                     <field label="Fault" name="fault" type="reference"/>
+                  </detail>
+               </processObject>
+               <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
+                              displayName="mt-iod-log-entry-item-iics-app6"
+                              isByCopy="true"
+                              name="mt-iod-log-entry-item-iics-app6">
+                  <description/>
+                  <tags/>
+                  <detail>
+                     <field label="InOut Parameters" name="inout" type="reference"/>
+                     <field label="Output Parameters" name="output" type="reference"/>
+                     <field label="Fault" name="fault" type="reference"/>
+                  </detail>
+               </processObject>
+               <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
+                              displayName="mt-iod-transformation-log-entry-iics-app4"
+                              isByCopy="true"
+                              name="mt-iod-transformation-log-entry-iics-app4">
+                  <description/>
+                  <tags/>
+                  <detail>
+                     <field label="InOut Parameters" name="inout" type="reference"/>
+                     <field label="Output Parameters" name="output" type="reference"/>
+                     <field label="Fault" name="fault" type="reference"/>
+                  </detail>
+               </processObject>
+               <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
+                              displayName="mt-iod-transformation-log-entry-iics-app6"
+                              isByCopy="true"
+                              name="mt-iod-transformation-log-entry-iics-app6">
+                  <description/>
+                  <tags/>
+                  <detail>
+                     <field label="InOut Parameters" name="inout" type="reference"/>
+                     <field label="Output Parameters" name="output" type="reference"/>
+                     <field label="Fault" name="fault" type="reference"/>
+                  </detail>
+               </processObject>
+               <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
+                              displayName="mt-iod-log-entry-iics-app1"
+                              isByCopy="true"
+                              name="mt-iod-log-entry-iics-app1">
+                  <description/>
+                  <tags/>
+                  <detail>
+                     <field label="InOut Parameters" name="inout" type="reference"/>
+                     <field label="Output Parameters" name="output" type="reference"/>
+                     <field label="Fault" name="fault" type="reference"/>
+                  </detail>
+               </processObject>
+            </dependencies>
+         </taskflow>
+      </types1:Entry>
+      <types1:GUID>a4VbmIaPsARh2jlu1RQ5Km</types1:GUID>
+      <types1:DisplayName>TF_DIM_Log_Entry_Data_load_bkp</types1:DisplayName>
+   </types1:Item>
+   <types1:CurrentServerDateTime>2024-12-30T10:48:06.438Z</types1:CurrentServerDateTime>
+</aetgt:getResponse>
