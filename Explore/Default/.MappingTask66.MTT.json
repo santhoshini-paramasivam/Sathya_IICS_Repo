@@ -1,7 +1,7 @@
 {
   "objectInfo" : {
-    "id" : "eew6YA8GOQYbpONDYBRb6H",
-    "name" : "mt_Orcl_SQqry_tgt_new",
+    "id" : "9WYtiLZfuiRkFTy2RngZUw",
+    "name" : "MappingTask66",
     "type" : "MTT",
     "metadata" : {
       "modelVersion" : {
@@ -9,7 +9,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0110ZH0Z0000000002KK"
+        "repoHandle" : "0110ZH0Z0000000001PP"
       },
       "contextAttributes" : [ {
         "name" : "id",
@@ -23,10 +23,30 @@
     }
   },
   "dataFileExtension" : "zip",
-  "updateTime" : "2024-12-30T10:49:36.666Z",
+  "updateTime" : "2024-12-30T10:49:36.668Z",
   "objectRefs" : [ {
-    "id" : "9ts17U03teHfO6Q8rRJFYC",
-    "name" : "Z_______pg_windows",
+    "id" : "0qnw6XXvQywlXkTEqNNugP",
+    "name" : "Oracle__phrarini",
+    "type" : "Connection",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0110ZH0B00000000006Q"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/SYS"
+  }, {
+    "id" : "l4Gq1qqkxeMjcz13mnI7g8",
+    "name" : "__Atop_INsatn01",
     "type" : "AgentGroup",
     "metadata" : {
       "modelVersion" : {
@@ -34,7 +54,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0110ZH2500000000009F"
+        "repoHandle" : "0110ZH25000000000002"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
@@ -45,28 +65,8 @@
     },
     "path" : "/SYS"
   }, {
-    "id" : "6tJwFgVnSYEkvpK5ZSu28J",
-    "name" : "m_Orcl_SQqry_tgt",
-    "type" : "DTEMPLATE",
-    "metadata" : {
-      "modelVersion" : {
-        "major" : 0,
-        "minor" : 0
-      },
-      "repoInfo" : {
-        "repoHandle" : "0110ZH170000000001H4"
-      },
-      "contextAttributes" : null,
-      "additionalInfo" : {
-        "description" : "",
-        "contentType" : "JSON",
-        "documentState" : "VALID"
-      }
-    },
-    "path" : "/Explore/Santhoshini_Test"
-  }, {
-    "id" : "aLltTXWFVGXgjFEDiXxG0m",
-    "name" : "Oracle_varsb",
+    "id" : "51UyzQYBweyf9qGm58cfyh",
+    "name" : "__ea_flatfile",
     "type" : "Connection",
     "metadata" : {
       "modelVersion" : {
@@ -74,16 +74,39 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0110ZH0B0000000000PW"
+        "repoHandle" : "0110ZH0B00000000004Y"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
-        "description" : "Connects to varsb",
+        "description" : null,
         "contentType" : "JSON",
         "documentState" : "COMPLETE"
       }
     },
     "path" : "/SYS"
+  }, {
+    "id" : "azbNDexR3vtjATWigUqD2K",
+    "name" : "m_I0039_employee_import_3_Debug_SQL",
+    "type" : "DTEMPLATE",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0110ZH170000000001QH"
+      },
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : "current version of employee import interface",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/harini"
   } ],
   "readableFileExtension" : null,
   "readableFilePresent" : false

@@ -1,7 +1,7 @@
 {
   "objectInfo" : {
-    "id" : "eew6YA8GOQYbpONDYBRb6H",
-    "name" : "mt_Orcl_SQqry_tgt_new",
+    "id" : "1LahCD9tvk4bWvFDmpFcoS",
+    "name" : "mct_m_GBQ_To_FF",
     "type" : "MTT",
     "metadata" : {
       "modelVersion" : {
@@ -9,7 +9,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0110ZH0Z0000000002KK"
+        "repoHandle" : "0110ZH0Z0000000002QB"
       },
       "contextAttributes" : [ {
         "name" : "id",
@@ -17,16 +17,36 @@
       } ],
       "additionalInfo" : {
         "description" : "",
-        "contentType" : "JSON",
+        "contentType" : null,
         "documentState" : "VALID"
       }
     }
   },
   "dataFileExtension" : "zip",
-  "updateTime" : "2024-12-30T10:49:36.666Z",
+  "updateTime" : "2024-12-30T10:49:36.667Z",
   "objectRefs" : [ {
-    "id" : "9ts17U03teHfO6Q8rRJFYC",
-    "name" : "Z_______pg_windows",
+    "id" : "2GwyVB2pPRvhXXEIXbYEuR",
+    "name" : "m_GBQ_To_FF",
+    "type" : "DTEMPLATE",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0110ZH170000000001ER"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Smruti/GBQ"
+  }, {
+    "id" : "1QDrVm9xZwWcPZp2pIdSiz",
+    "name" : "Agent_Group_Smr",
     "type" : "AgentGroup",
     "metadata" : {
       "modelVersion" : {
@@ -34,7 +54,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0110ZH2500000000009F"
+        "repoHandle" : "0110ZH25000000000027"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
@@ -45,28 +65,8 @@
     },
     "path" : "/SYS"
   }, {
-    "id" : "6tJwFgVnSYEkvpK5ZSu28J",
-    "name" : "m_Orcl_SQqry_tgt",
-    "type" : "DTEMPLATE",
-    "metadata" : {
-      "modelVersion" : {
-        "major" : 0,
-        "minor" : 0
-      },
-      "repoInfo" : {
-        "repoHandle" : "0110ZH170000000001H4"
-      },
-      "contextAttributes" : null,
-      "additionalInfo" : {
-        "description" : "",
-        "contentType" : "JSON",
-        "documentState" : "VALID"
-      }
-    },
-    "path" : "/Explore/Santhoshini_Test"
-  }, {
-    "id" : "aLltTXWFVGXgjFEDiXxG0m",
-    "name" : "Oracle_varsb",
+    "id" : "5eWI2xABuUPlcMIYe7WVUf",
+    "name" : "GBQ_SMR_Test",
     "type" : "Connection",
     "metadata" : {
       "modelVersion" : {
@@ -74,11 +74,11 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0110ZH0B0000000000PW"
+        "repoHandle" : "0110ZH0B0000000000P0"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
-        "description" : "Connects to varsb",
+        "description" : null,
         "contentType" : "JSON",
         "documentState" : "COMPLETE"
       }

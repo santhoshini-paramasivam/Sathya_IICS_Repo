@@ -1,7 +1,7 @@
 {
   "objectInfo" : {
-    "id" : "eew6YA8GOQYbpONDYBRb6H",
-    "name" : "mt_Orcl_SQqry_tgt_new",
+    "id" : "aWQqlTlpWakeETasDBFYAt",
+    "name" : "mct_oracle_ADLS_Precision_issue",
     "type" : "MTT",
     "metadata" : {
       "modelVersion" : {
@@ -9,7 +9,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0110ZH0Z0000000002KK"
+        "repoHandle" : "0110ZH0Z0000000003G3"
       },
       "contextAttributes" : [ {
         "name" : "id",
@@ -23,30 +23,50 @@
     }
   },
   "dataFileExtension" : "zip",
-  "updateTime" : "2024-12-30T10:49:36.666Z",
+  "updateTime" : "2024-12-30T10:49:36.668Z",
   "objectRefs" : [ {
-    "id" : "9ts17U03teHfO6Q8rRJFYC",
-    "name" : "Z_______pg_windows",
-    "type" : "AgentGroup",
+    "id" : "151yodvFzizjIBjnWIYc6W",
+    "name" : "Oracle_Linux",
+    "type" : "Connection",
     "metadata" : {
       "modelVersion" : {
         "major" : 0,
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0110ZH2500000000009F"
+        "repoHandle" : "0110ZH0B0000000001TG"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
         "description" : null,
         "contentType" : "JSON",
-        "documentState" : "VALID"
+        "documentState" : "COMPLETE"
       }
     },
     "path" : "/SYS"
   }, {
-    "id" : "6tJwFgVnSYEkvpK5ZSu28J",
-    "name" : "m_Orcl_SQqry_tgt",
+    "id" : "5cizeagC1Vlflhveh8GYsq",
+    "name" : "MicrosoftAzureDataLakeStorageGen2_Linux",
+    "type" : "Connection",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0110ZH0B0000000001TE"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/SYS"
+  }, {
+    "id" : "9K0Llgd6o2gf4316rrX4Gp",
+    "name" : "m_oracle_ADLS_Precision_issue",
     "type" : "DTEMPLATE",
     "metadata" : {
       "modelVersion" : {
@@ -54,7 +74,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0110ZH170000000001H4"
+        "repoHandle" : "0110ZH170000000006U3"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
@@ -63,24 +83,24 @@
         "documentState" : "VALID"
       }
     },
-    "path" : "/Explore/Santhoshini_Test"
+    "path" : "/Explore/Default"
   }, {
-    "id" : "aLltTXWFVGXgjFEDiXxG0m",
-    "name" : "Oracle_varsb",
-    "type" : "Connection",
+    "id" : "c3MX5TbHcWTk1nwt4kO2WU",
+    "name" : "USE6_Agent_Linux",
+    "type" : "AgentGroup",
     "metadata" : {
       "modelVersion" : {
         "major" : 0,
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0110ZH0B0000000000PW"
+        "repoHandle" : "0110ZH250000000000BF"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
-        "description" : "Connects to varsb",
+        "description" : null,
         "contentType" : "JSON",
-        "documentState" : "COMPLETE"
+        "documentState" : "VALID"
       }
     },
     "path" : "/SYS"

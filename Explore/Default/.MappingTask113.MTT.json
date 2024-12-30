@@ -1,7 +1,7 @@
 {
   "objectInfo" : {
-    "id" : "eew6YA8GOQYbpONDYBRb6H",
-    "name" : "mt_Orcl_SQqry_tgt_new",
+    "id" : "9fiQVTZF7cLdzECaR3ujSi",
+    "name" : "MappingTask113",
     "type" : "MTT",
     "metadata" : {
       "modelVersion" : {
@@ -9,24 +9,24 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0110ZH0Z0000000002KK"
+        "repoHandle" : "0110ZH0Z0000000003NZ"
       },
       "contextAttributes" : [ {
         "name" : "id",
         "value" : "@1"
       } ],
       "additionalInfo" : {
-        "description" : "",
+        "description" : null,
         "contentType" : "JSON",
         "documentState" : "VALID"
       }
     }
   },
   "dataFileExtension" : "zip",
-  "updateTime" : "2024-12-30T10:49:36.666Z",
+  "updateTime" : "2024-12-30T10:49:36.667Z",
   "objectRefs" : [ {
-    "id" : "9ts17U03teHfO6Q8rRJFYC",
-    "name" : "Z_______pg_windows",
+    "id" : "hLvXIc7yU6mdz9De5ZiaIX",
+    "name" : "vmwin16inaz",
     "type" : "AgentGroup",
     "metadata" : {
       "modelVersion" : {
@@ -34,7 +34,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0110ZH2500000000009F"
+        "repoHandle" : "0110ZH2500000000002W"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
@@ -45,28 +45,8 @@
     },
     "path" : "/SYS"
   }, {
-    "id" : "6tJwFgVnSYEkvpK5ZSu28J",
-    "name" : "m_Orcl_SQqry_tgt",
-    "type" : "DTEMPLATE",
-    "metadata" : {
-      "modelVersion" : {
-        "major" : 0,
-        "minor" : 0
-      },
-      "repoInfo" : {
-        "repoHandle" : "0110ZH170000000001H4"
-      },
-      "contextAttributes" : null,
-      "additionalInfo" : {
-        "description" : "",
-        "contentType" : "JSON",
-        "documentState" : "VALID"
-      }
-    },
-    "path" : "/Explore/Santhoshini_Test"
-  }, {
-    "id" : "aLltTXWFVGXgjFEDiXxG0m",
-    "name" : "Oracle_varsb",
+    "id" : "do9BOTSpjwYcRoB9rrT4gY",
+    "name" : "Aishwarya_GCS",
     "type" : "Connection",
     "metadata" : {
       "modelVersion" : {
@@ -74,16 +54,59 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0110ZH0B0000000000PW"
+        "repoHandle" : "0110ZH0B0000000001SF"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
-        "description" : "Connects to varsb",
+        "description" : null,
         "contentType" : "JSON",
         "documentState" : "COMPLETE"
       }
     },
     "path" : "/SYS"
+  }, {
+    "id" : "8dFvPKwR9zte6kG8H0QYil",
+    "name" : "flatfile_az",
+    "type" : "Connection",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0110ZH0B0000000000EI"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/SYS"
+  }, {
+    "id" : "5wEpxksXUVcjchcR1jUwk3",
+    "name" : "Mapping390",
+    "type" : "DTEMPLATE",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0110ZH1700000000072N"
+      },
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Default"
   } ],
   "readableFileExtension" : null,
   "readableFilePresent" : false

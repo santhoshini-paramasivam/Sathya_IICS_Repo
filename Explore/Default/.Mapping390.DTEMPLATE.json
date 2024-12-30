@@ -1,7 +1,7 @@
 {
   "objectInfo" : {
-    "id" : "gMKmt4e0TSbgba602sNTmn",
-    "name" : "m_param_04670257",
+    "id" : "5wEpxksXUVcjchcR1jUwk3",
+    "name" : "Mapping390",
     "type" : "DTEMPLATE",
     "metadata" : {
       "modelVersion" : {
@@ -9,24 +9,24 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0110ZH170000000006ZE"
+        "repoHandle" : "0110ZH1700000000072N"
       },
       "contextAttributes" : [ {
         "name" : "id",
         "value" : "@1"
       } ],
       "additionalInfo" : {
-        "description" : "Created for case 04670257 - testing param - assurance service",
+        "description" : "",
         "contentType" : "JSON",
         "documentState" : "VALID"
       }
     }
   },
   "dataFileExtension" : "zip",
-  "updateTime" : "2024-12-30T10:49:36.666Z",
+  "updateTime" : "2024-12-30T10:49:36.671Z",
   "objectRefs" : [ {
-    "id" : "aIxzJmghWP3edbKa750bOQ",
-    "name" : "SQL_Server_Sandy",
+    "id" : "8dFvPKwR9zte6kG8H0QYil",
+    "name" : "flatfile_az",
     "type" : "Connection",
     "metadata" : {
       "modelVersion" : {
@@ -34,7 +34,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0110ZH0B0000000001W9"
+        "repoHandle" : "0110ZH0B0000000000EI"
       },
       "contextAttributes" : null,
       "additionalInfo" : {

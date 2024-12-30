@@ -1,7 +1,7 @@
 {
   "objectInfo" : {
-    "id" : "eew6YA8GOQYbpONDYBRb6H",
-    "name" : "mt_Orcl_SQqry_tgt_new",
+    "id" : "3Ki6GSKEPtYhOE1EDIuSMP",
+    "name" : "MappingTask1",
     "type" : "MTT",
     "metadata" : {
       "modelVersion" : {
@@ -9,7 +9,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0110ZH0Z0000000002KK"
+        "repoHandle" : "0110ZH0Z0000000000KP"
       },
       "contextAttributes" : [ {
         "name" : "id",
@@ -25,8 +25,8 @@
   "dataFileExtension" : "zip",
   "updateTime" : "2024-12-30T10:49:36.666Z",
   "objectRefs" : [ {
-    "id" : "9ts17U03teHfO6Q8rRJFYC",
-    "name" : "Z_______pg_windows",
+    "id" : "glQwUyXZU6rkYAaDfazNuI",
+    "name" : "INW1PC0BNAQ6",
     "type" : "AgentGroup",
     "metadata" : {
       "modelVersion" : {
@@ -34,7 +34,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0110ZH2500000000009F"
+        "repoHandle" : "0110ZH2500000000000G"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
@@ -45,8 +45,8 @@
     },
     "path" : "/SYS"
   }, {
-    "id" : "6tJwFgVnSYEkvpK5ZSu28J",
-    "name" : "m_Orcl_SQqry_tgt",
+    "id" : "kAtHj6XKbC3i1UhpUtHEML",
+    "name" : "dummy_mapping_for_dll",
     "type" : "DTEMPLATE",
     "metadata" : {
       "modelVersion" : {
@@ -54,7 +54,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0110ZH170000000001H4"
+        "repoHandle" : "0110ZH170000000000KV"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
@@ -63,10 +63,10 @@
         "documentState" : "VALID"
       }
     },
-    "path" : "/Explore/Santhoshini_Test"
+    "path" : "/Explore/Default"
   }, {
-    "id" : "aLltTXWFVGXgjFEDiXxG0m",
-    "name" : "Oracle_varsb",
+    "id" : "ae5k4jWYPOtf1M029glOEr",
+    "name" : "02730178_WSC",
     "type" : "Connection",
     "metadata" : {
       "modelVersion" : {
@@ -74,11 +74,11 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0110ZH0B0000000000PW"
+        "repoHandle" : "0110ZH0B000000000010"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
-        "description" : "Connects to varsb",
+        "description" : "123",
         "contentType" : "JSON",
         "documentState" : "COMPLETE"
       }

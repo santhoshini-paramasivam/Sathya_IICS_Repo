@@ -1,0 +1,43 @@
+<aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
+                   xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
+   <types1:Item>
+      <types1:EntryId>8YybdsMkdypKwKB-gt-11745152-2020-02-04T10:30:51.95Z::tf.xml</types1:EntryId>
+      <types1:Name>Taskflow1</types1:Name>
+      <types1:MimeType>application/xml+taskflow</types1:MimeType>
+      <types1:Description/>
+      <types1:AppliesTo/>
+      <types1:Tags/>
+      <types1:VersionLabel>1.0</types1:VersionLabel>
+      <types1:State>CURRENT</types1:State>
+      <types1:ProcessGroup/>
+      <types1:CreatedBy>sathyanath.48@gmail.com.SAML2</types1:CreatedBy>
+      <types1:CreationDate>2020-02-04T10:30:52Z</types1:CreationDate>
+      <types1:ModifiedBy/>
+      <types1:PublicationStatus>unpublished</types1:PublicationStatus>
+      <types1:Entry>
+         <taskflow xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2010/10/avosScreenflow.xsd"
+                   xmlns:list="urn:activevos:spi:list:functions"
+                   displayName="Taskflow1"
+                   name="Taskflow1"
+                   overrideAPIName="false">
+            <appliesTo/>
+            <description/>
+            <tags/>
+            <generator>Informatica Process Designer 11</generator>
+            <notes/>
+            <deployment suspendOnFault="false" tracingLevel="verbose">
+               <rest/>
+            </deployment>
+            <flow id="a">
+               <start id="b">
+                  <link id="link1" targetId="c"/>
+               </start>
+               <end id="c"/>
+            </flow>
+         </taskflow>
+      </types1:Entry>
+      <types1:GUID>9ilDCBb0OeMcwZfYOq0qQp</types1:GUID>
+      <types1:DisplayName>Taskflow1</types1:DisplayName>
+   </types1:Item>
+   <types1:CurrentServerDateTime>2024-12-30T10:49:32.541Z</types1:CurrentServerDateTime>
+</aetgt:getResponse>
