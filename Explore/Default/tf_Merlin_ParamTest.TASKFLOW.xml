@@ -1,0 +1,224 @@
+<aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
+                   xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
+   <types1:Item>
+      <types1:EntryId>7Jk7KsqeErhNzUz-gt-44478498-2021-11-25T11:44:43.946Z::tf.xml</types1:EntryId>
+      <types1:Name>tf_Merlin_ParamTest</types1:Name>
+      <types1:MimeType>application/xml+taskflow</types1:MimeType>
+      <types1:Description/>
+      <types1:AppliesTo/>
+      <types1:Tags/>
+      <types1:VersionLabel>1.0</types1:VersionLabel>
+      <types1:State>CURRENT</types1:State>
+      <types1:ProcessGroup/>
+      <types1:CreatedBy>sn</types1:CreatedBy>
+      <types1:CreationDate>2021-11-25T11:44:44Z</types1:CreationDate>
+      <types1:ModifiedBy>sn</types1:ModifiedBy>
+      <types1:ModificationDate>2022-11-21T09:51:53Z</types1:ModificationDate>
+      <types1:PublicationStatus>published</types1:PublicationStatus>
+      <types1:PublishedBy>sn</types1:PublishedBy>
+      <types1:PublicationDate>2022-11-21T09:52:01Z</types1:PublicationDate>
+      <types1:PublishedContributionId>project:/tf.tf_Merlin_ParamTest/tf_Merlin_ParamTest.tf.xml</types1:PublishedContributionId>
+      <types1:Entry>
+         <taskflow xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2010/10/avosScreenflow.xsd"
+                   xmlns:tfm="http://schemas.active-endpoints.com/appmodules/screenflow/2021/04/taskflowModel.xsd"
+                   xmlns:list="urn:activevos:spi:list:functions"
+                   displayName="tf_Merlin_ParamTest"
+                   name="tf_Merlin_ParamTest"
+                   overrideAPIName="false">
+            <parameterSet xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2021/04/taskflowModel.xsd"/>
+            <appliesTo/>
+            <description/>
+            <tags/>
+            <generator>Informatica Process Designer 11</generator>
+            <tempFields>
+               <field description="" name="dt_ParamTest_ListOrgs" type="reference">
+                  <options>
+                     <option name="referenceTo">$po:mt-Merlin-ParamTest-ListOrgs</option>
+                     <option name="failOnNotRun">false</option>
+                     <option name="failOnFault">false</option>
+                  </options>
+               </field>
+               <field description="" name="dt_Parameter_Test" type="reference">
+                  <options>
+                     <option name="referenceTo">$po:mt-Merlin-Parameter-Test</option>
+                     <option name="failOnNotRun">false</option>
+                     <option name="failOnFault">false</option>
+                  </options>
+               </field>
+            </tempFields>
+            <notes/>
+            <deployment suspendOnFault="false" tracingLevel="verbose">
+               <rest/>
+            </deployment>
+            <flow id="a">
+               <start id="b">
+                  <link id="kddukknm" targetId="kd92t317"/>
+               </start>
+               <eventContainer id="kd92t317">
+                  <service id="kd92t300">
+                     <title>dt_ParamTest_ListOrgs</title>
+                     <serviceName>ICSExecuteDataTask</serviceName>
+                     <serviceGUID/>
+                     <serviceInput>
+                        <parameter name="Wait for Task to Complete" source="constant" updatable="true">true</parameter>
+                        <parameter name="Max Wait" source="constant" updatable="true">604800</parameter>
+                        <parameter name="Task Name" source="constant" updatable="true">mt_Merlin_ParamTest_ListOrgs</parameter>
+                        <parameter name="GUID" source="constant" updatable="true">64eFUZOtDmtkXOD0TC3LOu</parameter>
+                        <parameter name="Task Type" source="constant" updatable="true">MCT</parameter>
+                        <parameter name="Has Inout Parameters" source="constant" updatable="true">true</parameter>
+                        <parameter name="taskField" source="nested">
+                           <operation source="field" to="mt-Merlin-ParamTest-ListOrgs">temp.dt_ParamTest_ListOrgs</operation>
+                        </parameter>
+                     </serviceInput>
+                     <serviceOutput>
+                        <operation source="field" to="temp.dt_ParamTest_ListOrgs/output/Object_Name">Object Name</operation>
+                        <operation source="field" to="temp.dt_ParamTest_ListOrgs/output/Run_Id">Run Id</operation>
+                        <operation source="field" to="temp.dt_ParamTest_ListOrgs/output/Log_Id">Log Id</operation>
+                        <operation source="field" to="temp.dt_ParamTest_ListOrgs/output/Task_Id">Task Id</operation>
+                        <operation source="field" to="temp.dt_ParamTest_ListOrgs/output/Task_Status">Task Status</operation>
+                        <operation source="field"
+                                   to="temp.dt_ParamTest_ListOrgs/output/Success_Source_Rows">Success Source Rows</operation>
+                        <operation source="field"
+                                   to="temp.dt_ParamTest_ListOrgs/output/Failed_Source_Rows">Failed Source Rows</operation>
+                        <operation source="field"
+                                   to="temp.dt_ParamTest_ListOrgs/output/Success_Target_Rows">Success Target Rows</operation>
+                        <operation source="field"
+                                   to="temp.dt_ParamTest_ListOrgs/output/Failed_Target_Rows">Failed Target Rows</operation>
+                        <operation source="field" to="temp.dt_ParamTest_ListOrgs/output/Start_Time">Start Time</operation>
+                        <operation source="field" to="temp.dt_ParamTest_ListOrgs/output/End_Time">End Time</operation>
+                        <operation source="field" to="temp.dt_ParamTest_ListOrgs/output/Error_Message">Error Message</operation>
+                        <operation source="field" to="temp.dt_ParamTest_ListOrgs/output/TotalTransErrors">Total Transformation Errors</operation>
+                        <operation source="field" to="temp.dt_ParamTest_ListOrgs/output/FirstErrorCode">First Error Code</operation>
+                        <operation source="field" to="temp.dt_ParamTest_ListOrgs/inout/mv_BulkOrgList">mv_BulkOrgList</operation>
+                     </serviceOutput>
+                  </service>
+                  <link id="kvsdsphb" targetId="kvsdspl3"/>
+                  <events>
+                     <catch faultField="temp.dt_ParamTest_ListOrgs/fault"
+                            id="kd92t315"
+                            interrupting="true"
+                            name="error">
+                        <suspend/>
+                     </catch>
+                     <catch faultField="temp.dt_ParamTest_ListOrgs/fault"
+                            id="kd92t316"
+                            interrupting="true"
+                            name="warning"/>
+                  </events>
+               </eventContainer>
+               <eventContainer id="kvsdspl3">
+                  <service id="kddukknn">
+                     <title>dt_Parameter_Test</title>
+                     <serviceName>ICSExecuteDataTask</serviceName>
+                     <serviceGUID/>
+                     <serviceInput>
+                        <parameter name="Wait for Task to Complete" source="constant" updatable="true">true</parameter>
+                        <parameter name="Max Wait" source="constant" updatable="true">604800</parameter>
+                        <parameter name="Task Name" source="constant" updatable="true">mt_Merlin_Parameter_Test</parameter>
+                        <parameter name="GUID" source="constant" updatable="true">2E3MPetPh4Hi5Fj5gxNd24</parameter>
+                        <parameter name="Task Type" source="constant" updatable="true">MCT</parameter>
+                        <parameter name="Has Inout Parameters" source="constant" updatable="true">false</parameter>
+                        <parameter name="taskField" source="nested">
+                           <operation source="field" to="mt-Merlin-Parameter-Test">temp.dt_Parameter_Test</operation>
+                        </parameter>
+                     </serviceInput>
+                     <serviceOutput>
+                        <operation source="field" to="temp.dt_Parameter_Test/output/Object_Name">Object Name</operation>
+                        <operation source="field" to="temp.dt_Parameter_Test/output/Run_Id">Run Id</operation>
+                        <operation source="field" to="temp.dt_Parameter_Test/output/Log_Id">Log Id</operation>
+                        <operation source="field" to="temp.dt_Parameter_Test/output/Task_Id">Task Id</operation>
+                        <operation source="field" to="temp.dt_Parameter_Test/output/Task_Status">Task Status</operation>
+                        <operation source="field" to="temp.dt_Parameter_Test/output/Success_Source_Rows">Success Source Rows</operation>
+                        <operation source="field" to="temp.dt_Parameter_Test/output/Failed_Source_Rows">Failed Source Rows</operation>
+                        <operation source="field" to="temp.dt_Parameter_Test/output/Success_Target_Rows">Success Target Rows</operation>
+                        <operation source="field" to="temp.dt_Parameter_Test/output/Failed_Target_Rows">Failed Target Rows</operation>
+                        <operation source="field" to="temp.dt_Parameter_Test/output/Start_Time">Start Time</operation>
+                        <operation source="field" to="temp.dt_Parameter_Test/output/End_Time">End Time</operation>
+                        <operation source="field" to="temp.dt_Parameter_Test/output/Error_Message">Error Message</operation>
+                        <operation source="field" to="temp.dt_Parameter_Test/output/TotalTransErrors">Total Transformation Errors</operation>
+                        <operation source="field" to="temp.dt_Parameter_Test/output/FirstErrorCode">First Error Code</operation>
+                     </serviceOutput>
+                  </service>
+                  <link id="kvsdsph1" targetId="c"/>
+                  <events>
+                     <catch faultField="temp.dt_Parameter_Test/fault"
+                            id="kvsdspl1"
+                            interrupting="true"
+                            name="error">
+                        <suspend/>
+                     </catch>
+                     <catch faultField="temp.dt_Parameter_Test/fault"
+                            id="kvsdspl2"
+                            interrupting="true"
+                            name="warning"/>
+                  </events>
+               </eventContainer>
+               <end id="c"/>
+            </flow>
+            <dependencies>
+               <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
+                              displayName="mt-Merlin-ParamTest-ListOrgs"
+                              isByCopy="true"
+                              name="mt-Merlin-ParamTest-ListOrgs">
+                  <description/>
+                  <tags/>
+                  <detail>
+                     <field label="InOut Parameters"
+                            name="inout"
+                            nullable="true"
+                            required="false"
+                            type="reference"/>
+                     <field label="TaskProperties Parameters"
+                            name="taskProperties"
+                            nullable="true"
+                            required="false"
+                            type="reference"/>
+                     <field label="Output Parameters"
+                            name="output"
+                            nullable="true"
+                            required="false"
+                            type="reference"/>
+                     <field label="Fault"
+                            name="fault"
+                            nullable="true"
+                            required="false"
+                            type="reference"/>
+                  </detail>
+               </processObject>
+               <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
+                              displayName="mt-Merlin-Parameter-Test"
+                              isByCopy="true"
+                              name="mt-Merlin-Parameter-Test">
+                  <description/>
+                  <tags/>
+                  <detail>
+                     <field label="Input Parameters"
+                            name="input"
+                            nullable="true"
+                            required="false"
+                            type="reference"/>
+                     <field label="TaskProperties Parameters"
+                            name="taskProperties"
+                            nullable="true"
+                            required="false"
+                            type="reference"/>
+                     <field label="Output Parameters"
+                            name="output"
+                            nullable="true"
+                            required="false"
+                            type="reference"/>
+                     <field label="Fault"
+                            name="fault"
+                            nullable="true"
+                            required="false"
+                            type="reference"/>
+                  </detail>
+               </processObject>
+            </dependencies>
+         </taskflow>
+      </types1:Entry>
+      <types1:GUID>gk8FhsWQ3miiSocmCNWqUP</types1:GUID>
+      <types1:DisplayName>tf_Merlin_ParamTest</types1:DisplayName>
+   </types1:Item>
+   <types1:CurrentServerDateTime>2024-12-30T10:50:06.41Z</types1:CurrentServerDateTime>
+</aetgt:getResponse>
