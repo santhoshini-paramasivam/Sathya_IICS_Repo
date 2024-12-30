@@ -1,0 +1,50 @@
+{
+  "objectInfo" : {
+    "id" : "ayjcpp0ZpgFhrDF9gIc1UN",
+    "name" : "TF_polling_Logic",
+    "type" : "TASKFLOW",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "Lgaaa-gt-12163143-2023-04-13T12:16:40.609Z::tf.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "xml",
+  "updateTime" : "2024-12-30T10:26:34.923Z",
+  "objectRefs" : [ {
+    "id" : "eWOw9xkGy0TdL7vNtV42aR",
+    "name" : "mt_Polling_Logic_API",
+    "type" : "MTT",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0110ZH0Z0000000002M2"
+      },
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Santhoshini_Test/Hands_On"
+  } ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}

@@ -1,0 +1,47 @@
+{
+  "objectInfo" : {
+    "id" : "lfKDVXhlyw3jvCAVacRFOe",
+    "name" : "Tf_File_list",
+    "type" : "TASKFLOW",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "jnS24FsWTzIf6ri-gt-15451532-2023-04-14T14:09:19.148Z::tf.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "xml",
+  "updateTime" : "2024-12-30T10:26:34.923Z",
+  "objectRefs" : [ {
+    "id" : "6BgOHjLoIESeoOakksGCMI",
+    "name" : "File_Listnener_dummy",
+    "type" : "MI_FILE_LISTENER",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "38757"
+      },
+      "contextAttributes" : [ ],
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "Binary",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Santhoshini_Test/Hands_On"
+  } ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}

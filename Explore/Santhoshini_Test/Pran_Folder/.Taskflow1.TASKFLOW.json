@@ -1,0 +1,47 @@
+{
+  "objectInfo" : {
+    "id" : "aJ9iXVi0GMNkDQZhhKkUA1",
+    "name" : "Taskflow1",
+    "type" : "TASKFLOW",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "jsSbdpsaaaa-gt-5055801-2024-10-18T09:50:29.151Z::tf.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "xml",
+  "updateTime" : "2024-12-30T10:26:34.922Z",
+  "objectRefs" : [ {
+    "id" : "5RK5EPgMrQMc7crOX5s2cy",
+    "name" : "M_INC_LOAD",
+    "type" : "MTT",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0110ZH0Z0000000003TK"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/__Pran_Tasks_"
+  } ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}

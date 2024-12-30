@@ -1,0 +1,50 @@
+{
+  "objectInfo" : {
+    "id" : "0XR36WWHpJhcoiS7fDSWMX",
+    "name" : "m_unlkp_oracle",
+    "type" : "DTEMPLATE",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0110ZH170000000005X5"
+      },
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "zip",
+  "updateTime" : "2024-12-30T10:26:34.918Z",
+  "objectRefs" : [ {
+    "id" : "8kt8u1wBJd4kNbjoQQ5ws0",
+    "name" : "Oracle_C04257964E",
+    "type" : "Connection",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0110ZH0B000000000164"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "created for the schema C04257964E",
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/SYS"
+  } ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}

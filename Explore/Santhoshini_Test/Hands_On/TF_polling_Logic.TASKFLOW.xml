@@ -1,0 +1,181 @@
+<aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
+                   xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
+   <types1:Item>
+      <types1:EntryId>Lgaaa-gt-12163143-2023-04-13T12:16:40.609Z::tf.xml</types1:EntryId>
+      <types1:Name>TF_polling_Logic</types1:Name>
+      <types1:MimeType>application/xml+taskflow</types1:MimeType>
+      <types1:Description/>
+      <types1:AppliesTo/>
+      <types1:Tags/>
+      <types1:VersionLabel>1.0</types1:VersionLabel>
+      <types1:State>CURRENT</types1:State>
+      <types1:ProcessGroup/>
+      <types1:CreatedBy>santhoshini</types1:CreatedBy>
+      <types1:CreationDate>2023-04-13T12:16:41Z</types1:CreationDate>
+      <types1:ModifiedBy>santhoshini</types1:ModifiedBy>
+      <types1:ModificationDate>2023-04-13T12:53:12Z</types1:ModificationDate>
+      <types1:PublicationStatus>published</types1:PublicationStatus>
+      <types1:PublishedBy>santhoshini</types1:PublishedBy>
+      <types1:PublicationDate>2023-04-13T12:53:18Z</types1:PublicationDate>
+      <types1:PublishedContributionId>project:/tf.TF_polling_Logic/TF_polling_Logic.tf.xml</types1:PublishedContributionId>
+      <types1:Entry>
+         <taskflow xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2010/10/avosScreenflow.xsd"
+                   xmlns:tfm="http://schemas.active-endpoints.com/appmodules/screenflow/2021/04/taskflowModel.xsd"
+                   xmlns:list="urn:activevos:spi:list:functions"
+                   displayName="TF_polling_Logic"
+                   name="TF_polling_Logic"
+                   overrideAPIName="false">
+            <parameterSet xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2021/04/taskflowModel.xsd"/>
+            <appliesTo/>
+            <description/>
+            <tags/>
+            <generator>Informatica Process Designer 11</generator>
+            <tempFields>
+               <field description="" name="mt_Polling_Logic_API" type="reference">
+                  <options>
+                     <option name="failOnNotRun">false</option>
+                     <option name="failOnFault">false</option>
+                     <option name="referenceTo">$po:mt-Polling-Logic-API</option>
+                  </options>
+               </field>
+            </tempFields>
+            <notes/>
+            <deployment skipIfRunning="false" suspendOnFault="false" tracingLevel="verbose">
+               <rest/>
+            </deployment>
+            <flow id="a">
+               <start id="b">
+                  <link id="lgf2qdkz" targetId="lgf2qdl4"/>
+               </start>
+               <eventContainer id="lgf2qdl4">
+                  <service id="lgf2qdky">
+                     <title>mt_Polling_Logic_API</title>
+                     <serviceName>ICSExecuteDataTask</serviceName>
+                     <serviceGUID/>
+                     <serviceInput>
+                        <parameter name="Wait for Task to Complete" source="constant" updatable="true">true</parameter>
+                        <parameter name="Max Wait" source="constant" updatable="true">604800</parameter>
+                        <parameter name="Task Name" source="constant" updatable="true">mt_Polling_Logic_API</parameter>
+                        <parameter name="GUID" source="constant" updatable="true">eWOw9xkGy0TdL7vNtV42aR</parameter>
+                        <parameter name="Task Type" source="constant" updatable="true">MCT</parameter>
+                        <parameter name="Has Inout Parameters" source="constant" updatable="true">true</parameter>
+                        <parameter name="taskField" source="nested">
+                           <operation source="field" to="mt-Polling-Logic-API">temp.mt_Polling_Logic_API</operation>
+                        </parameter>
+                     </serviceInput>
+                     <serviceOutput>
+                        <operation source="field" to="temp.mt_Polling_Logic_API/output/Object_Name">Object Name</operation>
+                        <operation source="field" to="temp.mt_Polling_Logic_API/output/Run_Id">Run Id</operation>
+                        <operation source="field" to="temp.mt_Polling_Logic_API/output/Log_Id">Log Id</operation>
+                        <operation source="field" to="temp.mt_Polling_Logic_API/output/Task_Id">Task Id</operation>
+                        <operation source="field" to="temp.mt_Polling_Logic_API/output/Task_Status">Task Status</operation>
+                        <operation source="field"
+                                   to="temp.mt_Polling_Logic_API/output/Success_Source_Rows">Success Source Rows</operation>
+                        <operation source="field" to="temp.mt_Polling_Logic_API/output/Failed_Source_Rows">Failed Source Rows</operation>
+                        <operation source="field"
+                                   to="temp.mt_Polling_Logic_API/output/Success_Target_Rows">Success Target Rows</operation>
+                        <operation source="field" to="temp.mt_Polling_Logic_API/output/Failed_Target_Rows">Failed Target Rows</operation>
+                        <operation source="field" to="temp.mt_Polling_Logic_API/output/Start_Time">Start Time</operation>
+                        <operation source="field" to="temp.mt_Polling_Logic_API/output/End_Time">End Time</operation>
+                        <operation source="field" to="temp.mt_Polling_Logic_API/output/Error_Message">Error Message</operation>
+                        <operation source="field" to="temp.mt_Polling_Logic_API/output/TotalTransErrors">Total Transformation Errors</operation>
+                        <operation source="field" to="temp.mt_Polling_Logic_API/output/FirstErrorCode">First Error Code</operation>
+                        <operation source="field" to="temp.mt_Polling_Logic_API/inout/status_value">status_value</operation>
+                        <operation source="field" to="temp.mt_Polling_Logic_API/inout/counter_parameter">counter_parameter</operation>
+                     </serviceOutput>
+                  </service>
+                  <link id="lgf2qdny" targetId="lgf2qdmd"/>
+                  <events>
+                     <catch faultField="temp.mt_Polling_Logic_API/fault"
+                            id="lgf2qdl2"
+                            interrupting="true"
+                            name="error">
+                        <suspend/>
+                     </catch>
+                     <catch faultField="temp.mt_Polling_Logic_API/fault"
+                            id="lgf2qdl3"
+                            interrupting="true"
+                            name="warning"/>
+                  </events>
+               </eventContainer>
+               <container id="lgf2qdmd" type="exclusive">
+                  <title>Decision 1</title>
+                  <flow id="lgf2qdmh">
+                     <assignment id="lgf2qdoe">
+                        <title>Polling_Assignment</title>
+                        <operation source="formula"
+                                   to="temp.mt_Polling_Logic_API[1]/inout[1]/counter_parameter">
+                           <expression language="XQuery">$temp.mt_Polling_Logic_API[1]/inout[1]/counter_parameter+1</expression>
+                        </operation>
+                        <link id="lgf2qdpj" targetId="lgf2qdph"/>
+                     </assignment>
+                     <jumpTo id="lgf2qdph">
+                        <link id="lgf2qdpi" targetId="lgf2qdl4"/>
+                     </jumpTo>
+                  </flow>
+                  <flow id="lgf2qdmk">
+                     <assignment id="lgf2qdo1">
+                        <title>asgmt_Restv2_getStatus</title>
+                        <operation source="constant"
+                                   to="temp.mt_Polling_Logic_API[1]/inout[1]/counter_parameter">0</operation>
+                        <operation source="constant"
+                                   to="temp.mt_Polling_Logic_API[1]/inout[1]/status_value"/>
+                     </assignment>
+                     <link id="lgf2qdml" targetId="lgf2qdmd" type="containerLink"/>
+                  </flow>
+                  <link id="lgf2qdmg" targetId="lgf2qdmh" type="containerLink">
+                     <condition source="formula">
+                        <function name="string-equals">
+                           <arg name="left">{$temp.mt_Polling_Logic_API[1]/inout[1]/status_value}</arg>
+                           <arg name="right">running</arg>
+                        </function>
+                     </condition>
+                  </link>
+                  <link id="lgf2qdmj" targetId="lgf2qdmk" type="containerLink"/>
+                  <link id="lgf2qdmf" targetId="c"/>
+               </container>
+               <end id="c"/>
+            </flow>
+            <dependencies>
+               <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
+                              displayName="mt-Polling-Logic-API"
+                              isByCopy="true"
+                              name="mt-Polling-Logic-API">
+                  <description/>
+                  <tags/>
+                  <detail>
+                     <field label="InOut Parameters"
+                            name="inout"
+                            nullable="true"
+                            required="false"
+                            type="reference"/>
+                     <field label="TaskProperties Parameters"
+                            name="taskProperties"
+                            nullable="true"
+                            required="false"
+                            type="reference"/>
+                     <field label="Output Parameters"
+                            name="output"
+                            nullable="true"
+                            required="false"
+                            type="reference"/>
+                     <field label="Fault"
+                            name="fault"
+                            nullable="true"
+                            required="false"
+                            type="reference"/>
+                     <field label="Max Wait (Seconds)"
+                            name="Max_Wait"
+                            nullable="true"
+                            required="false"
+                            type="int"/>
+                  </detail>
+               </processObject>
+            </dependencies>
+         </taskflow>
+      </types1:Entry>
+      <types1:GUID>ayjcpp0ZpgFhrDF9gIc1UN</types1:GUID>
+      <types1:DisplayName>TF_polling_Logic</types1:DisplayName>
+   </types1:Item>
+   <types1:CurrentServerDateTime>2024-12-30T10:26:34.472Z</types1:CurrentServerDateTime>
+</aetgt:getResponse>

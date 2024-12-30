@@ -1,0 +1,50 @@
+{
+  "objectInfo" : {
+    "id" : "9gyzuhERLyidXb0qYPbR2y",
+    "name" : "unLkp_test",
+    "type" : "DTEMPLATE",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0110ZH170000000005WT"
+      },
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "JSON",
+        "documentState" : "INVALID"
+      }
+    }
+  },
+  "dataFileExtension" : "zip",
+  "updateTime" : "2024-12-30T10:26:34.919Z",
+  "objectRefs" : [ {
+    "id" : "eCNB94EEeghguzFd7OmkwH",
+    "name" : "Flatfile_01",
+    "type" : "Connection",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0110ZH0B00000000015W"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "Created for flatfile connections in path /root/Downloads/Flatfile_Test under host  san1",
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/SYS"
+  } ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}

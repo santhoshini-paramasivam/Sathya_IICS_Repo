@@ -1,0 +1,137 @@
+<aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
+                   xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
+   <types1:Item>
+      <types1:EntryId>jnS24FsWTzIf6ri-gt-15451532-2023-04-14T14:09:19.148Z::tf.xml</types1:EntryId>
+      <types1:Name>Tf_File_list</types1:Name>
+      <types1:MimeType>application/xml+taskflow</types1:MimeType>
+      <types1:Description/>
+      <types1:AppliesTo/>
+      <types1:Tags/>
+      <types1:VersionLabel>1.0</types1:VersionLabel>
+      <types1:State>CURRENT</types1:State>
+      <types1:ProcessGroup/>
+      <types1:CreatedBy>santhoshini</types1:CreatedBy>
+      <types1:CreationDate>2023-04-14T14:09:19Z</types1:CreationDate>
+      <types1:ModifiedBy>sn</types1:ModifiedBy>
+      <types1:ModificationDate>2023-04-18T05:57:41Z</types1:ModificationDate>
+      <types1:PublicationStatus>unpublished</types1:PublicationStatus>
+      <types1:Entry>
+         <taskflow xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2010/10/avosScreenflow.xsd"
+                   xmlns:tfm="http://schemas.active-endpoints.com/appmodules/screenflow/2021/04/taskflowModel.xsd"
+                   xmlns:list="urn:activevos:spi:list:functions"
+                   displayName="Tf_File_list"
+                   name="Tf_File_list"
+                   overrideAPIName="false">
+            <parameterSet xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2021/04/taskflowModel.xsd"/>
+            <appliesTo/>
+            <description/>
+            <tags/>
+            <generator>Informatica Process Designer 11</generator>
+            <tempFields>
+               <field description="" name="File Watch Task 1" type="reference">
+                  <options>
+                     <option name="referenceTo">$po:File-Listnener-dummy-6BgOHjLoIESeoOakksGCMI</option>
+                  </options>
+               </field>
+            </tempFields>
+            <notes/>
+            <deployment skipIfRunning="false" suspendOnFault="false" tracingLevel="verbose">
+               <rest/>
+            </deployment>
+            <flow id="a">
+               <start id="b">
+                  <link id="lggmgfj0" targetId="lggmgfhu"/>
+               </start>
+               <container id="lggmgfhu" type="exclusive">
+                  <title>Decision 1</title>
+                  <flow id="lggmgfhy">
+                     <eventContainer id="lggmgfjj">
+                        <service id="lggmgfi7">
+                           <title>File Watch Task 1</title>
+                           <serviceName>DIExecuteServiceTaskFileWatchTaskImpl</serviceName>
+                           <serviceGUID/>
+                           <serviceInput>
+                              <parameter name="Wait for Task to Complete" source="constant" updatable="true">true</parameter>
+                              <parameter name="Max Wait" source="constant" updatable="true">604800</parameter>
+                              <parameter name="Task Name" source="constant" updatable="true">File_Listnener_dummy</parameter>
+                              <parameter name="GUID" source="constant" updatable="true">6BgOHjLoIESeoOakksGCMI</parameter>
+                              <parameter name="Task Type" source="constant" updatable="true">MI_FILE_LISTENER</parameter>
+                              <parameter name="serviceProviderId" source="constant" updatable="true">filelistener</parameter>
+                              <parameter name="serviceProviderContextPath"
+                                         source="constant"
+                                         updatable="true">filelistener/</parameter>
+                              <parameter name="taskField" source="nested">
+                                 <operation source="field" to="File-Listnener-dummy-6BgOHjLoIESeoOakksGCMI">temp.File Watch Task 1</operation>
+                                 <operation source="constant"
+                                            to="File-Listnener-dummy-6BgOHjLoIESeoOakksGCMI/input[1]/notifyExistingFiles">true</operation>
+                              </parameter>
+                           </serviceInput>
+                           <serviceOutput>
+                              <operation source="field" to="temp.File Watch Task 1/output/fileEvents">fileEvents</operation>
+                           </serviceOutput>
+                        </service>
+                        <events>
+                           <catch faultField="temp.File Watch Task 1/fault"
+                                  id="lggmgfhm"
+                                  interrupting="true"
+                                  name="error">
+                              <suspend/>
+                           </catch>
+                        </events>
+                     </eventContainer>
+                     <link id="lggmgfhz" targetId="lggmgfhu" type="containerLink"/>
+                  </flow>
+                  <flow id="lggmgfi1">
+                     <link id="lggmgfk7" targetId="lggmgfhu" type="containerLink"/>
+                  </flow>
+                  <link id="lggmgfhx" targetId="lggmgfhy" type="containerLink">
+                     <condition source="formula">
+                        <function name="true">
+                           <arg name="field">{$temp.FileWatchTask1[1]/input[1]/notifyExistingFiles}</arg>
+                        </function>
+                     </condition>
+                  </link>
+                  <link id="lggmgfi0" targetId="lggmgfi1" type="containerLink">
+                     <condition source="formula">
+                        <function name="false">
+                           <arg name="field">{$temp.FileWatchTask1[1]/input[1]/notifyExistingFiles}</arg>
+                        </function>
+                     </condition>
+                  </link>
+                  <link id="lggmgfi6" targetId="c"/>
+               </container>
+               <end id="c"/>
+            </flow>
+            <dependencies>
+               <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
+                              displayName="File-Listnener-dummy-6BgOHjLoIESeoOakksGCMI"
+                              isByCopy="true"
+                              name="File-Listnener-dummy-6BgOHjLoIESeoOakksGCMI">
+                  <description/>
+                  <tags/>
+                  <detail>
+                     <field label="Fault"
+                            name="fault"
+                            nullable="true"
+                            required="false"
+                            type="reference"/>
+                     <field label="Input Parameters"
+                            name="input"
+                            nullable="true"
+                            required="false"
+                            type="reference"/>
+                     <field label="Output Parameters"
+                            name="output"
+                            nullable="true"
+                            required="false"
+                            type="reference"/>
+                  </detail>
+               </processObject>
+            </dependencies>
+         </taskflow>
+      </types1:Entry>
+      <types1:GUID>lfKDVXhlyw3jvCAVacRFOe</types1:GUID>
+      <types1:DisplayName>Tf_File_list</types1:DisplayName>
+   </types1:Item>
+   <types1:CurrentServerDateTime>2024-12-30T10:26:34.118Z</types1:CurrentServerDateTime>
+</aetgt:getResponse>

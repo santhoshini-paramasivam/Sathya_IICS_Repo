@@ -1,0 +1,70 @@
+{
+  "objectInfo" : {
+    "id" : "085QkqZfUIIlhMjYa3XjaE",
+    "name" : "Sync_03_FF_SF_Upd",
+    "type" : "DSS",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0110ZH0I00000000003J"
+      },
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "zip",
+  "updateTime" : "2024-12-30T10:26:34.921Z",
+  "objectRefs" : [ {
+    "id" : "eCNB94EEeghguzFd7OmkwH",
+    "name" : "Flatfile_01",
+    "type" : "Connection",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0110ZH0B00000000015W"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "Created for flatfile connections in path /root/Downloads/Flatfile_Test under host  san1",
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/SYS"
+  }, {
+    "id" : "b6ieKOjeHixfF0bSBIweAc",
+    "name" : "Salesforce_01",
+    "type" : "Connection",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0110ZH0B00000000015V"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "Create for Salesforce",
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/SYS"
+  } ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}
