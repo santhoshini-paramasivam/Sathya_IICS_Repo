@@ -1,7 +1,7 @@
 {
   "objectInfo" : {
-    "id" : "calNf5CKsqzeOMn6c8NdSc",
-    "name" : "m_Polling_Logic_API",
+    "id" : "6MM25zMnYYOcNZmUxPBLMN",
+    "name" : "m_postgres_update",
     "type" : "DTEMPLATE",
     "metadata" : {
       "modelVersion" : {
@@ -9,7 +9,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0110ZH170000000005YM"
+        "repoHandle" : "0110ZH170000000006Z1"
       },
       "contextAttributes" : [ {
         "name" : "id",
@@ -23,10 +23,10 @@
     }
   },
   "dataFileExtension" : "zip",
-  "updateTime" : "2024-12-30T10:32:31.817Z",
+  "updateTime" : "2024-12-30T10:32:31.819Z",
   "objectRefs" : [ {
-    "id" : "7NvAWDQPWP8e1tT95W8nYJ",
-    "name" : "RestV2_Santhoshini",
+    "id" : "bvKD04ToS0VgtDfc0B8Ve7",
+    "name" : "Sandy_PostgreSQL",
     "type" : "Connection",
     "metadata" : {
       "modelVersion" : {
@@ -34,31 +34,11 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0110ZH0B00000000016S"
+        "repoHandle" : "0110ZH0B0000000001VX"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
         "description" : null,
-        "contentType" : "JSON",
-        "documentState" : "COMPLETE"
-      }
-    },
-    "path" : "/SYS"
-  }, {
-    "id" : "eCNB94EEeghguzFd7OmkwH",
-    "name" : "Flatfile_01",
-    "type" : "Connection",
-    "metadata" : {
-      "modelVersion" : {
-        "major" : 0,
-        "minor" : 0
-      },
-      "repoInfo" : {
-        "repoHandle" : "0110ZH0B00000000015W"
-      },
-      "contextAttributes" : null,
-      "additionalInfo" : {
-        "description" : "Created for flatfile connections in path /root/Downloads/Flatfile_Test under host  san1",
         "contentType" : "JSON",
         "documentState" : "COMPLETE"
       }

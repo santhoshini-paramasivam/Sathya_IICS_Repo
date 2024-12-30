@@ -1,7 +1,7 @@
 {
   "objectInfo" : {
-    "id" : "calNf5CKsqzeOMn6c8NdSc",
-    "name" : "m_Polling_Logic_API",
+    "id" : "gMKmt4e0TSbgba602sNTmn",
+    "name" : "m_param_04670257",
     "type" : "DTEMPLATE",
     "metadata" : {
       "modelVersion" : {
@@ -9,14 +9,14 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0110ZH170000000005YM"
+        "repoHandle" : "0110ZH170000000006ZE"
       },
       "contextAttributes" : [ {
         "name" : "id",
         "value" : "@1"
       } ],
       "additionalInfo" : {
-        "description" : "",
+        "description" : "Created for case 04670257 - testing param - assurance service",
         "contentType" : "JSON",
         "documentState" : "VALID"
       }
@@ -25,8 +25,8 @@
   "dataFileExtension" : "zip",
   "updateTime" : "2024-12-30T10:32:31.817Z",
   "objectRefs" : [ {
-    "id" : "7NvAWDQPWP8e1tT95W8nYJ",
-    "name" : "RestV2_Santhoshini",
+    "id" : "aIxzJmghWP3edbKa750bOQ",
+    "name" : "SQL_Server_Sandy",
     "type" : "Connection",
     "metadata" : {
       "modelVersion" : {
@@ -34,31 +34,11 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0110ZH0B00000000016S"
+        "repoHandle" : "0110ZH0B0000000001W9"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
         "description" : null,
-        "contentType" : "JSON",
-        "documentState" : "COMPLETE"
-      }
-    },
-    "path" : "/SYS"
-  }, {
-    "id" : "eCNB94EEeghguzFd7OmkwH",
-    "name" : "Flatfile_01",
-    "type" : "Connection",
-    "metadata" : {
-      "modelVersion" : {
-        "major" : 0,
-        "minor" : 0
-      },
-      "repoInfo" : {
-        "repoHandle" : "0110ZH0B00000000015W"
-      },
-      "contextAttributes" : null,
-      "additionalInfo" : {
-        "description" : "Created for flatfile connections in path /root/Downloads/Flatfile_Test under host  san1",
         "contentType" : "JSON",
         "documentState" : "COMPLETE"
       }

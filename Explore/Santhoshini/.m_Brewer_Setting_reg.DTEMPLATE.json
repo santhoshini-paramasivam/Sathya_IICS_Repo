@@ -1,7 +1,7 @@
 {
   "objectInfo" : {
-    "id" : "calNf5CKsqzeOMn6c8NdSc",
-    "name" : "m_Polling_Logic_API",
+    "id" : "2ERyPlTTaWCb3IqASOZ8AI",
+    "name" : "m_Brewer_Setting_reg",
     "type" : "DTEMPLATE",
     "metadata" : {
       "modelVersion" : {
@@ -9,7 +9,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0110ZH170000000005YM"
+        "repoHandle" : "0110ZH170000000006W3"
       },
       "contextAttributes" : [ {
         "name" : "id",
@@ -23,10 +23,10 @@
     }
   },
   "dataFileExtension" : "zip",
-  "updateTime" : "2024-12-30T10:32:31.817Z",
+  "updateTime" : "2024-12-30T10:32:31.816Z",
   "objectRefs" : [ {
-    "id" : "7NvAWDQPWP8e1tT95W8nYJ",
-    "name" : "RestV2_Santhoshini",
+    "id" : "cRPWinSW5gPcbneKpVkV25",
+    "name" : "Sandy_Cosmos",
     "type" : "Connection",
     "metadata" : {
       "modelVersion" : {
@@ -34,19 +34,19 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0110ZH0B00000000016S"
+        "repoHandle" : "0110ZH0B0000000001UF"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
-        "description" : null,
+        "description" : "Created for case 04647407",
         "contentType" : "JSON",
         "documentState" : "COMPLETE"
       }
     },
     "path" : "/SYS"
   }, {
-    "id" : "eCNB94EEeghguzFd7OmkwH",
-    "name" : "Flatfile_01",
+    "id" : "h95fARPThYPfk7MnZjh448",
+    "name" : "Flatfile_Sandy",
     "type" : "Connection",
     "metadata" : {
       "modelVersion" : {
@@ -54,11 +54,11 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0110ZH0B00000000015W"
+        "repoHandle" : "0110ZH0B0000000001UG"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
-        "description" : "Created for flatfile connections in path /root/Downloads/Flatfile_Test under host  san1",
+        "description" : null,
         "contentType" : "JSON",
         "documentState" : "COMPLETE"
       }
