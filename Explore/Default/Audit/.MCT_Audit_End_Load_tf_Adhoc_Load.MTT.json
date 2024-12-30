@@ -1,0 +1,93 @@
+{
+  "objectInfo" : {
+    "id" : "4qnQvQOrDo8iB8X66dhba7",
+    "name" : "MCT_Audit_End_Load_tf_Adhoc_Load",
+    "type" : "MTT",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0110ZH0Z00000000030W"
+      },
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "zip",
+  "updateTime" : "2024-12-30T10:47:36.734Z",
+  "objectRefs" : [ {
+    "id" : "20PvuhO7Q8Kdw75U5tHNsU",
+    "name" : "m_Audit_End_Load_tf_Adhoc_Load",
+    "type" : "DTEMPLATE",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0110ZH170000000006E0"
+      },
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Default/Audit"
+  }, {
+    "id" : "4RnLDcxzayIe0S76dwqDEB",
+    "name" : "Merlin_Redshift_V2",
+    "type" : "Connection",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0110ZH0B00000000002V"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "Redshift V2 connection for Proj Merlin",
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/SYS"
+  }, {
+    "id" : "4lNtuQ45dlVdxxUXRixLmK",
+    "name" : "SAG_Merlin",
+    "type" : "AgentGroup",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0110ZH2500000000000K"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/SYS"
+  } ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}

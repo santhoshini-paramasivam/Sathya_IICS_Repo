@@ -1,0 +1,70 @@
+{
+  "objectInfo" : {
+    "id" : "5HjB85aq7Bwld2Uc74Ekgl",
+    "name" : "m_VXF_GBL_AUDIT_UPD_SUBPROC",
+    "type" : "DTEMPLATE",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0110ZH1700000000000D"
+      },
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : "Mapping to close the Sub Process ID for Given Process Name",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "zip",
+  "updateTime" : "2024-12-30T10:47:36.732Z",
+  "objectRefs" : [ {
+    "id" : "0fXODGddnwRl8ILFK67sO9",
+    "name" : "vaxforce_emea_postgre_onprem_ref",
+    "type" : "Connection",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0110ZH0B00000000000C"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "VaxForce Postgre DB Cloud connection - dal schema",
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/SYS"
+  }, {
+    "id" : "06jlRQ7FiAgexEOn02h4sV",
+    "name" : "vaxforce_emea_postgre_onprem_stage",
+    "type" : "Connection",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0110ZH0B00000000000D"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "VaxForce Postgre DB On premise connection - stage schema",
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/SYS"
+  } ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}

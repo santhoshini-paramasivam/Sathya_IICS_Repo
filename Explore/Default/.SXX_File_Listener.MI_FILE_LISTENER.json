@@ -1,0 +1,47 @@
+{
+  "objectInfo" : {
+    "id" : "8LJ7kK6P7e9htOzFilFcU5",
+    "name" : "SXX_File_Listener",
+    "type" : "MI_FILE_LISTENER",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "30217"
+      },
+      "contextAttributes" : [ ],
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "Binary",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "dat",
+  "updateTime" : "2024-12-30T10:47:36.729Z",
+  "objectRefs" : [ {
+    "id" : "4VznbTbmeRblNDsQIlgNWX",
+    "name" : "_Farha_AgentGroup",
+    "type" : "AgentGroup",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0110ZH2500000000004Y"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/SYS"
+  } ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}

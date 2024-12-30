@@ -1,0 +1,70 @@
+{
+  "objectInfo" : {
+    "id" : "anUeymTqpUVleMlHChB0SD",
+    "name" : "SXX_Listener_Taskflow",
+    "type" : "TASKFLOW",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "HryzfYtjCtbdsre-gt-10922843-2022-07-14T09:28:38.541Z::tf.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "xml",
+  "updateTime" : "2024-12-30T10:47:36.731Z",
+  "objectRefs" : [ {
+    "id" : "9hvCczIyqDMc9MurHeRJk7",
+    "name" : "SXX_File_Listener_Task",
+    "type" : "DSS",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0110ZH0I00000000001Z"
+      },
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Default"
+  }, {
+    "id" : "8LJ7kK6P7e9htOzFilFcU5",
+    "name" : "SXX_File_Listener",
+    "type" : "MI_FILE_LISTENER",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "30217"
+      },
+      "contextAttributes" : [ ],
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "Binary",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Default"
+  } ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}

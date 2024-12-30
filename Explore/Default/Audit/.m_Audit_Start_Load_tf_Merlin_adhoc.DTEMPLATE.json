@@ -1,0 +1,50 @@
+{
+  "objectInfo" : {
+    "id" : "flQjOW7SMeCeadAcDlrQSS",
+    "name" : "m_Audit_Start_Load_tf_Merlin_adhoc",
+    "type" : "DTEMPLATE",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0110ZH170000000006E6"
+      },
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "zip",
+  "updateTime" : "2024-12-30T10:47:36.733Z",
+  "objectRefs" : [ {
+    "id" : "4RnLDcxzayIe0S76dwqDEB",
+    "name" : "Merlin_Redshift_V2",
+    "type" : "Connection",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0110ZH0B00000000002V"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "Redshift V2 connection for Proj Merlin",
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/SYS"
+  } ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}

@@ -1,0 +1,53 @@
+{
+  "objectInfo" : {
+    "id" : "bQWM1tT11gXiNPSQIsrwyq",
+    "name" : "Sujai_Business_RestV2",
+    "type" : "BSERVICE",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0110ZH2700000000004X"
+      },
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      }, {
+        "name" : "0110ZH2800000000005P",
+        "value" : "bQWM1tT11gXiNPSQIsrwyq@getXMLById"
+      } ],
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "zip",
+  "updateTime" : "2024-12-30T10:47:36.730Z",
+  "objectRefs" : [ {
+    "id" : "03wTJzZ8GfllBi1NAPYMAj",
+    "name" : "Sujai_RestV2_Sample",
+    "type" : "Connection",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0110ZH0B0000000001XY"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/SYS"
+  } ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}
