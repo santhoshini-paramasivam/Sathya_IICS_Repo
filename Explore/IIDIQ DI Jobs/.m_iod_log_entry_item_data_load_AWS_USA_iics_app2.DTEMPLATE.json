@@ -1,32 +1,7 @@
 {
   "objectInfo" : {
-    "id" : "4WOM51moUBIgn3PUfTQisK",
-    "name" : "mt_CCON-101834_testing",
-    "type" : "MTT",
-    "metadata" : {
-      "modelVersion" : {
-        "major" : 0,
-        "minor" : 0
-      },
-      "repoInfo" : {
-        "repoHandle" : "0110ZH0Z0000000003TN"
-      },
-      "contextAttributes" : [ {
-        "name" : "id",
-        "value" : "@1"
-      } ],
-      "additionalInfo" : {
-        "description" : null,
-        "contentType" : "JSON",
-        "documentState" : "VALID"
-      }
-    }
-  },
-  "dataFileExtension" : "zip",
-  "updateTime" : "2024-12-30T10:48:38.204Z",
-  "objectRefs" : [ {
-    "id" : "8iMu0AdkwtzeqKBPFR35kr",
-    "name" : "m_CCON-101834_testing",
+    "id" : "aucEsfBBHBdbIz6YuDQo6B",
+    "name" : "m_iod_log_entry_item_data_load_AWS_USA_iics_app2",
     "type" : "DTEMPLATE",
     "metadata" : {
       "modelVersion" : {
@@ -34,7 +9,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0110ZH1700000000077X"
+        "repoHandle" : "0110ZH170000000000XM"
       },
       "contextAttributes" : [ {
         "name" : "id",
@@ -45,31 +20,13 @@
         "contentType" : "JSON",
         "documentState" : "VALID"
       }
-    },
-    "path" : "/Explore/Santhoshini"
-  }, {
-    "id" : "4kScHEiW85GfSHEVjKE3YT",
-    "name" : "invprani12linux01",
-    "type" : "AgentGroup",
-    "metadata" : {
-      "modelVersion" : {
-        "major" : 0,
-        "minor" : 0
-      },
-      "repoInfo" : {
-        "repoHandle" : "0110ZH250000000000CS"
-      },
-      "contextAttributes" : null,
-      "additionalInfo" : {
-        "description" : null,
-        "contentType" : "JSON",
-        "documentState" : "VALID"
-      }
-    },
-    "path" : "/SYS"
-  }, {
-    "id" : "aLltTXWFVGXgjFEDiXxG0m",
-    "name" : "Oracle_varsb",
+    }
+  },
+  "dataFileExtension" : "zip",
+  "updateTime" : "2024-12-30T10:48:38.207Z",
+  "objectRefs" : [ {
+    "id" : "3PZdksEs18vkVc0UA0ieKw",
+    "name" : "Florence_Redshift",
     "type" : "Connection",
     "metadata" : {
       "modelVersion" : {
@@ -77,19 +34,19 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0110ZH0B0000000000PW"
+        "repoHandle" : "0110ZH0B00000000003O"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
-        "description" : "Connects to varsb",
+        "description" : null,
         "contentType" : "JSON",
         "documentState" : "COMPLETE"
       }
     },
     "path" : "/SYS"
   }, {
-    "id" : "h95fARPThYPfk7MnZjh448",
-    "name" : "Flatfile_Sandy",
+    "id" : "dXsDH6GCXcRdtFHm94r3Cq",
+    "name" : "IICS_Redshift_Src_QA",
     "type" : "Connection",
     "metadata" : {
       "modelVersion" : {
@@ -97,7 +54,27 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0110ZH0B0000000001UG"
+        "repoHandle" : "0110ZH0B00000000003N"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/SYS"
+  }, {
+    "id" : "6HmBaVrViwOlcB29xE4pQQ",
+    "name" : "FF_",
+    "type" : "Connection",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0110ZH0B0000000000GE"
       },
       "contextAttributes" : null,
       "additionalInfo" : {

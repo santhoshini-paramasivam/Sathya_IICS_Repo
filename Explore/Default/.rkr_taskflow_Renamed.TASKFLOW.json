@@ -1,0 +1,27 @@
+{
+  "objectInfo" : {
+    "id" : "iFgwEtMIggudMwxV2HjeIT",
+    "name" : "rkr_taskflow_Renamed",
+    "type" : "TASKFLOW",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "tZK0CYybdsMkdyp-gt-24623413-2024-06-06T05:58:52.313Z::tf.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "xml",
+  "updateTime" : "2024-12-30T10:48:38.205Z",
+  "objectRefs" : [ ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}

@@ -1,0 +1,47 @@
+{
+  "objectInfo" : {
+    "id" : "dv2DWWptv6xbHGFVKoa9QY",
+    "name" : "rkra_tASKFLOW_COMMAND",
+    "type" : "TASKFLOW",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "J8NFoFuR55aaabd-gt-83148037-2023-10-30T12:40:24.565Z::tf.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "xml",
+  "updateTime" : "2024-12-30T10:48:38.204Z",
+  "objectRefs" : [ {
+    "id" : "14w4RzNZgc4d8ioH50mzys",
+    "name" : "Z__0_RKR_WIN_LOCAL",
+    "type" : "AgentGroup",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0110ZH250000000000A1"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/SYS"
+  } ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}

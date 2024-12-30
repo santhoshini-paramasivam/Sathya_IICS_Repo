@@ -1,7 +1,7 @@
 {
   "objectInfo" : {
-    "id" : "8iMu0AdkwtzeqKBPFR35kr",
-    "name" : "m_CCON-101834_testing",
+    "id" : "9K0Llgd6o2gf4316rrX4Gp",
+    "name" : "m_oracle_ADLS_Precision_issue",
     "type" : "DTEMPLATE",
     "metadata" : {
       "modelVersion" : {
@@ -9,7 +9,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0110ZH1700000000077X"
+        "repoHandle" : "0110ZH170000000006U3"
       },
       "contextAttributes" : [ {
         "name" : "id",
@@ -23,10 +23,10 @@
     }
   },
   "dataFileExtension" : "zip",
-  "updateTime" : "2024-12-30T10:48:38.202Z",
+  "updateTime" : "2024-12-30T10:48:38.206Z",
   "objectRefs" : [ {
-    "id" : "aLltTXWFVGXgjFEDiXxG0m",
-    "name" : "Oracle_varsb",
+    "id" : "151yodvFzizjIBjnWIYc6W",
+    "name" : "Oracle_Linux",
     "type" : "Connection",
     "metadata" : {
       "modelVersion" : {
@@ -34,19 +34,19 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0110ZH0B0000000000PW"
+        "repoHandle" : "0110ZH0B0000000001TG"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
-        "description" : "Connects to varsb",
+        "description" : null,
         "contentType" : "JSON",
         "documentState" : "COMPLETE"
       }
     },
     "path" : "/SYS"
   }, {
-    "id" : "h95fARPThYPfk7MnZjh448",
-    "name" : "Flatfile_Sandy",
+    "id" : "5cizeagC1Vlflhveh8GYsq",
+    "name" : "MicrosoftAzureDataLakeStorageGen2_Linux",
     "type" : "Connection",
     "metadata" : {
       "modelVersion" : {
@@ -54,7 +54,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0110ZH0B0000000001UG"
+        "repoHandle" : "0110ZH0B0000000001TE"
       },
       "contextAttributes" : null,
       "additionalInfo" : {

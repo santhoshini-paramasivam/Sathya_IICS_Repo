@@ -1,7 +1,7 @@
 {
   "objectInfo" : {
-    "id" : "4WOM51moUBIgn3PUfTQisK",
-    "name" : "mt_CCON-101834_testing",
+    "id" : "2FrqPtdwJtQb9KnhJ6UE6p",
+    "name" : "m_task",
     "type" : "MTT",
     "metadata" : {
       "modelVersion" : {
@@ -9,7 +9,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0110ZH0Z0000000003TN"
+        "repoHandle" : "0110ZH0Z0000000003UB"
       },
       "contextAttributes" : [ {
         "name" : "id",
@@ -23,31 +23,8 @@
     }
   },
   "dataFileExtension" : "zip",
-  "updateTime" : "2024-12-30T10:48:38.204Z",
+  "updateTime" : "2024-12-30T10:48:38.206Z",
   "objectRefs" : [ {
-    "id" : "8iMu0AdkwtzeqKBPFR35kr",
-    "name" : "m_CCON-101834_testing",
-    "type" : "DTEMPLATE",
-    "metadata" : {
-      "modelVersion" : {
-        "major" : 0,
-        "minor" : 0
-      },
-      "repoInfo" : {
-        "repoHandle" : "0110ZH1700000000077X"
-      },
-      "contextAttributes" : [ {
-        "name" : "id",
-        "value" : "@1"
-      } ],
-      "additionalInfo" : {
-        "description" : "",
-        "contentType" : "JSON",
-        "documentState" : "VALID"
-      }
-    },
-    "path" : "/Explore/Santhoshini"
-  }, {
     "id" : "4kScHEiW85GfSHEVjKE3YT",
     "name" : "invprani12linux01",
     "type" : "AgentGroup",
@@ -68,8 +45,8 @@
     },
     "path" : "/SYS"
   }, {
-    "id" : "aLltTXWFVGXgjFEDiXxG0m",
-    "name" : "Oracle_varsb",
+    "id" : "2qXuGtgE4LakKmjU2lJnaJ",
+    "name" : "Conn_Oracle_PF",
     "type" : "Connection",
     "metadata" : {
       "modelVersion" : {
@@ -77,27 +54,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0110ZH0B0000000000PW"
-      },
-      "contextAttributes" : null,
-      "additionalInfo" : {
-        "description" : "Connects to varsb",
-        "contentType" : "JSON",
-        "documentState" : "COMPLETE"
-      }
-    },
-    "path" : "/SYS"
-  }, {
-    "id" : "h95fARPThYPfk7MnZjh448",
-    "name" : "Flatfile_Sandy",
-    "type" : "Connection",
-    "metadata" : {
-      "modelVersion" : {
-        "major" : 0,
-        "minor" : 0
-      },
-      "repoInfo" : {
-        "repoHandle" : "0110ZH0B0000000001UG"
+        "repoHandle" : "0110ZH0B00000000020K"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
@@ -107,6 +64,49 @@
       }
     },
     "path" : "/SYS"
+  }, {
+    "id" : "3C07RwmpmEtkxKLhHGKbQR",
+    "name" : "Conn_FF_PF",
+    "type" : "Connection",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0110ZH0B00000000020M"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/SYS"
+  }, {
+    "id" : "2UqLEfo2yy7knlxsqTgKsU",
+    "name" : "m_13",
+    "type" : "DTEMPLATE",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0110ZH17000000000787"
+      },
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Default"
   } ],
   "readableFileExtension" : null,
   "readableFilePresent" : false

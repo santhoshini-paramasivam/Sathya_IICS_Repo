@@ -1,0 +1,47 @@
+{
+  "objectInfo" : {
+    "id" : "5AHzE6Wk2Gcg0lT0QVQmwk",
+    "name" : "ParentTF",
+    "type" : "TASKFLOW",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "x6I1dq2ME9paabd-gt-39290448-2024-06-13T22:49:21.386Z::tf.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "xml",
+  "updateTime" : "2024-12-30T10:48:38.207Z",
+  "objectRefs" : [ {
+    "id" : "dv2DWWptv6xbHGFVKoa9QY",
+    "name" : "rkra_tASKFLOW_COMMAND",
+    "type" : "TASKFLOW",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "J8NFoFuR55aaabd-gt-83148037-2023-10-30T12:40:24.565Z::tf.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/SathyaProjAI"
+  } ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}

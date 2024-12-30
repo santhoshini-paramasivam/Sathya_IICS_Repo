@@ -1,7 +1,7 @@
 {
   "objectInfo" : {
-    "id" : "8iMu0AdkwtzeqKBPFR35kr",
-    "name" : "m_CCON-101834_testing",
+    "id" : "2UqLEfo2yy7knlxsqTgKsU",
+    "name" : "m_13",
     "type" : "DTEMPLATE",
     "metadata" : {
       "modelVersion" : {
@@ -9,7 +9,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0110ZH1700000000077X"
+        "repoHandle" : "0110ZH17000000000787"
       },
       "contextAttributes" : [ {
         "name" : "id",
@@ -23,10 +23,10 @@
     }
   },
   "dataFileExtension" : "zip",
-  "updateTime" : "2024-12-30T10:48:38.202Z",
+  "updateTime" : "2024-12-30T10:48:38.204Z",
   "objectRefs" : [ {
-    "id" : "aLltTXWFVGXgjFEDiXxG0m",
-    "name" : "Oracle_varsb",
+    "id" : "2qXuGtgE4LakKmjU2lJnaJ",
+    "name" : "Conn_Oracle_PF",
     "type" : "Connection",
     "metadata" : {
       "modelVersion" : {
@@ -34,19 +34,19 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0110ZH0B0000000000PW"
+        "repoHandle" : "0110ZH0B00000000020K"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
-        "description" : "Connects to varsb",
+        "description" : null,
         "contentType" : "JSON",
         "documentState" : "COMPLETE"
       }
     },
     "path" : "/SYS"
   }, {
-    "id" : "h95fARPThYPfk7MnZjh448",
-    "name" : "Flatfile_Sandy",
+    "id" : "3C07RwmpmEtkxKLhHGKbQR",
+    "name" : "Conn_FF_PF",
     "type" : "Connection",
     "metadata" : {
       "modelVersion" : {
@@ -54,7 +54,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0110ZH0B0000000001UG"
+        "repoHandle" : "0110ZH0B00000000020M"
       },
       "contextAttributes" : null,
       "additionalInfo" : {

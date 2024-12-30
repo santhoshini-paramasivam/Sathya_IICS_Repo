@@ -1,7 +1,7 @@
 {
   "objectInfo" : {
-    "id" : "4WOM51moUBIgn3PUfTQisK",
-    "name" : "mt_CCON-101834_testing",
+    "id" : "64eFUZOtDmtkXOD0TC3LOu",
+    "name" : "mt_Merlin_ParamTest_ListOrgs",
     "type" : "MTT",
     "metadata" : {
       "modelVersion" : {
@@ -9,32 +9,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0110ZH0Z0000000003TN"
-      },
-      "contextAttributes" : [ {
-        "name" : "id",
-        "value" : "@1"
-      } ],
-      "additionalInfo" : {
-        "description" : null,
-        "contentType" : "JSON",
-        "documentState" : "VALID"
-      }
-    }
-  },
-  "dataFileExtension" : "zip",
-  "updateTime" : "2024-12-30T10:48:38.204Z",
-  "objectRefs" : [ {
-    "id" : "8iMu0AdkwtzeqKBPFR35kr",
-    "name" : "m_CCON-101834_testing",
-    "type" : "DTEMPLATE",
-    "metadata" : {
-      "modelVersion" : {
-        "major" : 0,
-        "minor" : 0
-      },
-      "repoInfo" : {
-        "repoHandle" : "0110ZH1700000000077X"
+        "repoHandle" : "0110ZH0Z0000000000J1"
       },
       "contextAttributes" : [ {
         "name" : "id",
@@ -45,11 +20,73 @@
         "contentType" : "JSON",
         "documentState" : "VALID"
       }
+    }
+  },
+  "dataFileExtension" : "zip",
+  "updateTime" : "2024-12-30T10:48:38.206Z",
+  "objectRefs" : [ {
+    "id" : "4RnLDcxzayIe0S76dwqDEB",
+    "name" : "Merlin_Redshift_V2",
+    "type" : "Connection",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0110ZH0B00000000002V"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "Redshift V2 connection for Proj Merlin",
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
     },
-    "path" : "/Explore/Santhoshini"
+    "path" : "/SYS"
   }, {
-    "id" : "4kScHEiW85GfSHEVjKE3YT",
-    "name" : "invprani12linux01",
+    "id" : "akllLoiROSufHOqcqei6gJ",
+    "name" : "FF_Merlin_Param",
+    "type" : "Connection",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0110ZH0B0000000000H9"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/SYS"
+  }, {
+    "id" : "d2htyuLGD2yekxJ5QKLDej",
+    "name" : "m_Merlin_ParamTest_ListOrgs",
+    "type" : "DTEMPLATE",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0110ZH170000000000YN"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/03170095_ojas"
+  }, {
+    "id" : "5VwmeIwnC0oduT8RlUavaR",
+    "name" : "small",
     "type" : "AgentGroup",
     "metadata" : {
       "modelVersion" : {
@@ -57,53 +94,13 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0110ZH250000000000CS"
+        "repoHandle" : "0110ZH25000000000029"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
         "description" : null,
         "contentType" : "JSON",
         "documentState" : "VALID"
-      }
-    },
-    "path" : "/SYS"
-  }, {
-    "id" : "aLltTXWFVGXgjFEDiXxG0m",
-    "name" : "Oracle_varsb",
-    "type" : "Connection",
-    "metadata" : {
-      "modelVersion" : {
-        "major" : 0,
-        "minor" : 0
-      },
-      "repoInfo" : {
-        "repoHandle" : "0110ZH0B0000000000PW"
-      },
-      "contextAttributes" : null,
-      "additionalInfo" : {
-        "description" : "Connects to varsb",
-        "contentType" : "JSON",
-        "documentState" : "COMPLETE"
-      }
-    },
-    "path" : "/SYS"
-  }, {
-    "id" : "h95fARPThYPfk7MnZjh448",
-    "name" : "Flatfile_Sandy",
-    "type" : "Connection",
-    "metadata" : {
-      "modelVersion" : {
-        "major" : 0,
-        "minor" : 0
-      },
-      "repoInfo" : {
-        "repoHandle" : "0110ZH0B0000000001UG"
-      },
-      "contextAttributes" : null,
-      "additionalInfo" : {
-        "description" : null,
-        "contentType" : "JSON",
-        "documentState" : "COMPLETE"
       }
     },
     "path" : "/SYS"

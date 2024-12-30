@@ -1,0 +1,164 @@
+<aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
+                   xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
+   <types1:Item>
+      <types1:EntryId>BTWvbeGoQwg74Rp-gt-63786714-2021-12-02T11:43:07.044Z::tf.xml</types1:EntryId>
+      <types1:Name>TfToTriggerOBMsEvery12secs</types1:Name>
+      <types1:MimeType>application/xml+taskflow</types1:MimeType>
+      <types1:Description/>
+      <types1:AppliesTo/>
+      <types1:Tags/>
+      <types1:VersionLabel>1.0</types1:VersionLabel>
+      <types1:State>CURRENT</types1:State>
+      <types1:ProcessGroup/>
+      <types1:CreatedBy>sn</types1:CreatedBy>
+      <types1:CreationDate>2021-12-02T11:43:07Z</types1:CreationDate>
+      <types1:ModifiedBy>sn</types1:ModifiedBy>
+      <types1:ModificationDate>2022-03-24T10:03:23Z</types1:ModificationDate>
+      <types1:PublicationStatus>published</types1:PublicationStatus>
+      <types1:PublishedBy>sn</types1:PublishedBy>
+      <types1:PublicationDate>2022-03-24T10:23:37Z</types1:PublicationDate>
+      <types1:PublishedContributionId>project:/tf.TfToTriggerOBMsEvery12secs/TfToTriggerOBMsEvery12secs.tf.xml</types1:PublishedContributionId>
+      <types1:Entry>
+         <taskflow xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2010/10/avosScreenflow.xsd"
+                   xmlns:tfm="http://schemas.active-endpoints.com/appmodules/screenflow/2021/04/taskflowModel.xsd"
+                   xmlns:list="urn:activevos:spi:list:functions"
+                   displayName="TfToTriggerOBMsEvery12secs"
+                   name="TfToTriggerOBMsEvery12secs"
+                   overrideAPIName="false">
+            <parameterSet xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2021/04/taskflowModel.xsd"/>
+            <appliesTo/>
+            <description/>
+            <tags/>
+            <generator>Informatica Process Designer 11</generator>
+            <tempFields>
+               <field description="" name="Data Task 1" type="reference">
+                  <options>
+                     <option name="failOnNotRun">false</option>
+                     <option name="failOnFault">false</option>
+                     <option name="referenceTo">$po:DSSAcctUpdate</option>
+                  </options>
+               </field>
+               <field description="" name="count" type="int">
+                  <options>
+                     <option name="required">false</option>
+                     <option name="initialvalue">1</option>
+                  </options>
+               </field>
+            </tempFields>
+            <notes/>
+            <deployment suspendOnFault="false" tracingLevel="verbose">
+               <rest/>
+            </deployment>
+            <flow id="a">
+               <start id="b">
+                  <link id="kwow0h1z" targetId="kwow0h2k"/>
+               </start>
+               <eventContainer id="kwow0h2k">
+                  <service id="kwow0h1y">
+                     <title>Data Task 1</title>
+                     <serviceName>ICSExecuteDataTask</serviceName>
+                     <serviceGUID/>
+                     <serviceInput>
+                        <parameter name="Wait for Task to Complete" source="constant" updatable="true">true</parameter>
+                        <parameter name="Max Wait" source="constant" updatable="true">604800</parameter>
+                        <parameter name="Task Name" source="constant" updatable="true">DSSAcctUpdate</parameter>
+                        <parameter name="GUID" source="constant" updatable="true">hIZokot3BCNdIXw98FQDYu</parameter>
+                        <parameter name="Task Type" source="constant" updatable="true">SAAS_DSS</parameter>
+                        <parameter name="Has Inout Parameters" source="constant" updatable="true">false</parameter>
+                        <parameter name="taskField" source="nested">
+                           <operation source="field" to="DSSAcctUpdate">temp.Data Task 1</operation>
+                        </parameter>
+                     </serviceInput>
+                     <serviceOutput>
+                        <operation source="field" to="temp.Data Task 1/output/Object_Name">Object Name</operation>
+                        <operation source="field" to="temp.Data Task 1/output/Run_Id">Run Id</operation>
+                        <operation source="field" to="temp.Data Task 1/output/Log_Id">Log Id</operation>
+                        <operation source="field" to="temp.Data Task 1/output/Task_Id">Task Id</operation>
+                        <operation source="field" to="temp.Data Task 1/output/Task_Status">Task Status</operation>
+                        <operation source="field" to="temp.Data Task 1/output/Success_Source_Rows">Success Source Rows</operation>
+                        <operation source="field" to="temp.Data Task 1/output/Failed_Source_Rows">Failed Source Rows</operation>
+                        <operation source="field" to="temp.Data Task 1/output/Success_Target_Rows">Success Target Rows</operation>
+                        <operation source="field" to="temp.Data Task 1/output/Failed_Target_Rows">Failed Target Rows</operation>
+                        <operation source="field" to="temp.Data Task 1/output/Start_Time">Start Time</operation>
+                        <operation source="field" to="temp.Data Task 1/output/End_Time">End Time</operation>
+                        <operation source="field" to="temp.Data Task 1/output/Error_Message">Error Message</operation>
+                        <operation source="field" to="temp.Data Task 1/output/TotalTransErrors">Total Transformation Errors</operation>
+                        <operation source="field" to="temp.Data Task 1/output/FirstErrorCode">First Error Code</operation>
+                     </serviceOutput>
+                  </service>
+                  <link id="kwow0h39" targetId="kwow0h38"/>
+                  <events>
+                     <catch faultField="temp.Data Task 1/fault"
+                            id="kwow0h2i"
+                            interrupting="true"
+                            name="error">
+                        <suspend/>
+                     </catch>
+                     <catch faultField="temp.Data Task 1/fault"
+                            id="kwow0h2j"
+                            interrupting="true"
+                            name="warning"/>
+                  </events>
+               </eventContainer>
+               <container id="kwow0h38" type="exclusive">
+                  <title>Decision 1</title>
+                  <flow id="kwow0h3c">
+                     <wait id="kwow0h3l">
+                        <title>Wait 1</title>
+                        <duration source="formula">
+                           <function name="duration_expression">
+                              <arg name="value">10</arg>
+                              <arg name="scale">S</arg>
+                              <arg name="businessDays"/>
+                           </function>
+                        </duration>
+                        <link id="kwow0h4a" targetId="kwow0h48"/>
+                     </wait>
+                     <jumpTo id="kwow0h48">
+                        <link id="kwow0h49" targetId="kwow0h2k"/>
+                     </jumpTo>
+                  </flow>
+                  <flow id="kwow0h3f">
+                     <link id="kwow0h3g" targetId="kwow0h38" type="containerLink"/>
+                  </flow>
+                  <link id="kwow0h3b" targetId="kwow0h3c" type="containerLink">
+                     <condition source="formula">
+                        <function name="less-than">
+                           <arg name="left">{$temp.count}</arg>
+                           <arg name="right">{100}</arg>
+                        </function>
+                     </condition>
+                  </link>
+                  <link id="kwow0h3e" targetId="kwow0h3f" type="containerLink"/>
+                  <link id="kwow0h3k" targetId="c"/>
+               </container>
+               <end id="c"/>
+            </flow>
+            <dependencies>
+               <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
+                              displayName="DSSAcctUpdate"
+                              isByCopy="true"
+                              name="DSSAcctUpdate">
+                  <description/>
+                  <tags/>
+                  <detail>
+                     <field label="Output Parameters"
+                            name="output"
+                            nullable="true"
+                            required="false"
+                            type="reference"/>
+                     <field label="Fault"
+                            name="fault"
+                            nullable="true"
+                            required="false"
+                            type="reference"/>
+                  </detail>
+               </processObject>
+            </dependencies>
+         </taskflow>
+      </types1:Entry>
+      <types1:GUID>hfuBWog5ZELfYIVoxSjLkF</types1:GUID>
+      <types1:DisplayName>TfToTriggerOBMsEvery12secs</types1:DisplayName>
+   </types1:Item>
+   <types1:CurrentServerDateTime>2024-12-30T10:48:36.725Z</types1:CurrentServerDateTime>
+</aetgt:getResponse>
