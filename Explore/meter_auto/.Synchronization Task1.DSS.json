@@ -1,43 +1,46 @@
 {
   "objectInfo" : {
-    "id" : "6BgOHjLoIESeoOakksGCMI",
-    "name" : "File_Listnener_dummy",
-    "type" : "MI_FILE_LISTENER",
-    "metadata" : {
-      "modelVersion" : {
-        "major" : 1,
-        "minor" : 0
-      },
-      "repoInfo" : {
-        "repoHandle" : "38757"
-      },
-      "contextAttributes" : [ ],
-      "additionalInfo" : {
-        "description" : "",
-        "contentType" : "Binary",
-        "documentState" : "VALID"
-      }
-    }
-  },
-  "dataFileExtension" : "dat",
-  "updateTime" : "2024-12-30T10:47:00.280Z",
-  "objectRefs" : [ {
-    "id" : "c6i6j4G4jO7czE6u4tykyd",
-    "name" : "san1_new",
-    "type" : "AgentGroup",
+    "id" : "0Afp0EYKzsMg2ntInHabeL",
+    "name" : "Synchronization Task1",
+    "type" : "DSS",
     "metadata" : {
       "modelVersion" : {
         "major" : 0,
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0110ZH2500000000008A"
+        "repoHandle" : "0110ZH0I00000000001I"
+      },
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "zip",
+  "updateTime" : "2024-12-30T10:47:00.274Z",
+  "objectRefs" : [ {
+    "id" : "hmYm7fGPyqhkaSSwIfIZ4R",
+    "name" : "flatfileConnectionOjas",
+    "type" : "Connection",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0110ZH0B0000000000WC"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
         "description" : null,
         "contentType" : "JSON",
-        "documentState" : "VALID"
+        "documentState" : "COMPLETE"
       }
     },
     "path" : "/SYS"

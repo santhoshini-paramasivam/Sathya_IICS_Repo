@@ -1,32 +1,32 @@
 {
   "objectInfo" : {
-    "id" : "6MM25zMnYYOcNZmUxPBLMN",
-    "name" : "m_postgres_update",
-    "type" : "DTEMPLATE",
+    "id" : "aQXejQUaTeiecT7cy6iF8W",
+    "name" : "Replication Task1",
+    "type" : "DRS",
     "metadata" : {
       "modelVersion" : {
         "major" : 0,
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0110ZH170000000006Z1"
+        "repoHandle" : "0110ZH0G00000000000A"
       },
       "contextAttributes" : [ {
         "name" : "id",
         "value" : "@1"
       } ],
       "additionalInfo" : {
-        "description" : "",
+        "description" : null,
         "contentType" : "JSON",
         "documentState" : "VALID"
       }
     }
   },
   "dataFileExtension" : "zip",
-  "updateTime" : "2024-12-30T10:47:00.276Z",
+  "updateTime" : "2024-12-30T10:47:00.281Z",
   "objectRefs" : [ {
-    "id" : "bvKD04ToS0VgtDfc0B8Ve7",
-    "name" : "Sandy_PostgreSQL",
+    "id" : "3kfd3T0B7bedb9nbTpBIy6",
+    "name" : "Ning_Salesforce",
     "type" : "Connection",
     "metadata" : {
       "modelVersion" : {
@@ -34,7 +34,27 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0110ZH0B0000000001VX"
+        "repoHandle" : "0110ZH0B0000000000HF"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/SYS"
+  }, {
+    "id" : "5UVqEk6cH6ycOg4RivViI8",
+    "name" : "ff_linux_source",
+    "type" : "Connection",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0110ZH0B0000000000HE"
       },
       "contextAttributes" : null,
       "additionalInfo" : {

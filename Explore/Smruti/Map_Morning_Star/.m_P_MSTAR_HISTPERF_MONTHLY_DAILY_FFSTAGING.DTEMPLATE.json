@@ -1,0 +1,70 @@
+{
+  "objectInfo" : {
+    "id" : "jTe0wQ46PIZbQYbBcEyb4y",
+    "name" : "m_P_MSTAR_HISTPERF_MONTHLY_DAILY_FFSTAGING",
+    "type" : "DTEMPLATE",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0110ZH170000000000OK"
+      },
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : "New Historical Performance feed from Morning star\nConverted using O2N Version: O2N : Framesh1ft Tool V3.03",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "zip",
+  "updateTime" : "2024-12-30T10:47:00.278Z",
+  "objectRefs" : [ {
+    "id" : "5R9QqAfbvoJlp8V2XHsBQQ",
+    "name" : "sf_staging",
+    "type" : "Connection",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0110ZH0B0000000000BN"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "snowflake",
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/SYS"
+  }, {
+    "id" : "8J5kBP7fbhMk68IObg3rYW",
+    "name" : "MORNINGSTAR_SRCSYS_DATAPATH",
+    "type" : "Connection",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0110ZH0B0000000000BM"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "Morningstar files to be loaded into PSTG",
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/SYS"
+  } ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}

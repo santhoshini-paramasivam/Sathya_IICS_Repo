@@ -1,7 +1,7 @@
 {
   "objectInfo" : {
-    "id" : "6MM25zMnYYOcNZmUxPBLMN",
-    "name" : "m_postgres_update",
+    "id" : "7vIO9VS1kOBiXlVasqxsIo",
+    "name" : "stov2trf_COST_CENTRAL_07_02_24_BKP",
     "type" : "DTEMPLATE",
     "metadata" : {
       "modelVersion" : {
@@ -9,14 +9,14 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0110ZH170000000006Z1"
+        "repoHandle" : "0110ZH170000000006M3"
       },
       "contextAttributes" : [ {
         "name" : "id",
         "value" : "@1"
       } ],
       "additionalInfo" : {
-        "description" : "",
+        "description" : "\nConverted using O2N Version: O2N : Framesh1ft Tool V3.03",
         "contentType" : "JSON",
         "documentState" : "VALID"
       }
@@ -25,8 +25,8 @@
   "dataFileExtension" : "zip",
   "updateTime" : "2024-12-30T10:47:00.276Z",
   "objectRefs" : [ {
-    "id" : "bvKD04ToS0VgtDfc0B8Ve7",
-    "name" : "Sandy_PostgreSQL",
+    "id" : "8IjhIQo30mReUltU9dHTYW",
+    "name" : "BIT_AZ_SYN_IPPMPRX_DM",
     "type" : "Connection",
     "metadata" : {
       "modelVersion" : {
@@ -34,7 +34,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0110ZH0B0000000001VX"
+        "repoHandle" : "0110ZH0B0000000001PJ"
       },
       "contextAttributes" : null,
       "additionalInfo" : {

@@ -1,7 +1,7 @@
 {
   "objectInfo" : {
-    "id" : "6MM25zMnYYOcNZmUxPBLMN",
-    "name" : "m_postgres_update",
+    "id" : "5gAsomhlnMdiGVK7IZ386A",
+    "name" : "m_sap_hana_to_ff",
     "type" : "DTEMPLATE",
     "metadata" : {
       "modelVersion" : {
@@ -9,7 +9,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0110ZH170000000006Z1"
+        "repoHandle" : "0110ZH1700000000072K"
       },
       "contextAttributes" : [ {
         "name" : "id",
@@ -23,10 +23,10 @@
     }
   },
   "dataFileExtension" : "zip",
-  "updateTime" : "2024-12-30T10:47:00.276Z",
+  "updateTime" : "2024-12-30T10:47:00.275Z",
   "objectRefs" : [ {
-    "id" : "bvKD04ToS0VgtDfc0B8Ve7",
-    "name" : "Sandy_PostgreSQL",
+    "id" : "h97fZHKJkyBknT8cfGboI5",
+    "name" : "Az_SAP_HANA",
     "type" : "Connection",
     "metadata" : {
       "modelVersion" : {
@@ -34,7 +34,27 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0110ZH0B0000000001VX"
+        "repoHandle" : "0110ZH0B0000000001YD"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/SYS"
+  }, {
+    "id" : "8dFvPKwR9zte6kG8H0QYil",
+    "name" : "flatfile_az",
+    "type" : "Connection",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0110ZH0B0000000000EI"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
