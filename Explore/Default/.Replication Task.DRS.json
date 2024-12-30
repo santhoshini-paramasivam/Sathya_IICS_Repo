@@ -1,15 +1,15 @@
 {
   "objectInfo" : {
-    "id" : "33eP44B8ECKgdlgr07xaik",
-    "name" : "mt_param_04670257",
-    "type" : "MTT",
+    "id" : "dJiqSdJnDawjcx5bhSVqyY",
+    "name" : "Replication Task",
+    "type" : "DRS",
     "metadata" : {
       "modelVersion" : {
         "major" : 0,
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0110ZH0Z0000000003L6"
+        "repoHandle" : "0110ZH0G000000000008"
       },
       "contextAttributes" : [ {
         "name" : "id",
@@ -23,10 +23,10 @@
     }
   },
   "dataFileExtension" : "zip",
-  "updateTime" : "2024-12-30T10:50:43.421Z",
+  "updateTime" : "2024-12-30T10:50:43.424Z",
   "objectRefs" : [ {
-    "id" : "aIxzJmghWP3edbKa750bOQ",
-    "name" : "SQL_Server_Sandy",
+    "id" : "2w5GfyxVtELj6qK5wgWJQN",
+    "name" : "Sales_Force",
     "type" : "Connection",
     "metadata" : {
       "modelVersion" : {
@@ -34,7 +34,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0110ZH0B0000000001W9"
+        "repoHandle" : "0110ZH0B00000000006V"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
@@ -45,42 +45,22 @@
     },
     "path" : "/SYS"
   }, {
-    "id" : "gMKmt4e0TSbgba602sNTmn",
-    "name" : "m_param_04670257",
-    "type" : "DTEMPLATE",
+    "id" : "7WIdOxt4fi9cbrxd3liMS4",
+    "name" : "flatfile",
+    "type" : "Connection",
     "metadata" : {
       "modelVersion" : {
         "major" : 0,
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0110ZH170000000006ZE"
-      },
-      "contextAttributes" : null,
-      "additionalInfo" : {
-        "description" : "Created for case 04670257 - testing param - assurance service",
-        "contentType" : "JSON",
-        "documentState" : "VALID"
-      }
-    },
-    "path" : "/Explore/Santhoshini"
-  }, {
-    "id" : "4fmVxd8sTeWj5STMbZHaWi",
-    "name" : "Z________pg_maintainj",
-    "type" : "AgentGroup",
-    "metadata" : {
-      "modelVersion" : {
-        "major" : 0,
-        "minor" : 0
-      },
-      "repoInfo" : {
-        "repoHandle" : "0110ZH2500000000009K"
+        "repoHandle" : "0110ZH0B0000000000EZ"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
         "description" : null,
         "contentType" : "JSON",
-        "documentState" : "VALID"
+        "documentState" : "COMPLETE"
       }
     },
     "path" : "/SYS"

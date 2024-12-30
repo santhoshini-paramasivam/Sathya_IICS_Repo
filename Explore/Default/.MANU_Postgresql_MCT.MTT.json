@@ -1,7 +1,7 @@
 {
   "objectInfo" : {
-    "id" : "33eP44B8ECKgdlgr07xaik",
-    "name" : "mt_param_04670257",
+    "id" : "3fOhLNEAFS9bexw89d4S8s",
+    "name" : "MANU_Postgresql_MCT",
     "type" : "MTT",
     "metadata" : {
       "modelVersion" : {
@@ -9,24 +9,24 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0110ZH0Z0000000003L6"
+        "repoHandle" : "0110ZH0Z00000000014C"
       },
       "contextAttributes" : [ {
         "name" : "id",
         "value" : "@1"
       } ],
       "additionalInfo" : {
-        "description" : null,
+        "description" : "",
         "contentType" : "JSON",
         "documentState" : "VALID"
       }
     }
   },
   "dataFileExtension" : "zip",
-  "updateTime" : "2024-12-30T10:50:43.421Z",
+  "updateTime" : "2024-12-30T10:50:43.423Z",
   "objectRefs" : [ {
-    "id" : "aIxzJmghWP3edbKa750bOQ",
-    "name" : "SQL_Server_Sandy",
+    "id" : "dhxPYGRJSEyhAi0Op6p1eI",
+    "name" : "Sathya_postgresql",
     "type" : "Connection",
     "metadata" : {
       "modelVersion" : {
@@ -34,7 +34,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0110ZH0B0000000001W9"
+        "repoHandle" : "0110ZH0B00000000001J"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
@@ -45,28 +45,8 @@
     },
     "path" : "/SYS"
   }, {
-    "id" : "gMKmt4e0TSbgba602sNTmn",
-    "name" : "m_param_04670257",
-    "type" : "DTEMPLATE",
-    "metadata" : {
-      "modelVersion" : {
-        "major" : 0,
-        "minor" : 0
-      },
-      "repoInfo" : {
-        "repoHandle" : "0110ZH170000000006ZE"
-      },
-      "contextAttributes" : null,
-      "additionalInfo" : {
-        "description" : "Created for case 04670257 - testing param - assurance service",
-        "contentType" : "JSON",
-        "documentState" : "VALID"
-      }
-    },
-    "path" : "/Explore/Santhoshini"
-  }, {
-    "id" : "4fmVxd8sTeWj5STMbZHaWi",
-    "name" : "Z________pg_maintainj",
+    "id" : "8xLUyLCLHgFhDdbETm0iAv",
+    "name" : "manu-windows-sb",
     "type" : "AgentGroup",
     "metadata" : {
       "modelVersion" : {
@@ -74,13 +54,53 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0110ZH2500000000009K"
+        "repoHandle" : "0110ZH25000000000049"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
         "description" : null,
         "contentType" : "JSON",
         "documentState" : "VALID"
+      }
+    },
+    "path" : "/SYS"
+  }, {
+    "id" : "8rZnS0m6m6elHR62sXLxiz",
+    "name" : "02835392_Postgresql",
+    "type" : "DTEMPLATE",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0110ZH170000000000G3"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/harini"
+  }, {
+    "id" : "esp7628MgSZimzTcFuKlos",
+    "name" : "Sathya_FlatFile",
+    "type" : "Connection",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0110ZH0B000000000004"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
       }
     },
     "path" : "/SYS"

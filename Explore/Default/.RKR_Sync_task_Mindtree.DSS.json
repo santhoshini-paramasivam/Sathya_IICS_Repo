@@ -1,22 +1,22 @@
 {
   "objectInfo" : {
-    "id" : "33eP44B8ECKgdlgr07xaik",
-    "name" : "mt_param_04670257",
-    "type" : "MTT",
+    "id" : "1d08SGKE6t0dZmmFb8NowE",
+    "name" : "RKR_Sync_task_Mindtree",
+    "type" : "DSS",
     "metadata" : {
       "modelVersion" : {
         "major" : 0,
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0110ZH0Z0000000003L6"
+        "repoHandle" : "0110ZH0I00000000003C"
       },
       "contextAttributes" : [ {
         "name" : "id",
         "value" : "@1"
       } ],
       "additionalInfo" : {
-        "description" : null,
+        "description" : "",
         "contentType" : "JSON",
         "documentState" : "VALID"
       }
@@ -25,8 +25,8 @@
   "dataFileExtension" : "zip",
   "updateTime" : "2024-12-30T10:50:43.421Z",
   "objectRefs" : [ {
-    "id" : "aIxzJmghWP3edbKa750bOQ",
-    "name" : "SQL_Server_Sandy",
+    "id" : "gJGabG4uHs9lM765x7QSud",
+    "name" : "RKR_Mindtree_DO_NOT_USE",
     "type" : "Connection",
     "metadata" : {
       "modelVersion" : {
@@ -34,7 +34,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0110ZH0B0000000001W9"
+        "repoHandle" : "0110ZH0B000000000158"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
@@ -45,42 +45,22 @@
     },
     "path" : "/SYS"
   }, {
-    "id" : "gMKmt4e0TSbgba602sNTmn",
-    "name" : "m_param_04670257",
-    "type" : "DTEMPLATE",
+    "id" : "esp7628MgSZimzTcFuKlos",
+    "name" : "Sathya_FlatFile",
+    "type" : "Connection",
     "metadata" : {
       "modelVersion" : {
         "major" : 0,
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0110ZH170000000006ZE"
-      },
-      "contextAttributes" : null,
-      "additionalInfo" : {
-        "description" : "Created for case 04670257 - testing param - assurance service",
-        "contentType" : "JSON",
-        "documentState" : "VALID"
-      }
-    },
-    "path" : "/Explore/Santhoshini"
-  }, {
-    "id" : "4fmVxd8sTeWj5STMbZHaWi",
-    "name" : "Z________pg_maintainj",
-    "type" : "AgentGroup",
-    "metadata" : {
-      "modelVersion" : {
-        "major" : 0,
-        "minor" : 0
-      },
-      "repoInfo" : {
-        "repoHandle" : "0110ZH2500000000009K"
+        "repoHandle" : "0110ZH0B000000000004"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
         "description" : null,
         "contentType" : "JSON",
-        "documentState" : "VALID"
+        "documentState" : "COMPLETE"
       }
     },
     "path" : "/SYS"

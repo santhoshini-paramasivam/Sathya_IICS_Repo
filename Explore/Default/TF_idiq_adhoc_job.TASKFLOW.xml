@@ -1,0 +1,590 @@
+<aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
+                   xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
+   <types1:Item>
+      <types1:EntryId>zUzeA8rJ4pbgchw-gt-12747759-2022-11-30T06:26:08.409Z::tf.xml</types1:EntryId>
+      <types1:Name>TF_idiq_adhoc_job</types1:Name>
+      <types1:MimeType>application/xml+taskflow</types1:MimeType>
+      <types1:Description/>
+      <types1:AppliesTo/>
+      <types1:Tags/>
+      <types1:VersionLabel>1.0</types1:VersionLabel>
+      <types1:State>CURRENT</types1:State>
+      <types1:ProcessGroup/>
+      <types1:CreatedBy>sn</types1:CreatedBy>
+      <types1:CreationDate>2022-11-30T06:26:08Z</types1:CreationDate>
+      <types1:ModifiedBy>sn</types1:ModifiedBy>
+      <types1:ModificationDate>2023-01-09T09:17:44Z</types1:ModificationDate>
+      <types1:PublicationStatus>published</types1:PublicationStatus>
+      <types1:PublishedBy>sn</types1:PublishedBy>
+      <types1:PublicationDate>2023-01-09T09:18:12Z</types1:PublicationDate>
+      <types1:PublishedContributionId>project:/tf.TF_idiq_adhoc_job/TF_idiq_adhoc_job.tf.xml</types1:PublishedContributionId>
+      <types1:Entry>
+         <taskflow xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2010/10/avosScreenflow.xsd"
+                   xmlns:list="urn:activevos:spi:list:functions"
+                   displayName="TF_idiq_adhoc_job"
+                   name="TF_idiq_adhoc_job">
+            <appliesTo/>
+            <description/>
+            <tags/>
+            <generator>Informatica Process Designer 11</generator>
+            <tempFields>
+               <field description="" name="dt_task_run_hist_job" type="reference">
+                  <options>
+                     <option name="referenceTo">$po:mct-task-run-hist-job</option>
+                  </options>
+               </field>
+               <field description="" name="dt_job_detail_job" type="reference">
+                  <options>
+                     <option name="referenceTo">$po:mct-job-detail-job</option>
+                  </options>
+               </field>
+               <field description="" name="dt_task_run_agg_job" type="reference">
+                  <options>
+                     <option name="referenceTo">$po:mct-task-run-agg-job</option>
+                  </options>
+               </field>
+               <field description=""
+                      name="dt_task_run_hist_POD1_new1_bkfill"
+                      type="reference">
+                  <options>
+                     <option name="referenceTo">$po:mct-task-run-hist-POD1-new1-bkfill</option>
+                  </options>
+               </field>
+               <field description=""
+                      name="dt_task_run_hist_jdbc_2_WF_new_bkfill"
+                      type="reference">
+                  <options>
+                     <option name="referenceTo">$po:mct-task-run-hist-jdbc-2-WF-new-bkfill</option>
+                  </options>
+               </field>
+               <field description="" name="dt_ICS_JOB_Detail_bkfill" type="reference">
+                  <options>
+                     <option name="referenceTo">$po:mct-ICS-JOB-Detail-bkfill</option>
+                  </options>
+               </field>
+               <field description=""
+                      name="dt_ICS_JOB_Detail_Workflow_bkfill"
+                      type="reference">
+                  <options>
+                     <option name="referenceTo">$po:mct-ICS-JOB-Detail-Workflow-bkfill</option>
+                  </options>
+               </field>
+               <field description="" name="dt_ICS_Task_Agg_bkfill" type="reference">
+                  <options>
+                     <option name="referenceTo">$po:mct-ICS-Task-Agg-bkfill</option>
+                  </options>
+               </field>
+            </tempFields>
+            <notes/>
+            <deployment suspendOnFault="false" tracingLevel="verbose">
+               <rest/>
+            </deployment>
+            <flow id="a">
+               <start id="b">
+                  <link id="k5al1cvo" targetId="k5al1cvt"/>
+               </start>
+               <eventContainer id="k5al1cvt">
+                  <service id="k5al1cvn">
+                     <title>dt_task_run_hist_job</title>
+                     <serviceName>ICSExecuteDataTask</serviceName>
+                     <serviceGUID/>
+                     <serviceInput>
+                        <parameter name="Wait for Task to Complete" source="constant" updatable="true">true</parameter>
+                        <parameter name="Max Wait" source="constant" updatable="true">86400</parameter>
+                        <parameter name="Task Name" source="constant" updatable="true">mct_task_run_hist_job</parameter>
+                        <parameter name="GUID" source="constant" updatable="true">hbsRu4P6egElBSToBXV7iA</parameter>
+                        <parameter name="Task Type" source="constant" updatable="true">MCT</parameter>
+                        <parameter name="Has Inout Parameters" source="constant" updatable="true">false</parameter>
+                        <parameter name="taskField" source="nested">
+                           <operation source="field" to="mct-task-run-hist-job">temp.dt_task_run_hist_job</operation>
+                        </parameter>
+                     </serviceInput>
+                     <serviceOutput>
+                        <operation source="field" to="temp.dt_task_run_hist_job/output/Object_Name">Object Name</operation>
+                        <operation source="field" to="temp.dt_task_run_hist_job/output/Run_Id">Run Id</operation>
+                        <operation source="field" to="temp.dt_task_run_hist_job/output/Log_Id">Log Id</operation>
+                        <operation source="field" to="temp.dt_task_run_hist_job/output/Task_Status">Task Status</operation>
+                        <operation source="field"
+                                   to="temp.dt_task_run_hist_job/output/Success_Source_Rows">Success Source Rows</operation>
+                        <operation source="field" to="temp.dt_task_run_hist_job/output/Failed_Source_Rows">Failed Source Rows</operation>
+                        <operation source="field"
+                                   to="temp.dt_task_run_hist_job/output/Success_Target_Rows">Success Target Rows</operation>
+                        <operation source="field" to="temp.dt_task_run_hist_job/output/Failed_Target_Rows">Failed Target Rows</operation>
+                        <operation source="field" to="temp.dt_task_run_hist_job/output/Start_Time">Start Time</operation>
+                        <operation source="field" to="temp.dt_task_run_hist_job/output/End_Time">End Time</operation>
+                        <operation source="field" to="temp.dt_task_run_hist_job/output/Error_Message">Error Message</operation>
+                     </serviceOutput>
+                  </service>
+                  <link id="k5al1cwa" targetId="k5al1cx4"/>
+                  <events>
+                     <catch faultField="temp.dt_task_run_hist_job/fault"
+                            id="k5al1cvr"
+                            interrupting="true"
+                            name="error">
+                        <suspend/>
+                     </catch>
+                     <catch faultField="temp.dt_task_run_hist_job/fault"
+                            id="k5al1cvs"
+                            interrupting="true"
+                            name="warning"/>
+                  </events>
+               </eventContainer>
+               <eventContainer id="k5al1cx4">
+                  <service id="k5al1cw9">
+                     <title>dt_job_detail_job</title>
+                     <serviceName>ICSExecuteDataTask</serviceName>
+                     <serviceGUID/>
+                     <serviceInput>
+                        <parameter name="Wait for Task to Complete" source="constant" updatable="true">true</parameter>
+                        <parameter name="Max Wait" source="constant" updatable="true">86400</parameter>
+                        <parameter name="Task Name" source="constant" updatable="true">mct_job_detail_job</parameter>
+                        <parameter name="GUID" source="constant" updatable="true">aAKa2GoIKNUimzdpJ8RX2g</parameter>
+                        <parameter name="Task Type" source="constant" updatable="true">MCT</parameter>
+                        <parameter name="Has Inout Parameters" source="constant" updatable="true">false</parameter>
+                        <parameter name="taskField" source="nested">
+                           <operation source="field" to="mct-job-detail-job">temp.dt_job_detail_job</operation>
+                        </parameter>
+                     </serviceInput>
+                     <serviceOutput>
+                        <operation source="field" to="temp.dt_job_detail_job/output/Object_Name">Object Name</operation>
+                        <operation source="field" to="temp.dt_job_detail_job/output/Run_Id">Run Id</operation>
+                        <operation source="field" to="temp.dt_job_detail_job/output/Log_Id">Log Id</operation>
+                        <operation source="field" to="temp.dt_job_detail_job/output/Task_Status">Task Status</operation>
+                        <operation source="field" to="temp.dt_job_detail_job/output/Success_Source_Rows">Success Source Rows</operation>
+                        <operation source="field" to="temp.dt_job_detail_job/output/Failed_Source_Rows">Failed Source Rows</operation>
+                        <operation source="field" to="temp.dt_job_detail_job/output/Success_Target_Rows">Success Target Rows</operation>
+                        <operation source="field" to="temp.dt_job_detail_job/output/Failed_Target_Rows">Failed Target Rows</operation>
+                        <operation source="field" to="temp.dt_job_detail_job/output/Start_Time">Start Time</operation>
+                        <operation source="field" to="temp.dt_job_detail_job/output/End_Time">End Time</operation>
+                        <operation source="field" to="temp.dt_job_detail_job/output/Error_Message">Error Message</operation>
+                     </serviceOutput>
+                  </service>
+                  <link id="k5al1cwg" targetId="k5al1cxk"/>
+                  <events>
+                     <catch faultField="temp.dt_job_detail_job/fault"
+                            id="k5al1cx2"
+                            interrupting="true"
+                            name="error">
+                        <suspend/>
+                     </catch>
+                     <catch faultField="temp.dt_job_detail_job/fault"
+                            id="k5al1cx3"
+                            interrupting="true"
+                            name="warning"/>
+                  </events>
+               </eventContainer>
+               <eventContainer id="k5al1cxk">
+                  <service id="k5al1cwf">
+                     <title>dt_task_run_agg_job</title>
+                     <serviceName>ICSExecuteDataTask</serviceName>
+                     <serviceGUID/>
+                     <serviceInput>
+                        <parameter name="Wait for Task to Complete" source="constant" updatable="true">true</parameter>
+                        <parameter name="Max Wait" source="constant" updatable="true">86400</parameter>
+                        <parameter name="Task Name" source="constant" updatable="true">mct_task_run_agg_job</parameter>
+                        <parameter name="GUID" source="constant" updatable="true">0L3evlSLeKUlBPD8NI1WmK</parameter>
+                        <parameter name="Task Type" source="constant" updatable="true">MCT</parameter>
+                        <parameter name="Has Inout Parameters" source="constant" updatable="true">false</parameter>
+                        <parameter name="taskField" source="nested">
+                           <operation source="field" to="mct-task-run-agg-job">temp.dt_task_run_agg_job</operation>
+                        </parameter>
+                     </serviceInput>
+                     <serviceOutput>
+                        <operation source="field" to="temp.dt_task_run_agg_job/output/Object_Name">Object Name</operation>
+                        <operation source="field" to="temp.dt_task_run_agg_job/output/Run_Id">Run Id</operation>
+                        <operation source="field" to="temp.dt_task_run_agg_job/output/Log_Id">Log Id</operation>
+                        <operation source="field" to="temp.dt_task_run_agg_job/output/Task_Status">Task Status</operation>
+                        <operation source="field" to="temp.dt_task_run_agg_job/output/Success_Source_Rows">Success Source Rows</operation>
+                        <operation source="field" to="temp.dt_task_run_agg_job/output/Failed_Source_Rows">Failed Source Rows</operation>
+                        <operation source="field" to="temp.dt_task_run_agg_job/output/Success_Target_Rows">Success Target Rows</operation>
+                        <operation source="field" to="temp.dt_task_run_agg_job/output/Failed_Target_Rows">Failed Target Rows</operation>
+                        <operation source="field" to="temp.dt_task_run_agg_job/output/Start_Time">Start Time</operation>
+                        <operation source="field" to="temp.dt_task_run_agg_job/output/End_Time">End Time</operation>
+                        <operation source="field" to="temp.dt_task_run_agg_job/output/Error_Message">Error Message</operation>
+                     </serviceOutput>
+                  </service>
+                  <link id="k5bne9ox" targetId="k5ap4c73"/>
+                  <events>
+                     <catch faultField="temp.dt_task_run_agg_job/fault"
+                            id="k5al1cxi"
+                            interrupting="true"
+                            name="error">
+                        <suspend/>
+                     </catch>
+                     <catch faultField="temp.dt_task_run_agg_job/fault"
+                            id="k5al1cxj"
+                            interrupting="true"
+                            name="warning"/>
+                  </events>
+               </eventContainer>
+               <eventContainer id="k5ap4c73">
+                  <service id="k5ap4c6x">
+                     <title>dt_task_run_hist_POD1_new1_bkfill</title>
+                     <serviceName>ICSExecuteDataTask</serviceName>
+                     <serviceGUID/>
+                     <serviceInput>
+                        <parameter name="Wait for Task to Complete" source="constant" updatable="true">true</parameter>
+                        <parameter name="Max Wait" source="constant" updatable="true">86400</parameter>
+                        <parameter name="Task Name" source="constant" updatable="true">mct_task_run_hist_POD1_new1_bkfill</parameter>
+                        <parameter name="GUID" source="constant" updatable="true">1nJx75Rr1W9eqWC4SQgP4L</parameter>
+                        <parameter name="Task Type" source="constant" updatable="true">MCT</parameter>
+                        <parameter name="Has Inout Parameters" source="constant" updatable="true">true</parameter>
+                        <parameter name="taskField" source="nested">
+                           <operation source="field" to="mct-task-run-hist-POD1-new1-bkfill">temp.dt_task_run_hist_POD1_new1_bkfill</operation>
+                        </parameter>
+                     </serviceInput>
+                     <serviceOutput>
+                        <operation source="field"
+                                   to="temp.dt_task_run_hist_POD1_new1_bkfill/output/Object_Name">Object Name</operation>
+                        <operation source="field"
+                                   to="temp.dt_task_run_hist_POD1_new1_bkfill/output/Run_Id">Run Id</operation>
+                        <operation source="field"
+                                   to="temp.dt_task_run_hist_POD1_new1_bkfill/output/Log_Id">Log Id</operation>
+                        <operation source="field"
+                                   to="temp.dt_task_run_hist_POD1_new1_bkfill/output/Task_Status">Task Status</operation>
+                        <operation source="field"
+                                   to="temp.dt_task_run_hist_POD1_new1_bkfill/output/Success_Source_Rows">Success Source Rows</operation>
+                        <operation source="field"
+                                   to="temp.dt_task_run_hist_POD1_new1_bkfill/output/Failed_Source_Rows">Failed Source Rows</operation>
+                        <operation source="field"
+                                   to="temp.dt_task_run_hist_POD1_new1_bkfill/output/Success_Target_Rows">Success Target Rows</operation>
+                        <operation source="field"
+                                   to="temp.dt_task_run_hist_POD1_new1_bkfill/output/Failed_Target_Rows">Failed Target Rows</operation>
+                        <operation source="field"
+                                   to="temp.dt_task_run_hist_POD1_new1_bkfill/output/Start_Time">Start Time</operation>
+                        <operation source="field"
+                                   to="temp.dt_task_run_hist_POD1_new1_bkfill/output/End_Time">End Time</operation>
+                        <operation source="field"
+                                   to="temp.dt_task_run_hist_POD1_new1_bkfill/output/Error_Message">Error Message</operation>
+                        <operation source="field"
+                                   to="temp.dt_task_run_hist_POD1_new1_bkfill/inout/mv_task_hist_1">mv_task_hist_1</operation>
+                     </serviceOutput>
+                  </service>
+                  <link id="k5ap4c7m" targetId="k5ap4c86"/>
+                  <events>
+                     <catch faultField="temp.dt_task_run_hist_POD1_new1_bkfill/fault"
+                            id="k5ap4c71"
+                            interrupting="true"
+                            name="error">
+                        <suspend/>
+                     </catch>
+                     <catch faultField="temp.dt_task_run_hist_POD1_new1_bkfill/fault"
+                            id="k5ap4c72"
+                            interrupting="true"
+                            name="warning"/>
+                  </events>
+               </eventContainer>
+               <eventContainer id="k5ap4c86">
+                  <service id="k5ap4c7l">
+                     <title>dt_task_run_hist_jdbc_2_WF_new_bkfill</title>
+                     <serviceName>ICSExecuteDataTask</serviceName>
+                     <serviceGUID/>
+                     <serviceInput>
+                        <parameter name="Wait for Task to Complete" source="constant" updatable="true">true</parameter>
+                        <parameter name="Max Wait" source="constant" updatable="true">86400</parameter>
+                        <parameter name="Task Name" source="constant" updatable="true">mct_task_run_hist_jdbc_2_WF_new_bkfill</parameter>
+                        <parameter name="GUID" source="constant" updatable="true">5ng46bov1hPeroAB56SM8j</parameter>
+                        <parameter name="Task Type" source="constant" updatable="true">MCT</parameter>
+                        <parameter name="Has Inout Parameters" source="constant" updatable="true">true</parameter>
+                        <parameter name="taskField" source="nested">
+                           <operation source="field" to="mct-task-run-hist-jdbc-2-WF-new-bkfill">temp.dt_task_run_hist_jdbc_2_WF_new_bkfill</operation>
+                        </parameter>
+                     </serviceInput>
+                     <serviceOutput>
+                        <operation source="field"
+                                   to="temp.dt_task_run_hist_jdbc_2_WF_new_bkfill/output/Object_Name">Object Name</operation>
+                        <operation source="field"
+                                   to="temp.dt_task_run_hist_jdbc_2_WF_new_bkfill/output/Run_Id">Run Id</operation>
+                        <operation source="field"
+                                   to="temp.dt_task_run_hist_jdbc_2_WF_new_bkfill/output/Log_Id">Log Id</operation>
+                        <operation source="field"
+                                   to="temp.dt_task_run_hist_jdbc_2_WF_new_bkfill/output/Task_Status">Task Status</operation>
+                        <operation source="field"
+                                   to="temp.dt_task_run_hist_jdbc_2_WF_new_bkfill/output/Success_Source_Rows">Success Source Rows</operation>
+                        <operation source="field"
+                                   to="temp.dt_task_run_hist_jdbc_2_WF_new_bkfill/output/Failed_Source_Rows">Failed Source Rows</operation>
+                        <operation source="field"
+                                   to="temp.dt_task_run_hist_jdbc_2_WF_new_bkfill/output/Success_Target_Rows">Success Target Rows</operation>
+                        <operation source="field"
+                                   to="temp.dt_task_run_hist_jdbc_2_WF_new_bkfill/output/Failed_Target_Rows">Failed Target Rows</operation>
+                        <operation source="field"
+                                   to="temp.dt_task_run_hist_jdbc_2_WF_new_bkfill/output/Start_Time">Start Time</operation>
+                        <operation source="field"
+                                   to="temp.dt_task_run_hist_jdbc_2_WF_new_bkfill/output/End_Time">End Time</operation>
+                        <operation source="field"
+                                   to="temp.dt_task_run_hist_jdbc_2_WF_new_bkfill/output/Error_Message">Error Message</operation>
+                        <operation source="field"
+                                   to="temp.dt_task_run_hist_jdbc_2_WF_new_bkfill/inout/mv_task_hist_WF_2">mv_task_hist_WF_2</operation>
+                     </serviceOutput>
+                  </service>
+                  <link id="k5ap4c8a" targetId="k5ap4c8f"/>
+                  <events>
+                     <catch faultField="temp.dt_task_run_hist_jdbc_2_WF_new_bkfill/fault"
+                            id="k5ap4c84"
+                            interrupting="true"
+                            name="error">
+                        <suspend/>
+                     </catch>
+                     <catch faultField="temp.dt_task_run_hist_jdbc_2_WF_new_bkfill/fault"
+                            id="k5ap4c85"
+                            interrupting="true"
+                            name="warning"/>
+                  </events>
+               </eventContainer>
+               <eventContainer id="k5ap4c8f">
+                  <service id="k5ap4c89">
+                     <title>dt_ICS_JOB_Detail_bkfill</title>
+                     <serviceName>ICSExecuteDataTask</serviceName>
+                     <serviceGUID/>
+                     <serviceInput>
+                        <parameter name="Wait for Task to Complete" source="constant" updatable="true">true</parameter>
+                        <parameter name="Max Wait" source="constant" updatable="true">86400</parameter>
+                        <parameter name="Task Name" source="constant" updatable="true">mct_ICS_JOB_Detail_bkfill</parameter>
+                        <parameter name="GUID" source="constant" updatable="true">8wb8791oO86jk78NhXHeSJ</parameter>
+                        <parameter name="Task Type" source="constant" updatable="true">MCT</parameter>
+                        <parameter name="Has Inout Parameters" source="constant" updatable="true">true</parameter>
+                        <parameter name="taskField" source="nested">
+                           <operation source="field" to="mct-ICS-JOB-Detail-bkfill">temp.dt_ICS_JOB_Detail_bkfill</operation>
+                        </parameter>
+                     </serviceInput>
+                     <serviceOutput>
+                        <operation source="field" to="temp.dt_ICS_JOB_Detail_bkfill/output/Object_Name">Object Name</operation>
+                        <operation source="field" to="temp.dt_ICS_JOB_Detail_bkfill/output/Run_Id">Run Id</operation>
+                        <operation source="field" to="temp.dt_ICS_JOB_Detail_bkfill/output/Log_Id">Log Id</operation>
+                        <operation source="field" to="temp.dt_ICS_JOB_Detail_bkfill/output/Task_Status">Task Status</operation>
+                        <operation source="field"
+                                   to="temp.dt_ICS_JOB_Detail_bkfill/output/Success_Source_Rows">Success Source Rows</operation>
+                        <operation source="field"
+                                   to="temp.dt_ICS_JOB_Detail_bkfill/output/Failed_Source_Rows">Failed Source Rows</operation>
+                        <operation source="field"
+                                   to="temp.dt_ICS_JOB_Detail_bkfill/output/Success_Target_Rows">Success Target Rows</operation>
+                        <operation source="field"
+                                   to="temp.dt_ICS_JOB_Detail_bkfill/output/Failed_Target_Rows">Failed Target Rows</operation>
+                        <operation source="field" to="temp.dt_ICS_JOB_Detail_bkfill/output/Start_Time">Start Time</operation>
+                        <operation source="field" to="temp.dt_ICS_JOB_Detail_bkfill/output/End_Time">End Time</operation>
+                        <operation source="field" to="temp.dt_ICS_JOB_Detail_bkfill/output/Error_Message">Error Message</operation>
+                        <operation source="field" to="temp.dt_ICS_JOB_Detail_bkfill/inout/mv_job_detail">mv_job_detail</operation>
+                     </serviceOutput>
+                  </service>
+                  <link id="k5ap4c8y" targetId="k5ap4c93"/>
+                  <events>
+                     <catch faultField="temp.dt_ICS_JOB_Detail_bkfill/fault"
+                            id="k5ap4c8d"
+                            interrupting="true"
+                            name="error">
+                        <suspend/>
+                     </catch>
+                     <catch faultField="temp.dt_ICS_JOB_Detail_bkfill/fault"
+                            id="k5ap4c8e"
+                            interrupting="true"
+                            name="warning"/>
+                  </events>
+               </eventContainer>
+               <eventContainer id="k5ap4c93">
+                  <service id="k5ap4c8x">
+                     <title>dt_ICS_JOB_Detail_Workflow_bkfill</title>
+                     <serviceName>ICSExecuteDataTask</serviceName>
+                     <serviceGUID/>
+                     <serviceInput>
+                        <parameter name="Wait for Task to Complete" source="constant" updatable="true">true</parameter>
+                        <parameter name="Max Wait" source="constant" updatable="true">86400</parameter>
+                        <parameter name="Task Name" source="constant" updatable="true">mct_ICS_JOB_Detail_Workflow_bkfill</parameter>
+                        <parameter name="GUID" source="constant" updatable="true">a30SGfdfNGGi4nYQupjPO4</parameter>
+                        <parameter name="Task Type" source="constant" updatable="true">MCT</parameter>
+                        <parameter name="Has Inout Parameters" source="constant" updatable="true">true</parameter>
+                        <parameter name="taskField" source="nested">
+                           <operation source="field" to="mct-ICS-JOB-Detail-Workflow-bkfill">temp.dt_ICS_JOB_Detail_Workflow_bkfill</operation>
+                        </parameter>
+                     </serviceInput>
+                     <serviceOutput>
+                        <operation source="field"
+                                   to="temp.dt_ICS_JOB_Detail_Workflow_bkfill/output/Object_Name">Object Name</operation>
+                        <operation source="field"
+                                   to="temp.dt_ICS_JOB_Detail_Workflow_bkfill/output/Run_Id">Run Id</operation>
+                        <operation source="field"
+                                   to="temp.dt_ICS_JOB_Detail_Workflow_bkfill/output/Log_Id">Log Id</operation>
+                        <operation source="field"
+                                   to="temp.dt_ICS_JOB_Detail_Workflow_bkfill/output/Task_Status">Task Status</operation>
+                        <operation source="field"
+                                   to="temp.dt_ICS_JOB_Detail_Workflow_bkfill/output/Success_Source_Rows">Success Source Rows</operation>
+                        <operation source="field"
+                                   to="temp.dt_ICS_JOB_Detail_Workflow_bkfill/output/Failed_Source_Rows">Failed Source Rows</operation>
+                        <operation source="field"
+                                   to="temp.dt_ICS_JOB_Detail_Workflow_bkfill/output/Success_Target_Rows">Success Target Rows</operation>
+                        <operation source="field"
+                                   to="temp.dt_ICS_JOB_Detail_Workflow_bkfill/output/Failed_Target_Rows">Failed Target Rows</operation>
+                        <operation source="field"
+                                   to="temp.dt_ICS_JOB_Detail_Workflow_bkfill/output/Start_Time">Start Time</operation>
+                        <operation source="field"
+                                   to="temp.dt_ICS_JOB_Detail_Workflow_bkfill/output/End_Time">End Time</operation>
+                        <operation source="field"
+                                   to="temp.dt_ICS_JOB_Detail_Workflow_bkfill/output/Error_Message">Error Message</operation>
+                        <operation source="field"
+                                   to="temp.dt_ICS_JOB_Detail_Workflow_bkfill/inout/mv_job_detail_wf">mv_job_detail_wf</operation>
+                     </serviceOutput>
+                  </service>
+                  <link id="k5ap4c9m" targetId="k5ap4ca4"/>
+                  <events>
+                     <catch faultField="temp.dt_ICS_JOB_Detail_Workflow_bkfill/fault"
+                            id="k5ap4c91"
+                            interrupting="true"
+                            name="error">
+                        <suspend/>
+                     </catch>
+                     <catch faultField="temp.dt_ICS_JOB_Detail_Workflow_bkfill/fault"
+                            id="k5ap4c92"
+                            interrupting="true"
+                            name="warning"/>
+                  </events>
+               </eventContainer>
+               <eventContainer id="k5ap4ca4">
+                  <service id="k5ap4c9l">
+                     <title>dt_ICS_Task_Agg_bkfill</title>
+                     <serviceName>ICSExecuteDataTask</serviceName>
+                     <serviceGUID/>
+                     <serviceInput>
+                        <parameter name="Wait for Task to Complete" source="constant" updatable="true">true</parameter>
+                        <parameter name="Max Wait" source="constant" updatable="true">86400</parameter>
+                        <parameter name="Task Name" source="constant" updatable="true">mct_ICS_Task_Agg_bkfill</parameter>
+                        <parameter name="GUID" source="constant" updatable="true">8fa7o3PjJ5Ylyihuz03MQl</parameter>
+                        <parameter name="Task Type" source="constant" updatable="true">MCT</parameter>
+                        <parameter name="Has Inout Parameters" source="constant" updatable="true">false</parameter>
+                        <parameter name="taskField" source="nested">
+                           <operation source="field" to="mct-ICS-Task-Agg-bkfill">temp.dt_ICS_Task_Agg_bkfill</operation>
+                        </parameter>
+                     </serviceInput>
+                     <serviceOutput>
+                        <operation source="field" to="temp.dt_ICS_Task_Agg_bkfill/output/Object_Name">Object Name</operation>
+                        <operation source="field" to="temp.dt_ICS_Task_Agg_bkfill/output/Run_Id">Run Id</operation>
+                        <operation source="field" to="temp.dt_ICS_Task_Agg_bkfill/output/Log_Id">Log Id</operation>
+                        <operation source="field" to="temp.dt_ICS_Task_Agg_bkfill/output/Task_Status">Task Status</operation>
+                        <operation source="field"
+                                   to="temp.dt_ICS_Task_Agg_bkfill/output/Success_Source_Rows">Success Source Rows</operation>
+                        <operation source="field"
+                                   to="temp.dt_ICS_Task_Agg_bkfill/output/Failed_Source_Rows">Failed Source Rows</operation>
+                        <operation source="field"
+                                   to="temp.dt_ICS_Task_Agg_bkfill/output/Success_Target_Rows">Success Target Rows</operation>
+                        <operation source="field"
+                                   to="temp.dt_ICS_Task_Agg_bkfill/output/Failed_Target_Rows">Failed Target Rows</operation>
+                        <operation source="field" to="temp.dt_ICS_Task_Agg_bkfill/output/Start_Time">Start Time</operation>
+                        <operation source="field" to="temp.dt_ICS_Task_Agg_bkfill/output/End_Time">End Time</operation>
+                        <operation source="field" to="temp.dt_ICS_Task_Agg_bkfill/output/Error_Message">Error Message</operation>
+                     </serviceOutput>
+                  </service>
+                  <link id="k5bne9oy" targetId="c"/>
+                  <events>
+                     <catch faultField="temp.dt_ICS_Task_Agg_bkfill/fault"
+                            id="k5ap4ca2"
+                            interrupting="true"
+                            name="error">
+                        <suspend/>
+                     </catch>
+                     <catch faultField="temp.dt_ICS_Task_Agg_bkfill/fault"
+                            id="k5ap4ca3"
+                            interrupting="true"
+                            name="warning"/>
+                  </events>
+               </eventContainer>
+               <end id="c"/>
+            </flow>
+            <dependencies>
+               <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
+                              displayName="mct-task-run-hist-job"
+                              isByCopy="true"
+                              name="mct-task-run-hist-job">
+                  <description/>
+                  <tags/>
+                  <detail>
+                     <field label="Output Parameters" name="output" type="reference"/>
+                     <field label="Fault" name="fault" type="reference"/>
+                  </detail>
+               </processObject>
+               <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
+                              displayName="mct-job-detail-job"
+                              isByCopy="true"
+                              name="mct-job-detail-job">
+                  <description/>
+                  <tags/>
+                  <detail>
+                     <field label="Output Parameters" name="output" type="reference"/>
+                     <field label="Fault" name="fault" type="reference"/>
+                  </detail>
+               </processObject>
+               <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
+                              displayName="mct-task-run-agg-job"
+                              isByCopy="true"
+                              name="mct-task-run-agg-job">
+                  <description/>
+                  <tags/>
+                  <detail>
+                     <field label="Output Parameters" name="output" type="reference"/>
+                     <field label="Fault" name="fault" type="reference"/>
+                  </detail>
+               </processObject>
+               <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
+                              displayName="mct-task-run-hist-POD1-new1-bkfill"
+                              isByCopy="true"
+                              name="mct-task-run-hist-POD1-new1-bkfill">
+                  <description/>
+                  <tags/>
+                  <detail>
+                     <field label="InOut Parameters" name="inout" type="reference"/>
+                     <field label="Output Parameters" name="output" type="reference"/>
+                     <field label="Fault" name="fault" type="reference"/>
+                  </detail>
+               </processObject>
+               <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
+                              displayName="mct-task-run-hist-jdbc-2-WF-new-bkfill"
+                              isByCopy="true"
+                              name="mct-task-run-hist-jdbc-2-WF-new-bkfill">
+                  <description/>
+                  <tags/>
+                  <detail>
+                     <field label="InOut Parameters" name="inout" type="reference"/>
+                     <field label="Output Parameters" name="output" type="reference"/>
+                     <field label="Fault" name="fault" type="reference"/>
+                  </detail>
+               </processObject>
+               <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
+                              displayName="mct-ICS-JOB-Detail-bkfill"
+                              isByCopy="true"
+                              name="mct-ICS-JOB-Detail-bkfill">
+                  <description/>
+                  <tags/>
+                  <detail>
+                     <field label="InOut Parameters" name="inout" type="reference"/>
+                     <field label="Output Parameters" name="output" type="reference"/>
+                     <field label="Fault" name="fault" type="reference"/>
+                  </detail>
+               </processObject>
+               <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
+                              displayName="mct-ICS-JOB-Detail-Workflow-bkfill"
+                              isByCopy="true"
+                              name="mct-ICS-JOB-Detail-Workflow-bkfill">
+                  <description/>
+                  <tags/>
+                  <detail>
+                     <field label="InOut Parameters" name="inout" type="reference"/>
+                     <field label="Output Parameters" name="output" type="reference"/>
+                     <field label="Fault" name="fault" type="reference"/>
+                  </detail>
+               </processObject>
+               <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
+                              displayName="mct-ICS-Task-Agg-bkfill"
+                              isByCopy="true"
+                              name="mct-ICS-Task-Agg-bkfill">
+                  <description/>
+                  <tags/>
+                  <detail>
+                     <field label="Output Parameters" name="output" type="reference"/>
+                     <field label="Fault" name="fault" type="reference"/>
+                  </detail>
+               </processObject>
+            </dependencies>
+         </taskflow>
+      </types1:Entry>
+      <types1:GUID>18ZWC1NM4UaiqRaNUEBIuu</types1:GUID>
+      <types1:DisplayName>TF_idiq_adhoc_job</types1:DisplayName>
+   </types1:Item>
+   <types1:CurrentServerDateTime>2024-12-30T10:50:42.281Z</types1:CurrentServerDateTime>
+</aetgt:getResponse>

@@ -1,7 +1,7 @@
 {
   "objectInfo" : {
-    "id" : "33eP44B8ECKgdlgr07xaik",
-    "name" : "mt_param_04670257",
+    "id" : "1OIHrLtJnq1hQhDVXYZeO3",
+    "name" : "MappingTask78",
     "type" : "MTT",
     "metadata" : {
       "modelVersion" : {
@@ -9,64 +9,24 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0110ZH0Z0000000003L6"
+        "repoHandle" : "0110ZH0Z0000000002E8"
       },
       "contextAttributes" : [ {
         "name" : "id",
         "value" : "@1"
       } ],
       "additionalInfo" : {
-        "description" : null,
+        "description" : "",
         "contentType" : "JSON",
-        "documentState" : "VALID"
+        "documentState" : "INVALID"
       }
     }
   },
   "dataFileExtension" : "zip",
-  "updateTime" : "2024-12-30T10:50:43.421Z",
+  "updateTime" : "2024-12-30T10:50:43.420Z",
   "objectRefs" : [ {
-    "id" : "aIxzJmghWP3edbKa750bOQ",
-    "name" : "SQL_Server_Sandy",
-    "type" : "Connection",
-    "metadata" : {
-      "modelVersion" : {
-        "major" : 0,
-        "minor" : 0
-      },
-      "repoInfo" : {
-        "repoHandle" : "0110ZH0B0000000001W9"
-      },
-      "contextAttributes" : null,
-      "additionalInfo" : {
-        "description" : null,
-        "contentType" : "JSON",
-        "documentState" : "COMPLETE"
-      }
-    },
-    "path" : "/SYS"
-  }, {
-    "id" : "gMKmt4e0TSbgba602sNTmn",
-    "name" : "m_param_04670257",
-    "type" : "DTEMPLATE",
-    "metadata" : {
-      "modelVersion" : {
-        "major" : 0,
-        "minor" : 0
-      },
-      "repoInfo" : {
-        "repoHandle" : "0110ZH170000000006ZE"
-      },
-      "contextAttributes" : null,
-      "additionalInfo" : {
-        "description" : "Created for case 04670257 - testing param - assurance service",
-        "contentType" : "JSON",
-        "documentState" : "VALID"
-      }
-    },
-    "path" : "/Explore/Santhoshini"
-  }, {
-    "id" : "4fmVxd8sTeWj5STMbZHaWi",
-    "name" : "Z________pg_maintainj",
+    "id" : "8gAeUnTcU5kdaOlS2C1jcY",
+    "name" : "__1_ctanneeru_vm",
     "type" : "AgentGroup",
     "metadata" : {
       "modelVersion" : {
@@ -74,13 +34,53 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0110ZH2500000000009K"
+        "repoHandle" : "0110ZH2500000000006V"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
         "description" : null,
         "contentType" : "JSON",
         "documentState" : "VALID"
+      }
+    },
+    "path" : "/SYS"
+  }, {
+    "id" : "01ZLn0nyBM6dZ8sAJadjIv",
+    "name" : "Mapping_parameter_saptest",
+    "type" : "DTEMPLATE",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0110ZH170000000005PU"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Default"
+  }, {
+    "id" : "1YUIm6wpi2SecbLelIsSId",
+    "name" : "ctanneeru_ff_tgt",
+    "type" : "Connection",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0110ZH0B0000000000YX"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
       }
     },
     "path" : "/SYS"
