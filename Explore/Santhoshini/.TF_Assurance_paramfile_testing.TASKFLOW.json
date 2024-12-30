@@ -1,0 +1,50 @@
+{
+  "objectInfo" : {
+    "id" : "0sS1PgfeS7qbPV70NZqAe2",
+    "name" : "TF_Assurance_paramfile_testing",
+    "type" : "TASKFLOW",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "6YFqXL86zqzm5Y6-gt-2523472-2024-07-15T14:42:17.926Z::tf.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "xml",
+  "updateTime" : "2024-12-30T10:38:05.708Z",
+  "objectRefs" : [ {
+    "id" : "53aiGLa2dHWlKXzeXjAEoQ",
+    "name" : "mt_Oracle_precision_testing",
+    "type" : "MTT",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0110ZH0Z0000000003N7"
+      },
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Santhoshini"
+  } ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}
